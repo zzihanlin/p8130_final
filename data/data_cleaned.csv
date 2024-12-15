@@ -1,949 +1,949 @@
-"EthnicGroup","ParentEduc","TestPrep"
-"","bachelor's degree","none"
-"group C","some college",""
-"group B","master's degree","none"
-"Other","associate's degree","none"
-"group C","some college","none"
-"group B","associate's degree","none"
-"group B","some college","completed"
-"group B","some college","none"
-"group D","high school","completed"
-"group B","high school","none"
-"group C","associate's degree","none"
-"group D","associate's degree","none"
-"group B","high school","none"
-"Other","some college","completed"
-"Other","master's degree","none"
-"group C","some high school","none"
-"group C","high school",""
-"group B","some high school","none"
-"group C","master's degree","completed"
-"group C","associate's degree","none"
-"group D","high school","none"
-"group B","some college","completed"
-"group D","","none"
-"group C","some high school","none"
-"group D","","completed"
-"Other","master's degree","none"
-"group B","some college","none"
-"group C","bachelor's degree","none"
-"group C","high school","none"
-"group D","some college","none"
-"group B","some college","none"
-"Other","master's degree","none"
-"","some college","none"
-"Other","some college","none"
-"Other","associate's degree","completed"
-"group D","associate's degree","none"
-"group D","some high school","none"
-"group D","associate's degree","completed"
-"group B","associate's degree","none"
-"group C","associate's degree","none"
-"group C","associate's degree","none"
-"group B","some college",""
-"Other","associate's degree","none"
-"group B","associate's degree","none"
-"group C","high school","none"
-"group C","high school","completed"
-"Other","some college","none"
-"","associate's degree","completed"
-"group C","some college","none"
-"group D","high school","none"
-"","some high school","completed"
-"group C","high school","none"
-"Other","associate's degree","completed"
-"group D","associate's degree","none"
-"group D","","completed"
-"group C","some high school","none"
-"Other","some high school","none"
-"Other","associate's degree","none"
-"group D","some high school","none"
-"group B","some high school","none"
-"group D","some high school","none"
-"group C","some college","none"
-"group B","associate's degree","none"
-"group C","associate's degree","none"
-"group D","some college","completed"
-"Other","associate's degree","none"
-"group C","some high school","none"
-"group C","some high school",""
-"group B","associate's degree","none"
-"Other","some high school","none"
-"Other","","completed"
-"group D","some high school","completed"
-"Other","master's degree","none"
-"group B","associate's degree","none"
-"group B","high school","none"
-"Other","some college","completed"
-"Other","associate's degree","none"
-"group D","high school","none"
-"group C","some college","none"
-"group C","some college","none"
-"group D","associate's degree","none"
-"Other","some college","none"
-"group D","some high school","none"
-"group C","high school","none"
-"group C","high school","none"
-"group C","associate's degree","completed"
-"group B","some college","none"
-"group B","some high school","completed"
-"","some college","completed"
-"group D","some college","none"
-"group D","bachelor's degree","none"
-"group B","some college","none"
-"group D","bachelor's degree","completed"
-"group D","associate's degree","none"
-"group B","high school","completed"
-"","some college","completed"
-"group C","some college","none"
-"group D","master's degree","none"
-"Other","","completed"
-"group B","associate's degree","none"
-"group B","some high school","none"
-"group D","associate's degree","completed"
-"group C","high school","none"
-"Other","associate's degree","none"
-"group D","some college","none"
-"Other","bachelor's degree","completed"
-"group C","high school","none"
-"group B","bachelor's degree","none"
-"group D","bachelor's degree","none"
-"group D","some high school","none"
-"group C","some college","none"
-"group C","bachelor's degree","completed"
-"group B","associate's degree","completed"
-"group C","some college","completed"
-"group D","high school","none"
-"Other","some college","none"
-"group B","high school","none"
-"group B","","none"
-"group D","some college",""
-"group D","master's degree","none"
-"Other","bachelor's degree","none"
-"group D","master's degree","none"
-"group C","some high school","completed"
-"","some college","completed"
-"","some college","completed"
-"group D","bachelor's degree","completed"
-"group C","bachelor's degree","none"
-"group B","some high school","completed"
-"Other","high school","none"
-"group C","associate's degree",""
-"group D","some college","completed"
-"group D","some high school","none"
-"group C","some college","none"
-"Other","some college","completed"
-"Other","high school","none"
-"group D","some college","none"
-"group C","some college","none"
-"group D","bachelor's degree","completed"
-"Other","associate's degree","completed"
-"Other","some high school","completed"
-"group B","associate's degree","completed"
-"group D","bachelor's degree","none"
-"group D","some high school","none"
-"group C","some college","completed"
-"Other","high school","completed"
-"group B","","none"
-"group B","associate's degree",""
-"group D","associate's degree","none"
-"group B","associate's degree","completed"
-"Other","some college","completed"
-"group B","master's degree","none"
-"group C","high school","none"
-"Other","master's degree","none"
-"group C","bachelor's degree","completed"
-"group C","high school","completed"
-"group B","master's degree","completed"
-"group B","high school","completed"
-"Other","high school","completed"
-"Other","some high school","none"
-"group D","some college","none"
-"group C","associate's degree","none"
-"group C","bachelor's degree","completed"
-"group C","master's degree","completed"
-"group B","high school","completed"
-"group C","associate's degree","completed"
-"group B","master's degree","completed"
-"group D","some high school","completed"
-"group C","master's degree","completed"
-"group C","some college","none"
-"Other","high school","none"
-"group D","associate's degree","none"
-"group C","associate's degree","completed"
-"Other","high school","none"
-"group D","some high school","completed"
-"group B","some high school","none"
-"group C","bachelor's degree","none"
-"Other","associate's degree","none"
-"group D","some college","completed"
-"group B","some high school","none"
-"group D","some college","completed"
-"group C","master's degree","completed"
-"group D","associate's degree","none"
-"group C","","completed"
-"Other","high school","none"
-"group B","some college","none"
-"group B","bachelor's degree",""
-"group C","associate's degree","completed"
-"group D","some college","none"
-"group C","associate's degree","none"
-"","associate's degree","none"
-"group C","some college","none"
-"group D","some high school","completed"
-"Other","bachelor's degree","none"
-"Other","high school","completed"
-"group B","some college","none"
-"group B","some college",""
-"group D","some high school","completed"
-"group C","some college",""
-"group C","high school","none"
-"group C","associate's degree","completed"
-"Other","high school",""
-"group B","some high school","completed"
-"Other","associate's degree","completed"
-"group C","high school",""
-"group B","high school","none"
-"group B","some high school","completed"
-"group D","high school","completed"
-"group B","associate's degree","none"
-"group C","some high school",""
-"group D","some high school","none"
-"group B","associate's degree","completed"
-"Other","master's degree","none"
-"group C","some college","none"
-"group D","high school","none"
-"Other","","none"
-"group C","some college","completed"
-"group D","some college","none"
-"group C","associate's degree","none"
-"group B","bachelor's degree","none"
-"Other","some high school","none"
-"group C","bachelor's degree","completed"
-"group D","associate's degree","none"
-"group D","bachelor's degree","none"
-"group D","some high school",""
-"group B","some college","none"
-"group C","associate's degree","none"
-"group D","high school","completed"
-"Other","bachelor's degree","none"
-"Other","some college",""
-"group D","some high school","none"
-"group C","associate's degree","none"
-"Other","associate's degree",""
-"group B","high school","completed"
-"group B","high school","none"
-"","high school","none"
-"Other","some high school","completed"
-"group D","some college","none"
-"group B","some high school","completed"
-"group D","master's degree","none"
-"group D","high school","none"
-"Other","some college","none"
-"group C","associate's degree","none"
-"","associate's degree","completed"
-"group C","some high school","completed"
-"group C","some college","completed"
-"group C","some high school","none"
-"Other","high school","none"
-"group D","high school","none"
-"group D","some high school","none"
-"","bachelor's degree","none"
-"group D","high school","none"
-"group D","associate's degree","completed"
-"Other","some college","none"
-"group C","bachelor's degree","none"
-"group C","some college",""
-"group D","associate's degree","none"
-"group D","some college","none"
-"group B","some college","completed"
-"group C","bachelor's degree","none"
-"group C","some high school","completed"
-"Other","","completed"
-"group C","some high school","none"
-"group B","bachelor's degree","none"
-"group D","high school","none"
-"group D","bachelor's degree","none"
-"group D","some college","completed"
-"","some high school","none"
-"group B","associate's degree","completed"
-"Other","associate's degree","completed"
-"group B","some high school","none"
-"group B","bachelor's degree","none"
-"","some high school","completed"
-"group C","associate's degree","none"
-"group D","some high school","none"
-"group C","some high school","completed"
-"Other","bachelor's degree","none"
-"group D","high school","completed"
-"group B","associate's degree","none"
-"","some high school","completed"
-"","associate's degree","completed"
-"group C","","completed"
-"group D","associate's degree","none"
-"Other","some college","completed"
-"group D","some high school",""
-"group C","associate's degree","completed"
-"group B","associate's degree","none"
-"group C","associate's degree","completed"
-"Other","some college","none"
-"Other","some college","completed"
-"group C","some high school","none"
-"group B","associate's degree","none"
-"group D","high school",""
-"group B","associate's degree","none"
-"group B","bachelor's degree","none"
-"group D","bachelor's degree","completed"
-"group C","associate's degree","completed"
-"group C","high school","none"
-"group D","master's degree","completed"
-"group C","associate's degree","none"
-"group B","bachelor's degree","none"
-"group D","associate's degree","none"
-"group C","high school",""
-"Other","high school","none"
-"group C","some college","none"
-"group C","some high school","none"
-"group C","high school","none"
-"group C","some college","none"
-"group C","some college","none"
-"Other","some college","none"
-"group C","associate's degree","completed"
-"group B","some high school","none"
-"group C","high school","none"
-"group C","associate's degree","none"
-"Other","associate's degree","completed"
-"group B","associate's degree","none"
-"group C","bachelor's degree","none"
-"group B","some college","none"
-"group D","some high school","completed"
-"group C","associate's degree","none"
-"group B","some high school","none"
-"group D","some high school","completed"
-"group C","high school","none"
-"group C","","none"
-"group B","","completed"
-"group D","associate's degree","completed"
-"group D","some college","none"
-"group C","high school","none"
-"group B","","none"
-"group C","bachelor's degree","completed"
-"Other","associate's degree","none"
-"group B","bachelor's degree","none"
-"Other","some college","none"
-"group C","some college","completed"
-"group C","associate's degree","none"
-"group C","some college","none"
-"group B","bachelor's degree","none"
-"Other","","none"
-"group C","some college","completed"
-"group D","some college","none"
-"group B","high school","none"
-"group B","some high school","completed"
-"group C","some college","none"
-"group D","some high school","none"
-"group C","some college","none"
-"Other","bachelor's degree","completed"
-"group C","high school","completed"
-"group C","bachelor's degree","none"
-"Other","some high school","none"
-"group D","some high school","none"
-"Other","some college","none"
-"group C","some college","completed"
-"group D","some high school","none"
-"group D","some college","completed"
-"group D","bachelor's degree","none"
-"group D","some high school","none"
-"group D","master's degree","completed"
-"Other","some high school","none"
-"Other","bachelor's degree","none"
-"group B","associate's degree","none"
-"group C","associate's degree","completed"
-"group C","master's degree","none"
-"Other","some high school","none"
-"Other","some high school","none"
-"Other","some college","none"
-"Other","bachelor's degree","none"
-"group C","","none"
-"group D","high school","none"
-"group D","master's degree","none"
-"Other","some high school","completed"
-"group D","some college","none"
-"Other","some college","none"
-"group C","associate's degree","completed"
-"group C","some high school","completed"
-"group B","high school","none"
-"group B","some high school","none"
-"group D","some high school","none"
-"group C","some high school","completed"
-"Other","some college",""
-"Other","some college","none"
-"group D","high school","completed"
-"group C","high school","none"
-"group C","some high school","none"
-"group B","associate's degree","completed"
-"group B","associate's degree",""
-"group D","high school","completed"
-"group D","associate's degree","completed"
-"group D","master's degree","completed"
-"","some college","completed"
-"group D","associate's degree","none"
-"group C","",""
-"Other","high school","none"
-"group C","bachelor's degree","completed"
-"group C","associate's degree","none"
-"group D","some college","none"
-"Other","high school","completed"
-"group D","high school","completed"
-"group D","master's degree","completed"
-"Other","some high school","completed"
-"","some college","none"
-"","some college","none"
-"group C","bachelor's degree","none"
-"group C","some high school","none"
-"Other","some high school",""
-"group C","some high school","none"
-"","associate's degree","none"
-"group C","high school","none"
-"group C","high school","none"
-"Other","some high school","none"
-"group C","","none"
-"","some college","completed"
-"group D","associate's degree","none"
-"group D","","none"
-"group C","high school",""
-"group D","some high school","completed"
-"group C","","completed"
-"group D","high school","none"
-"Other","some high school","none"
-"","associate's degree","none"
-"Other","some high school","none"
-"group C","some high school","completed"
-"group D","some college","none"
-"group C","high school","completed"
-"group B","high school","none"
-"group B","associate's degree","none"
-"group C","some college","completed"
-"Other","some college","none"
-"group C","associate's degree","none"
-"group C","some college","none"
-"group C","associate's degree","none"
-"group C","bachelor's degree","none"
-"group D","bachelor's degree","none"
-"group D","associate's degree","none"
-"Other","bachelor's degree","none"
-"group B","high school",""
-"group C","bachelor's degree","none"
-"group B","some college","none"
-"Other","some college","none"
-"group C","some college","none"
-"Other","bachelor's degree","completed"
-"group C","some college","none"
-"group D","associate's degree","none"
-"Other","high school","completed"
-"Other","high school","completed"
-"","some college","none"
-"group C","associate's degree","completed"
-"group C","high school",""
-"group C","associate's degree","completed"
-"group D","some high school","none"
-"group B","associate's degree",""
-"group D","bachelor's degree","completed"
-"Other","bachelor's degree","completed"
-"group D","","none"
-"group D","master's degree","none"
-"Other","associate's degree","none"
-"group B","high school","completed"
-"group D","associate's degree",""
-"","some college","none"
-"Other","high school","none"
-"group B","associate's degree","none"
-"group C","high school","none"
-"group D","some college","none"
-"group C","associate's degree","none"
-"group B","some high school","completed"
-"Other","associate's degree","completed"
-"Other","associate's degree","none"
-"group C","associate's degree",""
-"group C","some college","none"
-"group C","bachelor's degree","none"
-"group B","high school","none"
-"group D","high school","completed"
-"group C","some college","none"
-"group D","some college","completed"
-"Other","some college","none"
-"group D","master's degree","none"
-"group B","associate's degree","completed"
-"group C","some college","none"
-"Other","associate's degree","completed"
-"group D","master's degree","none"
-"group B","some high school","none"
-"Other","high school","none"
-"group C","","none"
-"group C","bachelor's degree","none"
-"group D","some college","none"
-"Other","","none"
-"group D","some high school","none"
-"group B","some high school","completed"
-"group B","master's degree","completed"
-"group C","some high school","completed"
-"group D","some college","none"
-"Other","some college","completed"
-"group D","some high school","completed"
-"group B","high school","completed"
-"group D","","none"
-"group C","associate's degree","none"
-"","bachelor's degree","none"
-"group C","master's degree",""
-"group C","high school","completed"
-"","some college","none"
-"group C","some high school","completed"
-"group C","high school","none"
-"group D","bachelor's degree","none"
-"group C","associate's degree","none"
-"group C","associate's degree","completed"
-"group C","some high school","none"
-"Other","associate's degree","completed"
-"Other","associate's degree","completed"
-"group B","high school","completed"
-"group C","bachelor's degree","completed"
-"","associate's degree","completed"
-"group D","high school","none"
-"","bachelor's degree","completed"
-"Other","associate's degree","completed"
-"group C","high school","completed"
-"","associate's degree",""
-"","associate's degree","none"
-"group D","associate's degree","none"
-"group D","","none"
-"Other","some high school","completed"
-"Other","some high school","completed"
-"group C","high school","completed"
-"group C","high school","none"
-"group C","master's degree","none"
-"group C","some high school","none"
-"group B","bachelor's degree","completed"
-"group B","","none"
-"group D","some college","none"
-"Other","associate's degree","none"
-"group C","some college",""
-"group C","master's degree","none"
-"group B","associate's degree","none"
-"group D","some high school","none"
-"group D","some college","completed"
-"group C","some college","none"
-"group C","bachelor's degree","completed"
-"group D","some college","completed"
-"group B","bachelor's degree","none"
-"group B","associate's degree","none"
-"Other","bachelor's degree","completed"
-"group D","master's degree","completed"
-"group B","high school","none"
-"","bachelor's degree","none"
-"group B","","completed"
-"Other","bachelor's degree","none"
-"group C","some college",""
-"group C","high school","completed"
-"","high school","none"
-"Other","associate's degree",""
-"Other","some college","completed"
-"group B","high school","none"
-"group B","some college","completed"
-"group D","master's degree","none"
-"group D","some high school","none"
-"Other","some high school","none"
-"group D","bachelor's degree","none"
-"","associate's degree","completed"
-"Other","high school","none"
-"group C","bachelor's degree","none"
-"group C","some college","none"
-"Other","some high school","none"
-"group C","some college","none"
-"","some high school","none"
-"Other","bachelor's degree","none"
-"","",""
-"group C","bachelor's degree","completed"
-"group C","bachelor's degree","completed"
-"group B","high school","none"
-"Other","some high school","none"
-"group D","high school","none"
-"group D","some high school","none"
-"","master's degree","none"
-"group C","high school","none"
-"Other","some college","none"
-"group D","high school","none"
-"group D","master's degree","completed"
-"group C","some high school","none"
-"group C","associate's degree","none"
-"group C","master's degree","none"
-"","some college",""
-"group B","associate's degree","none"
-"group D","some college","completed"
-"group C","some college","none"
-"group C","bachelor's degree","completed"
-"Other","associate's degree","none"
-"group C","high school","none"
-"Other","bachelor's degree","none"
-"group D","bachelor's degree","none"
-"group D","master's degree","none"
-"","associate's degree","completed"
-"group C","high school","none"
-"group B","","none"
-"group C","high school","completed"
-"Other","some college","completed"
-"","bachelor's degree","none"
-"group D","some college","completed"
-"group B","associate's degree","completed"
-"group D","associate's degree","none"
-"group D","some college","none"
-"group C","some high school","completed"
-"group D","some college","none"
-"group B","high school","none"
-"group B","bachelor's degree","completed"
-"group C","high school","none"
-"Other","high school","none"
-"group D","some high school","completed"
-"Other","some college",""
-"group D","","none"
-"group D","high school","none"
-"group D","associate's degree","completed"
-"group B","some high school","none"
-"Other","high school","completed"
-"group B","high school","none"
-"group B","bachelor's degree","completed"
-"","associate's degree","none"
-"Other","","none"
-"","high school","none"
-"group D","some college","completed"
-"group C","some high school","completed"
-"Other","high school","completed"
-"group D","some college","completed"
-"Other","associate's degree","completed"
-"group B","some high school","none"
-"group B","some college","none"
-"group C","associate's degree","none"
-"group D","some high school","none"
-"group D","associate's degree","none"
-"group D","associate's degree","none"
-"group C","some high school","none"
-"group D","some college","none"
-"group C","high school","none"
-"","associate's degree","none"
-"group C","some high school","completed"
-"group C","some college","completed"
-"group B","bachelor's degree","none"
-"group C","some college","none"
-"group D","associate's degree","completed"
-"group C","high school","none"
-"group D","associate's degree","none"
-"group C","some college","none"
-"group C","associate's degree",""
-"group D","high school","completed"
-"group B","some college","completed"
-"Other","some college","completed"
-"group C","","completed"
-"group D","associate's degree",""
-"group D","some college",""
-"group D","high school","none"
-"group B","high school","none"
-"group C","","completed"
-"group B","some college",""
-"Other","master's degree","completed"
-"Other","some college","completed"
-"","associate's degree","none"
-"Other","high school","none"
-"Other","some college","none"
-"group C","associate's degree","none"
-"Other","associate's degree","none"
-"group C","","completed"
-"group D","associate's degree","none"
-"group C","some high school","none"
-"group D","some college","none"
-"","associate's degree","completed"
-"Other","bachelor's degree","none"
-"group D","associate's degree","completed"
-"group C","high school","none"
-"Other","bachelor's degree","completed"
-"","some high school","none"
-"Other","bachelor's degree","completed"
-"group D","",""
-"group B","some high school","completed"
-"Other","","none"
-"group D","high school","none"
-"group C","some college",""
-"group D","high school","none"
-"group D","associate's degree","completed"
-"group C","some college","completed"
-"Other","some high school","completed"
-"group D","some college","none"
-"group D","master's degree","none"
-"group B","some high school","completed"
-"group B","associate's degree","completed"
-"group C","associate's degree","completed"
-"group C","associate's degree","completed"
-"group C","high school","none"
-"Other","associate's degree","completed"
-"group C","some college","none"
-"group D","some high school","completed"
-"group B","some high school",""
-"group C","high school","none"
-"group B","some college","none"
-"Other","some college","completed"
-"Other","","completed"
-"Other","some high school","completed"
-"group D","high school","none"
-"group C","some college","none"
-"group B","associate's degree","completed"
-"","some high school","none"
-"group C","some college","completed"
-"","","none"
-"Other","some college","none"
-"group C","master's degree",""
-"group C","associate's degree","none"
-"","some college","completed"
-"group D","associate's degree","none"
-"group C","high school","none"
-"group D","bachelor's degree","none"
-"","associate's degree","none"
-"group C","high school","none"
-"group C","associate's degree","completed"
-"group B","some college","none"
-"","associate's degree","none"
-"group D","high school","none"
-"group C","some college","none"
-"","bachelor's degree","none"
-"group B","some college","completed"
-"group D","some high school","completed"
-"Other","some college","none"
-"group C","master's degree","completed"
-"group C","some high school","completed"
-"group C","associate's degree","none"
-"Other","associate's degree","none"
-"group D","some college","none"
-"Other","bachelor's degree","completed"
-"group D","some college","completed"
-"group B","some college","completed"
-"group C","high school","none"
-"group D","some high school","none"
-"group D","some high school","completed"
-"group B","high school","none"
-"group D","some college","none"
-"group B","high school","none"
-"","high school","completed"
-"group B","high school","completed"
-"group D","some high school","none"
-"Other","some college","none"
-"group B","high school","none"
-"group D","bachelor's degree","none"
-"group B","some high school","completed"
-"group C","bachelor's degree","none"
-"group B","","none"
-"group B","some high school","none"
-"group B","high school",""
-"group C","some college","none"
-"","","completed"
-"Other","associate's degree","completed"
-"group D","associate's degree","none"
-"group B","master's degree","none"
-"group B","","completed"
-"group C","associate's degree","completed"
-"group C","bachelor's degree","completed"
-"group B","some high school","completed"
-"Other","some high school","none"
-"group B","some college","none"
-"group C","associate's degree",""
-"group C","master's degree","none"
-"group B","high school","none"
-"","some college","none"
-"group D","high school","none"
-"Other","some high school","completed"
-"group B","high school","none"
-"Other","associate's degree","completed"
-"group D","high school","none"
-"Other","associate's degree","none"
-"Other","","none"
-"group C","associate's degree","none"
-"group C","some high school","completed"
-"group B","some college","none"
-"group C","some college","none"
-"Other","some college","none"
-"group D","some college","none"
-"Other","high school","none"
-"group C","high school","none"
-"group B","bachelor's degree","none"
-"Other","some high school","none"
-"Other","high school","none"
-"group C","master's degree","completed"
-"Other","some high school","completed"
-"group C","high school","none"
-"group B","some high school","completed"
-"group D","bachelor's degree","completed"
-"group B","high school","none"
-"group C","some high school","none"
-"Other","some high school","completed"
-"Other","some college","completed"
-"group C","some high school","none"
-"group C","high school","none"
-"group C","associate's degree","completed"
-"","some high school","none"
-"group B","some high school","none"
-"Other","some college","none"
-"group C","bachelor's degree","completed"
-"Other","bachelor's degree","none"
-"group B","some college","none"
-"group C","high school","completed"
-"Other","high school","none"
-"Other","high school","completed"
-"group B","associate's degree","completed"
-"group D","high school","none"
-"group C","some high school","none"
-"group B","high school","completed"
-"group B","some college","completed"
-"group D","some high school","completed"
-"Other","master's degree","none"
-"group C","master's degree","completed"
-"group C","high school","none"
-"group D","associate's degree","none"
-"group C","master's degree","none"
-"Other","high school","none"
-"Other","some college","none"
-"Other","some high school","none"
-"group C","some high school","none"
-"group B","bachelor's degree","none"
-"group B","some college","none"
-"group C","bachelor's degree","none"
-"group B","high school","completed"
-"group C","associate's degree","none"
-"group C","associate's degree","none"
-"Other","master's degree","none"
-"group D","bachelor's degree","completed"
-"group C","some college","completed"
-"group C","associate's degree","none"
-"group D","","completed"
-"group B","associate's degree","none"
-"Other","associate's degree","completed"
-"group C","associate's degree","none"
-"group B","high school","none"
-"group B","associate's degree","completed"
-"Other","associate's degree","none"
-"group C","bachelor's degree","none"
-"group C","","none"
-"group D","some college","none"
-"group C","some high school","none"
-"group D","some high school","none"
-"","associate's degree","none"
-"group C","bachelor's degree","completed"
-"Other","bachelor's degree","completed"
-"group B","high school","none"
-"group D","bachelor's degree","none"
-"Other","associate's degree","none"
-"group C","associate's degree","completed"
-"Other","associate's degree","completed"
-"group D","some college","none"
-"group D","high school","none"
-"Other","some college","completed"
-"Other","associate's degree","none"
-"Other","master's degree","none"
-"group D","some high school","completed"
-"Other","associate's degree","none"
-"Other","","none"
-"group B","high school","none"
-"group B","some high school","completed"
-"group D","","completed"
-"group D","some high school","completed"
-"group D","master's degree","none"
-"group C","master's degree","none"
-"Other","high school","completed"
-"group D","bachelor's degree","completed"
-"group D","some high school","none"
-"group D","","none"
-"group B","","none"
-"group D","some college","completed"
-"group C","bachelor's degree","none"
-"","bachelor's degree","completed"
-"group D","bachelor's degree",""
-"Other","some college","none"
-"group C","bachelor's degree","completed"
-"group C","bachelor's degree","completed"
-"group B","associate's degree","none"
-"Other","some college","none"
-"Other","bachelor's degree","completed"
-"group C","high school","none"
-"group C","associate's degree","completed"
-"group B","some college","completed"
-"group D","high school","none"
-"group D","high school","none"
-"group B","associate's degree","none"
-"group D","high school","none"
-"Other","some high school","completed"
-"Other","","none"
-"group D","high school","completed"
-"Other","associate's degree","completed"
-"group C","some high school","none"
-"group D","some college","none"
-"group D","associate's degree","completed"
-"group C","","completed"
-"group C","associate's degree","completed"
-"group D","some college","none"
-"Other","associate's degree","none"
-"Other","high school","none"
-"group D","some college","completed"
-"group D","some high school","completed"
-"group C","master's degree","completed"
-"group D","master's degree","none"
-"group C","high school","none"
-"Other","some high school","completed"
-"group B","high school","none"
-"group C","associate's degree","none"
-"group B","high school","none"
-"group D","some college","none"
-"group B","some high school","completed"
-"Other","high school","completed"
-"Other","high school","none"
-"group D","some college","completed"
-"Other","some high school","none"
-"","high school","completed"
-"group C","some college",""
-"Other","associate's degree","none"
-"group C","some college","none"
-"group D","master's degree","none"
-"group D","high school","none"
-"group C","high school",""
-"Other","some college","none"
-"group D","some high school",""
-"Other","associate's degree","none"
-"","some high school","completed"
-"group D","","none"
-"group D","some college",""
-"Other","some high school","completed"
-"group C","some college","none"
-"Other","associate's degree","none"
-"group B","bachelor's degree","none"
-"group D","bachelor's degree","none"
-"group C","some high school","completed"
-"Other","high school","completed"
-"group D","some college","none"
-"Other","","none"
-"group C","associate's degree","none"
-"group D","high school","completed"
-"group C","associate's degree","none"
-"group B","high school","none"
-"group D","some high school","none"
-"group B","some high school","completed"
-"Other","some college","completed"
-"group C","some high school","none"
-"Other","high school","none"
-"group C","associate's degree","none"
-"Other","some high school","completed"
-"Other","some high school",""
-"group D","some college","completed"
-"Other","high school","completed"
-"group B","some high school","completed"
-"group D","associate's degree","none"
-"group D","bachelor's degree","none"
-"Other","high school","none"
-"Other","master's degree",""
-"group C","high school","none"
-"group C","high school","completed"
-"group D","","completed"
-"group D","some college","none"
+"Gender","EthnicGroup","ParentEduc","LunchType","TestPrep","ParentMaritalStatus","PracticeSport","IsFirstChild","NrSiblings","TransportMeans","WklyStudyHours","MathScore","ReadingScore","WritingScore"
+"female","","bachelor's degree","standard","none","married","regularly","yes",3,"school_bus","< 5",0.323104857518868,0.145829937038045,0.393877346465413
+"female","group C","some college","standard","","married","sometimes","yes",0,"","10-May",0.194324783973404,1.42964656750201,1.30222489508209
+"female","group B","master's degree","standard","none","single","sometimes","yes",4,"school_bus","< 5",1.35334544588258,1.63235445652264,1.49687079835709
+"male","group A","associate's degree","free/reduced","none","married","never","no",1,"","10-May",-1.35103609857217,-0.867709508065085,-1.68234562180127
+"male","group C","some college","standard","none","married","sometimes","yes",0,"school_bus","10-May",0.645055041382529,0.618815011419506,0.458759314223747
+"female","group B","associate's degree","standard","none","married","regularly","yes",1,"school_bus","10-May",0.451884931064333,1.02423078946076,0.718287185257083
+"female","group B","some college","standard","completed","widowed","never","no",1,"private","10-May",1.22456537233712,1.63235445652264,1.36710686284042
+"male","group B","some college","free/reduced","none","married","sometimes","yes",1,"private","> 10",-1.6085962456631,-1.7461103604878,-1.87699152507627
+"male","group D","high school","free/reduced","completed","single","sometimes","no",3,"private","> 10",-0.0632353631175246,-0.327155137343416,0.00458553991540994
+"female","group B","high school","free/reduced","none","married","regularly","yes",2.15521064301552,"private","< 5",-1.86615639275402,-0.665001619044459,-1.1632898797346
+"male","group C","associate's degree","standard","none","","sometimes","yes",1,"private","10-May",-0.51396562052665,-1.0028481007455,-1.03352594421793
+"male","group D","associate's degree","standard","none","divorced","sometimes","yes",1,"school_bus","10-May",-1.67298628243583,-1.13798669342592,-1.61746365404294
+"female","group B","high school","standard","none","married","regularly","no",1,"private","10-May",0.00115467365520756,0.88909219678034,0.393877346465413
+"male","group A","some college","standard","completed","single","sometimes","yes",1,"private","> 10",0.902615188473458,0.280968529718462,0.199231443190412
+"female","group A","master's degree","standard","none","divorced","sometimes","yes",2,"private","< 5",-1.15786598825397,-1.07041739708571,-0.644234137667929
+"female","group C","some high school","standard","none","married","sometimes","yes",0,"private","",0.194324783973404,0.41610712239888,0.653405217498749
+"male","group C","high school","standard","","married","sometimes","yes",0,"school_bus","10-May",1.41773548265531,1.3620772711618,1.17246095956542
+"female","group B","some high school","free/reduced","none","divorced","sometimes","yes",1,"school_bus","10-May",-3.08956709143594,-2.48937262023009,-2.59069317041795
+"male","group C","master's degree","free/reduced","completed","single","sometimes","no",1,"private","10-May",-1.28664606179944,-1.81367965682801,-1.3579357830096
+"female","group C","associate's degree","free/reduced","none","married","never","yes",3,"private","< 5",-1.02908591470851,-0.867709508065085,-0.644234137667929
+"male","group D","high school","standard","none","married","sometimes","yes",5,"school_bus","10-May",0.00115467365520756,0.0106913443576277,-0.31982429887626
+"female","group B","some college","free/reduced","completed","married","sometimes","no",2,"school_bus","10-May",-0.0632353631175246,0.41610712239888,0.134349475432078
+"male","group D","","standard","none","married","never","yes",5,"","10-May",-1.54420620889036,-1.07041739708571,-1.09840791197627
+"female","group C","some high school","standard","none","divorced","never","no",3,"","10-May",0.00115467365520756,0.145829937038045,0.199231443190412
+"male","group D","","free/reduced","completed","married","sometimes","yes",2,"school_bus","10-May",0.516274967837065,0.145829937038045,0.783169153015417
+"male","group A","master's degree","free/reduced","none","married","regularly","yes",1,"school_bus","10-May",0.580665004609797,0.483676418739088,0.523641281982081
+"male","group B","some college","standard","none","married","sometimes","yes",5,"school_bus","< 5",0.00115467365520756,-1.07041739708571,-0.968643976459599
+"female","group C","bachelor's degree","standard","none","married","sometimes","yes",4,"school_bus","> 10",0.194324783973404,0.0782606406978364,0.523641281982081
+"male","group C","high school","standard","none","married","sometimes","no",1,"private","10-May",0.258714820746136,0.0782606406978364,-0.190060363359592
+"female","group D","some college","standard","none","single","sometimes","yes",0,"private","< 5",0.00115467365520756,0.213399233378254,0.264113410948746
+"female","group B","some college","standard","none","single","sometimes","yes",5,"","10-May",-0.192015436662989,-0.259585841003207,-0.449588234392927
+"female","group E","master's degree","free/reduced","none","divorced","sometimes","yes",1,"school_bus","10-May",-0.642745694072114,0.280968529718462,-0.125178395601258
+"male","","some college","standard","none","married","sometimes","no",2,"private","10-May",-1.67298628243583,-1.81367965682801,-1.94187349283461
+"male","group E","some college","standard","none","divorced","sometimes","yes",0,"school_bus","",1.9972458136099,1.22693867848138,0.912933088532085
+"male","group E","associate's degree","standard","completed","single","sometimes","no",2.15521064301552,"school_bus","10-May",0.96700522524619,0.821522900440132,0.718287185257083
+"female","group D","associate's degree","standard","none","married","regularly","no",2,"private","10-May",0.645055041382529,0.88909219678034,1.10757899180709
+"female","group D","some high school","free/reduced","none","married","regularly","yes",1,"private","10-May",-0.964695877935775,-0.327155137343416,-0.514470202151261
+"female","group D","associate's degree","free/reduced","completed","married","regularly","no",1,"school_bus","10-May",0.709445078155261,1.49721586384222,1.43198883059876
+"male","group B","associate's degree","free/reduced","none","single","regularly","yes",5,"school_bus","10-May",-0.51396562052665,-0.867709508065085,-0.644234137667929
+"male","group C","associate's degree","free/reduced","none","married","never","yes",0,"school_bus","10-May",-0.83591580439031,-0.59743232270425,-1.03352594421793
+"female","group C","associate's degree","standard","none","divorced","regularly","no",1,"","10-May",-0.449575583753917,0.348537826058671,0.0694675076737439
+"male","group B","some college","free/reduced","","married","regularly","yes",3,"school_bus","10-May",-0.385185546981185,-0.259585841003207,-0.060296427842924
+"female","group E","associate's degree","free/reduced","none","married","sometimes","yes",5,"school_bus","< 5",-1.15786598825397,-0.935278804405294,-1.03352594421793
+"male","group B","associate's degree","standard","none","single","sometimes","yes",3,"school_bus","< 5",-0.192015436662989,-1.07041739708571,-0.838880040942931
+"female","group C","high school","standard","none","married","regularly","yes",2.15521064301552,"private","10-May",0.0655447104279397,0.213399233378254,0.588523249740415
+"male","group C","high school","standard","completed","married","sometimes","",3,"","10-May",1.03139526201892,1.02423078946076,0.912933088532085
+"male","group E","some college","standard","none","married","","no",3,"school_bus","> 10",-0.771525767617578,-0.935278804405294,-1.29305381525127
+"male","","associate's degree","free/reduced","completed","married","regularly","no",2,"private","< 5",0.645055041382529,-0.056877951982581,0.00458553991540994
+"male","group C","some college","standard","none","divorced","regularly","yes",3,"school_bus","> 10",-0.642745694072114,-1.61097176780738,-1.61746365404294
+"male","group D","high school","standard","none","single","sometimes","yes",2,"school_bus","10-May",1.41773548265531,0.618815011419506,0.458759314223747
+"female","","some high school","free/reduced","completed","married","regularly","yes",2.15521064301552,"private","> 10",0.580665004609797,1.15936938214117,1.43198883059876
+"female","group C","high school","free/reduced","none","divorced","sometimes","yes",2,"private","10-May",-2.12371653984495,-1.88124895316821,-1.61746365404294
+"female","group E","associate's degree","standard","completed","married","sometimes","yes",3,"school_bus","> 10",1.16017533556439,1.15936938214117,1.23734292732375
+"male","group D","associate's degree","standard","none","single","sometimes","no",2,"private","10-May",-0.900305841163042,-0.935278804405294,-1.22817184749293
+"male","group D","","standard","completed","married","regularly","no",1,"private","> 10",-0.320795510208453,-0.59743232270425,-0.514470202151261
+"female","group C","some high school","free/reduced","none","single","regularly","yes",3,"school_bus","> 10",-4.24858775334511,-3.50291206533322,-3.75856859006796
+"male","group A","some high school","free/reduced","none","married","sometimes","yes",2.15521064301552,"school_bus","10-May",-1.73737631920856,-2.01638754584863,-2.20140136386794
+"male","group A","associate's degree","free/reduced","none","married","sometimes","yes",5,"private","10-May",-0.256405473435721,-0.529863026364042,-0.838880040942931
+"female","group D","some high school","standard","none","married","sometimes","yes",0,"school_bus","10-May",-0.449575583753917,-0.732570915384668,-0.579352169909595
+"male","group B","some high school","standard","none","married","never","yes",1,"private","< 5",-0.192015436662989,-0.462293730023833,-0.644234137667929
+"male","group D","some high school","free/reduced","none","married","sometimes","yes",4,"school_bus","10-May",-1.35103609857217,-2.15152613852905,-2.00675546059294
+"female","group C","some college","standard","none","married","regularly","no",3,"school_bus","10-May",-0.320795510208453,0.280968529718462,0.458759314223747
+"male","group B","associate's degree","free/reduced","none","divorced","regularly","no",3,"school_bus","",-0.256405473435721,-0.732570915384668,-0.709116105426263
+"female","group C","associate's degree","standard","none","single","sometimes","yes",3,"school_bus","10-May",-1.73737631920856,-0.327155137343416,-0.709116105426263
+"male","group D","some college","standard","completed","divorced","sometimes","yes",3,"private","> 10",-0.127625399890257,-0.935278804405294,-0.254942331117926
+"female","group A","associate's degree","free/reduced","none","single","regularly","yes",1,"private","10-May",-1.54420620889036,-1.20555598976613,-1.22817184749293
+"male","group C","some high school","free/reduced","none","divorced","never","yes",3,"school_bus","10-May",-0.449575583753917,-0.867709508065085,-0.903762008701265
+"male","group C","some high school","standard","","married","sometimes","yes",2,"private","< 5",-1.2222560250267,-1.40826387878675,-1.81210955731794
+"male","group B","associate's degree","free/reduced","none","divorced","sometimes","no",2.15521064301552,"school_bus","10-May",-1.4154261353449,-1.88124895316821,-1.94187349283461
+"male","group E","some high school","standard","none","","sometimes","no",5,"school_bus","10-May",-2.44566672370861,-2.96235769461155,-3.04486694472628
+"male","group A","","standard","completed","","regularly","yes",2.15521064301552,"","10-May",1.03139526201892,0.686384307759714,0.977815056290419
+"female","group D","some high school","standard","completed","divorced","sometimes","yes",2,"school_bus","> 10",-0.256405473435721,0.41610712239888,0.32899537870708
+"female","group E","master's degree","standard","none","divorced","never","yes",1,"school_bus","10-May",-0.385185546981185,-0.056877951982581,0.00458553991540994
+"female","group B","associate's degree","standard","none","married","regularly","yes",0,"private","> 10",-1.09347595148124,-1.27312528610634,-1.03352594421793
+"male","group B","high school","free/reduced","none","married","sometimes","yes",0,"private","",-1.09347595148124,-1.61097176780738,-1.48769971852627
+"male","group A","some college","free/reduced","completed","married","sometimes","no",2.15521064301552,"school_bus","10-May",-1.02908591470851,-1.47583317512696,-0.903762008701265
+"male","group E","associate's degree","standard","none","married","regularly","yes",0,"private","10-May",0.516274967837065,-0.327155137343416,-0.254942331117926
+"male","group D","high school","free/reduced","none","married","never","",3,"private","10-May",-1.67298628243583,-2.08395684218884,-2.26628333162628
+"female","group C","some college","standard","none","divorced","sometimes","yes",0,"private","10-May",0.451884931064333,0.753953604099923,0.912933088532085
+"female","group C","some college","free/reduced","none","married","sometimes","yes",2.15521064301552,"school_bus","< 5",0.451884931064333,0.821522900440132,1.17246095956542
+"female","group D","associate's degree","standard","none","single","sometimes","yes",0,"private","10-May",0.323104857518868,0.145829937038045,0.393877346465413
+"female","group A","some college","standard","none","divorced","regularly","yes",3,"school_bus","< 5",-0.578355657299382,0.0106913443576277,-0.060296427842924
+"female","group D","some high school","standard","none","single","sometimes","yes",2.15521064301552,"private","> 10",0.580665004609797,1.22693867848138,0.977815056290419
+"male","group C","high school","free/reduced","none","divorced","regularly","no",4,"","10-May",-2.51005676048135,-2.35423402754968,-2.07163742835128
+"male","group C","high school","standard","none","divorced","sometimes","no",1,"","< 5",0.129934747200672,0.551245715079297,0.0694675076737439
+"male","group C","associate's degree","free/reduced","completed","married","regularly","no",3,"private","> 10",-1.35103609857217,-1.54340247146717,-1.03352594421793
+"female","group B","some college","standard","none","married","regularly","yes",4,"private","10-May",0.96700522524619,1.22693867848138,1.69151670163209
+"male","group B","some high school","standard","completed","married","regularly","yes",5,"school_bus","10-May",-0.192015436662989,-0.259585841003207,-0.449588234392927
+"female","","some college","standard","completed","married","never","yes",0,"school_bus","< 5",-0.449575583753917,0.0106913443576277,-0.125178395601258
+"female","group D","some college","free/reduced","none","single","regularly","yes",2,"","> 10",-0.320795510208453,0.0106913443576277,-0.254942331117926
+"female","group D","bachelor's degree","standard","none","married","regularly","yes",3,"school_bus","< 5",-0.127625399890257,-0.192016544662998,-0.384706266634594
+"male","group B","some college","standard","none","married","sometimes","no",7,"school_bus","10-May",0.838225151700726,-0.12444724832279,-0.060296427842924
+"male","group D","bachelor's degree","standard","completed","single","sometimes","no",1,"private","10-May",0.129934747200672,0.348537826058671,0.393877346465413
+"female","group D","associate's degree","standard","none","married","regularly","yes",3,"school_bus","10-May",1.35334544588258,1.56478516018243,1.49687079835709
+"male","group B","high school","standard","completed","married","regularly","no",3,"school_bus","10-May",-0.320795510208453,-1.67854106414759,-1.29305381525127
+"male","","some college","standard","completed","married","regularly","yes",1,"school_bus","> 10",2.1904159239281,1.29450797482159,1.69151670163209
+"female","group C","some college","standard","none","married","sometimes","yes",0,"school_bus","10-May",-0.51396562052665,-0.12444724832279,0.264113410948746
+"female","group D","master's degree","standard","none","married","sometimes","no",3,"private","10-May",1.35334544588258,2.1053395309041,2.0808085081821
+"male","group E","","standard","completed","single","sometimes","yes",0,"school_bus","10-May",0.00115467365520756,-0.394724433683624,-0.254942331117926
+"female","group B","associate's degree","free/reduced","none","married","sometimes","yes",2,"school_bus","10-May",-0.900305841163042,0.483676418739088,0.134349475432078
+"female","group B","some high school","standard","none","single","regularly","no",3,"school_bus","10-May",0.3874948942916,-0.327155137343416,0.32899537870708
+"female","group D","associate's degree","free/reduced","completed","single","sometimes","yes",4,"school_bus","> 10",0.838225151700726,1.42964656750201,2.01592654042376
+"male","group C","high school","standard","none","single","regularly","no",6,"","10-May",-0.192015436662989,-0.935278804405294,-1.1632898797346
+"male","group A","associate's degree","standard","none","married","sometimes","yes",0,"school_bus","10-May",-0.771525767617578,-1.07041739708571,-1.3579357830096
+"female","group D","some college","standard","none","married","never","yes",1,"school_bus","< 5",-1.2222560250267,-0.867709508065085,-1.09840791197627
+"female","group E","bachelor's degree","standard","completed","married","regularly","yes",3,"school_bus","< 5",2.06163585038264,2.03777023456389,2.0808085081821
+"male","group C","high school","standard","none","married","sometimes","yes",4,"private","10-May",1.16017533556439,0.551245715079297,0.393877346465413
+"female","group B","bachelor's degree","free/reduced","none","single","never","no",1,"school_bus","10-May",0.3874948942916,0.956661493120549,0.718287185257083
+"female","group D","bachelor's degree","standard","none","married","never","no",2,"private","10-May",0.580665004609797,0.753953604099923,0.588523249740415
+"female","group D","some high school","standard","none","single","regularly","yes",0,"private","> 10",-0.771525767617578,-0.327155137343416,-0.31982429887626
+"female","group C","some college","standard","none","divorced","sometimes","no",3,"school_bus","10-May",-0.707135730844846,0.0106913443576277,-0.190060363359592
+"female","group C","bachelor's degree","standard","completed","married","never","yes",1,"school_bus","10-May",0.645055041382529,1.42964656750201,1.17246095956542
+"male","group B","associate's degree","standard","completed","married","sometimes","yes",3,"school_bus","< 5",1.41773548265531,1.22693867848138,1.43198883059876
+"female","group C","some college","standard","completed","single","regularly","yes",1,"","10-May",1.54651555620078,1.69992375286284,1.75639866939043
+"male","group D","high school","free/reduced","none","married","sometimes","no",3,"private","",-0.192015436662989,-0.800140211724876,-0.773998073184597
+"male","group E","some college","standard","none","single","regularly","no",3,"school_bus","< 5",1.03139526201892,0.686384307759714,0.32899537870708
+"female","group B","high school","standard","none","single","never","yes",2,"school_bus","> 10",1.28895540910985,1.69992375286284,1.10757899180709
+"male","group B","","standard","none","married","","no",3,"private","10-May",0.3874948942916,-0.056877951982581,-0.060296427842924
+"male","group D","some college","standard","","married","regularly","no",3,"school_bus","< 5",-0.127625399890257,0.483676418739088,0.393877346465413
+"male","group D","master's degree","standard","none","single","never","yes",2,"private","< 5",0.709445078155261,0.821522900440132,0.264113410948746
+"female","group A","bachelor's degree","standard","none","","regularly","yes",0,"school_bus","10-May",-0.900305841163042,-1.34069458244655,-1.03352594421793
+"male","group D","master's degree","standard","none","single","sometimes","no",1,"school_bus","< 5",1.35334544588258,1.02423078946076,0.912933088532085
+"male","group C","some high school","free/reduced","completed","single","regularly","yes",1,"private","< 5",-0.900305841163042,-2.21909543486926,-1.81210955731794
+"male","","some college","free/reduced","completed","married","regularly","yes",2,"school_bus","10-May",1.48212551942805,0.41610712239888,0.199231443190412
+"female","","some college","standard","completed","married","never","no",6,"","< 5",0.258714820746136,0.618815011419506,0.783169153015417
+"male","group D","bachelor's degree","free/reduced","completed","married","sometimes","yes",1,"private","> 10",0.645055041382529,0.753953604099923,0.523641281982081
+"male","group C","bachelor's degree","standard","none","married","sometimes","yes",1,"","< 5",-0.642745694072114,-1.0028481007455,-1.3579357830096
+"male","group B","some high school","standard","completed","divorced","sometimes","yes",1,"private","10-May",-0.964695877935775,-1.0028481007455,-1.74722758955961
+"male","group E","high school","standard","none","divorced","sometimes","yes",0,"school_bus","< 5",0.0655447104279397,-1.0028481007455,-0.903762008701265
+"female","group C","associate's degree","standard","","married","sometimes","yes",1,"private","10-May",-0.449575583753917,-0.192016544662998,-0.060296427842924
+"male","group D","some college","standard","completed","married","sometimes","yes",0,"private","> 10",0.451884931064333,-0.529863026364042,0.134349475432078
+"female","group D","some high school","standard","none","married","sometimes","no",1,"school_bus","10-May",0.645055041382529,0.213399233378254,0.199231443190412
+"female","group C","some college","free/reduced","none","married","regularly","no",2,"private","10-May",-0.385185546981185,-0.462293730023833,-0.190060363359592
+"female","group E","some college","free/reduced","completed","single","regularly","",1,"private","< 5",-1.6085962456631,-1.0028481007455,-0.903762008701265
+"male","group A","high school","standard","none","single","sometimes","no",1,"school_bus","10-May",-0.578355657299382,-1.7461103604878,-1.3579357830096
+"male","group D","some college","standard","none","divorced","sometimes","yes",3,"private","> 10",1.54651555620078,0.348537826058671,0.718287185257083
+"female","group C","some college","free/reduced","none","single","regularly","yes",1,"school_bus","< 5",-2.89639698111774,-2.08395684218884,-2.26628333162628
+"female","group D","bachelor's degree","standard","completed","married","sometimes","yes",1,"private","< 5",-0.0632353631175246,0.280968529718462,0.718287185257083
+"male","group E","associate's degree","free/reduced","completed","married","regularly","no",3,"private","10-May",2.1904159239281,2.1053395309041,1.75639866939043
+"male","group A","some high school","standard","completed","married","sometimes","no",2,"private","10-May",-0.256405473435721,-0.12444724832279,0.0694675076737439
+"female","group B","associate's degree","standard","completed","single","sometimes","yes",2,"school_bus","< 5",-0.578355657299382,-0.056877951982581,-0.254942331117926
+"male","group D","bachelor's degree","standard","none","married","sometimes","no",1,"","10-May",-0.771525767617578,-1.34069458244655,-1.3579357830096
+"male","group D","some high school","standard","none","single","never","no",2,"","< 5",-0.51396562052665,-0.259585841003207,-0.644234137667929
+"female","group C","some college","standard","completed","married","regularly","yes",3,"school_bus","< 5",0.194324783973404,1.29450797482159,1.30222489508209
+"female","group E","high school","free/reduced","completed","married","regularly","yes",1,"school_bus","10-May",0.0655447104279397,0.41610712239888,0.718287185257083
+"male","group B","","free/reduced","none","","sometimes","yes",2,"school_bus","< 5",-0.51396562052665,-0.665001619044459,-0.644234137667929
+"female","group B","associate's degree","standard","","divorced","regularly","yes",2,"private","10-May",-0.256405473435721,1.22693867848138,1.36710686284042
+"male","group D","associate's degree","free/reduced","none","married","regularly","no",3,"school_bus","> 10",0.258714820746136,-0.394724433683624,-0.125178395601258
+"male","group B","associate's degree","free/reduced","completed","single","sometimes","yes",2,"private","10-May",1.03139526201892,0.618815011419506,0.393877346465413
+"female","group E","some college","free/reduced","completed","married","sometimes","yes",3,"school_bus","10-May",0.580665004609797,1.29450797482159,1.10757899180709
+"male","group B","master's degree","free/reduced","none","single","never","no",2,"school_bus","10-May",-1.15786598825397,-1.07041739708571,-1.03352594421793
+"male","group C","high school","standard","none","divorced","sometimes","yes",1,"school_bus","10-May",-0.900305841163042,-1.07041739708571,-1.22817184749293
+"female","group E","master's degree","standard","none","married","never","yes",3,"private","< 5",0.645055041382529,1.3620772711618,1.17246095956542
+"female","group C","bachelor's degree","standard","completed","married","sometimes","yes",0,"school_bus","10-May",1.93285577683717,2.1053395309041,2.0808085081821
+"male","group C","high school","free/reduced","completed","single","sometimes","yes",5,"private","10-May",-0.83591580439031,-1.20555598976613,-1.09840791197627
+"female","group B","master's degree","free/reduced","completed","married","regularly","no",1,"private","> 10",-0.256405473435721,0.686384307759714,0.977815056290419
+"female","group B","high school","standard","completed","married","regularly","yes",2,"private","10-May",0.258714820746136,1.02423078946076,0.718287185257083
+"male","group A","high school","standard","completed","divorced","regularly","yes",5,"school_bus","> 10",0.645055041382529,0.41610712239888,0.588523249740415
+"male","group E","some high school","standard","none","married","sometimes","no",3,"school_bus","< 5",1.61090559297351,1.15936938214117,0.523641281982081
+"female","group D","some college","standard","none","single","never","yes",3,"school_bus","10-May",0.645055041382529,1.02423078946076,0.653405217498749
+"female","group C","associate's degree","standard","none","married","sometimes","yes",2,"school_bus","10-May",-0.192015436662989,-0.12444724832279,0.134349475432078
+"female","group C","bachelor's degree","free/reduced","completed","married","sometimes","no",1,"school_bus","< 5",-1.6085962456631,-1.27312528610634,-1.03352594421793
+"female","group C","master's degree","standard","completed","divorced","sometimes","yes",1,"school_bus","10-May",0.96700522524619,1.56478516018243,1.36710686284042
+"female","group B","high school","free/reduced","completed","married","sometimes","no",2,"school_bus","< 5",-1.4154261353449,-1.07041739708571,-0.773998073184597
+"female","group C","associate's degree","standard","completed","married","regularly","yes",2.15521064301552,"school_bus","< 5",0.258714820746136,0.483676418739088,0.588523249740415
+"female","group B","master's degree","free/reduced","completed","divorced","regularly","yes",2,"school_bus","10-May",-0.771525767617578,0.213399233378254,-0.190060363359592
+"female","group D","some high school","standard","completed","divorced","regularly","yes",0,"school_bus","10-May",2.12602588715537,2.1053395309041,2.0808085081821
+"male","group C","master's degree","free/reduced","completed","single","sometimes","yes",2,"private","< 5",-0.385185546981185,-0.056877951982581,0.458759314223747
+"female","group C","some college","free/reduced","none","single","sometimes","yes",1,"private","10-May",-1.28664606179944,-0.327155137343416,-0.125178395601258
+"female","group E","high school","standard","none","married","sometimes","yes",3,"private","",-1.02908591470851,-1.27312528610634,-1.3579357830096
+"female","group D","associate's degree","standard","none","single","sometimes","no",2.15521064301552,"private","< 5",-0.192015436662989,-0.12444724832279,0.00458553991540994
+"male","group C","associate's degree","free/reduced","completed","married","never","yes",5,"private","< 5",-0.320795510208453,-0.259585841003207,-0.384706266634594
+"male","group E","high school","standard","none","married","never","yes",1,"school_bus","< 5",0.580665004609797,0.280968529718462,-0.384706266634594
+"male","group D","some high school","standard","completed","married","sometimes","no",4,"private","10-May",-0.256405473435721,-0.192016544662998,0.00458553991540994
+"male","group B","some high school","free/reduced","none","married","regularly","no",3,"school_bus","< 5",-1.2222560250267,-1.20555598976613,-1.48769971852627
+"female","group C","bachelor's degree","standard","none","single","sometimes","yes",1,"school_bus","< 5",0.516274967837065,1.15936938214117,1.10757899180709
+"female","group E","associate's degree","standard","none","married","sometimes","yes",2,"school_bus","10-May",0.00115467365520756,-0.259585841003207,0.0694675076737439
+"male","group D","some college","standard","completed","married","sometimes","no",2,"school_bus","< 5",0.451884931064333,0.821522900440132,0.588523249740415
+"female","group B","some high school","standard","none","single","sometimes","no",3,"private","",-0.256405473435721,-0.327155137343416,-0.125178395601258
+"male","group D","some college","standard","completed","married","regularly","yes",4,"","",0.838225151700726,-0.462293730023833,-0.31982429887626
+"female","group C","master's degree","standard","completed","","regularly","yes",1,"school_bus","< 5",0.194324783973404,1.09180008580097,1.23734292732375
+"male","group D","associate's degree","standard","none","married","regularly","no",4,"school_bus","< 5",-0.385185546981185,-1.0028481007455,-1.03352594421793
+"male","group C","","free/reduced","completed","married","never","yes",1,"school_bus","10-May",-0.578355657299382,-0.12444724832279,-0.31982429887626
+"male","group E","high school","free/reduced","none","married","","no",7,"private","> 10",-0.642745694072114,-0.867709508065085,-1.03352594421793
+"female","group B","some college","free/reduced","none","widowed","regularly","yes",3,"","> 10",-1.2222560250267,-1.0028481007455,-0.709116105426263
+"female","group B","bachelor's degree","free/reduced","","married","regularly","yes",3,"private","10-May",0.902615188473458,0.753953604099923,0.588523249740415
+"female","group C","associate's degree","standard","completed","single","regularly","no",1,"private","< 5",0.00115467365520756,0.956661493120549,1.17246095956542
+"female","group D","some college","free/reduced","none","divorced","sometimes","yes",3,"school_bus","< 5",-0.192015436662989,0.686384307759714,0.458759314223747
+"male","group C","associate's degree","standard","none","married","sometimes","yes",2,"school_bus","10-May",0.194324783973404,0.551245715079297,0.0694675076737439
+"female","","associate's degree","standard","none","","regularly","yes",2,"school_bus","10-May",-0.51396562052665,0.0782606406978364,0.0694675076737439
+"male","group C","some college","standard","none","single","regularly","yes",1,"","< 5",-0.51396562052665,-1.94881824950842,-1.68234562180127
+"male","group D","some high school","standard","completed","married","","yes",2.15521064301552,"school_bus","< 5",0.323104857518868,0.0106913443576277,0.523641281982081
+"male","group E","bachelor's degree","standard","none","married","regularly","yes",4,"school_bus","10-May",1.16017533556439,-0.462293730023833,-0.31982429887626
+"male","group E","high school","standard","completed","married","regularly","no",2,"school_bus","10-May",1.09578529879165,0.821522900440132,0.588523249740415
+"female","group B","some college","free/reduced","none","married","regularly","yes",1,"private","< 5",0.451884931064333,0.753953604099923,0.523641281982081
+"female","group B","some college","free/reduced","","single","sometimes","no",2,"","",-0.51396562052665,-0.529863026364042,-0.125178395601258
+"male","group D","some high school","free/reduced","completed","widowed","sometimes","yes",3,"school_bus","< 5",0.709445078155261,0.551245715079297,0.588523249740415
+"male","group C","some college","free/reduced","","married","sometimes","yes",3,"school_bus","10-May",-1.99493646629949,-2.75964980559093,-2.65557513817628
+"female","group C","high school","free/reduced","none","divorced","sometimes","yes",2,"school_bus","10-May",-1.54420620889036,-0.462293730023833,-0.514470202151261
+"male","group C","associate's degree","free/reduced","completed","single","regularly","no",1,"school_bus","10-May",-0.320795510208453,-1.20555598976613,-0.709116105426263
+"male","group E","high school","standard","","married","sometimes","yes",1,"private","10-May",1.35334544588258,1.49721586384222,0.848051120773751
+"male","group B","some high school","standard","completed","","regularly","no",2,"private","10-May",1.28895540910985,1.02423078946076,0.523641281982081
+"female","group E","associate's degree","free/reduced","completed","married","sometimes","yes",3,"school_bus","< 5",0.902615188473458,1.02423078946076,1.17246095956542
+"female","group C","high school","free/reduced","","married","regularly","no",3,"","< 5",-2.12371653984495,-1.88124895316821,-1.87699152507627
+"male","group B","high school","free/reduced","none","married","sometimes","no",2,"school_bus","< 5",-0.127625399890257,0.41610712239888,0.00458553991540994
+"male","group B","some high school","standard","completed","single","never","no",1,"","10-May",-0.449575583753917,-0.935278804405294,-0.903762008701265
+"female","group D","high school","standard","completed","widowed","regularly","yes",4,"school_bus","10-May",-0.578355657299382,0.0106913443576277,0.458759314223747
+"male","group B","associate's degree","standard","none","married","sometimes","yes",0,"school_bus","> 10",1.48212551942805,1.15936938214117,0.393877346465413
+"female","group C","some high school","free/reduced","","divorced","sometimes","no",3,"","10-May",-0.707135730844846,-0.259585841003207,-0.384706266634594
+"male","group D","some high school","standard","none","married","regularly","no",3,"school_bus","10-May",1.41773548265531,0.821522900440132,0.523641281982081
+"female","group B","associate's degree","standard","completed","divorced","regularly","",3,"school_bus","> 10",-0.707135730844846,-0.12444724832279,0.523641281982081
+"female","group E","master's degree","free/reduced","none","married","sometimes","no",2.15521064301552,"private","< 5",-1.47981617211763,-0.935278804405294,-1.03352594421793
+"female","group C","some college","standard","none","married","sometimes","yes",5,"school_bus","10-May",0.3874948942916,0.213399233378254,0.199231443190412
+"male","group D","high school","standard","none","single","regularly","yes",0,"school_bus","10-May",-0.51396562052665,-1.27312528610634,-0.838880040942931
+"male","group A","","free/reduced","none","divorced","sometimes","no",4,"school_bus","10-May",0.129934747200672,0.213399233378254,-0.254942331117926
+"female","group C","some college","standard","completed","married","regularly","yes",3,"school_bus","> 10",1.73968566651898,1.90263164188347,1.95104457266543
+"male","group D","some college","standard","none","married","regularly","yes",0,"","10-May",0.773835114927993,-0.327155137343416,-0.060296427842924
+"male","group C","associate's degree","standard","none","married","regularly","",1,"private","10-May",-1.2222560250267,-1.7461103604878,-1.61746365404294
+"female","group B","bachelor's degree","standard","none","married","sometimes","yes",2,"school_bus","10-May",0.0655447104279397,1.15936938214117,0.977815056290419
+"male","group E","some high school","standard","none","divorced","sometimes","yes",3,"school_bus","> 10",1.80407570329171,1.29450797482159,0.718287185257083
+"male","group C","bachelor's degree","standard","completed","married","sometimes","no",3,"school_bus","> 10",1.22456537233712,0.956661493120549,1.10757899180709
+"male","group D","associate's degree","standard","none","married","regularly","no",1,"school_bus","> 10",1.16017533556439,0.551245715079297,0.783169153015417
+"male","group D","bachelor's degree","free/reduced","none","divorced","regularly","no",2,"school_bus","< 5",-0.256405473435721,-0.259585841003207,-0.060296427842924
+"female","group D","some high school","standard","","married","sometimes","yes",4,"school_bus","< 5",-0.256405473435721,-0.665001619044459,0.264113410948746
+"male","group B","some college","standard","none","married","regularly","yes",2,"private","> 10",-0.578355657299382,-1.07041739708571,-0.968643976459599
+"male","group C","associate's degree","standard","none","","sometimes","yes",1,"private","10-May",1.16017533556439,0.753953604099923,0.783169153015417
+"male","group D","high school","free/reduced","completed","divorced","","yes",1,"private","> 10",0.580665004609797,0.0106913443576277,-0.060296427842924
+"female","group E","bachelor's degree","standard","none","single","regularly","no",4,"private","10-May",1.03139526201892,1.02423078946076,1.10757899180709
+"male","group E","some college","standard","","single","regularly","no",2,"school_bus","< 5",-0.51396562052665,-1.27312528610634,-1.61746365404294
+"male","group D","some high school","standard","none","divorced","regularly","yes",1,"school_bus","< 5",0.516274967837065,0.280968529718462,0.0694675076737439
+"male","group C","associate's degree","standard","none","married","sometimes","no",3,"private","< 5",1.03139526201892,0.348537826058671,0.0694675076737439
+"male","group E","associate's degree","standard","","married","regularly","no",2,"school_bus","10-May",1.61090559297351,0.551245715079297,0.458759314223747
+"female","group B","high school","standard","completed","single","sometimes","yes",1,"private","10-May",-0.51396562052665,0.0782606406978364,0.00458553991540994
+"female","group B","high school","standard","none","married","sometimes","yes",2,"private","< 5",-0.192015436662989,-0.394724433683624,-0.514470202151261
+"male","","high school","standard","none","married","sometimes","no",2,"school_bus","> 10",0.258714820746136,-0.59743232270425,-0.903762008701265
+"male","group A","some high school","standard","completed","single","sometimes","yes",2,"school_bus","10-May",-1.2222560250267,-1.34069458244655,-1.22817184749293
+"female","group D","some college","free/reduced","none","married","regularly","",4,"school_bus","< 5",0.258714820746136,0.88909219678034,0.977815056290419
+"female","group B","some high school","standard","completed","single","sometimes","yes",3,"private","10-May",-0.385185546981185,0.0782606406978364,0.134349475432078
+"male","group D","master's degree","standard","none","married","sometimes","no",3,"school_bus","",0.902615188473458,0.753953604099923,0.264113410948746
+"male","group D","high school","standard","none","married","sometimes","yes",0,"private","10-May",-0.771525767617578,-1.13798669342592,-1.03352594421793
+"female","group E","some college","standard","none","single","sometimes","no",1,"school_bus","10-May",-0.256405473435721,0.280968529718462,0.134349475432078
+"female","group C","associate's degree","free/reduced","none","single","sometimes","no",5,"private","< 5",-0.256405473435721,0.145829937038045,-0.125178395601258
+"male","","associate's degree","standard","completed","married","regularly","",1,"school_bus","10-May",0.902615188473458,0.618815011419506,0.653405217498749
+"female","group C","some high school","free/reduced","completed","married","sometimes","yes",1,"private","> 10",-0.0632353631175246,0.753953604099923,0.653405217498749
+"male","group C","some college","standard","completed","married","sometimes","no",2,"school_bus","10-May",0.838225151700726,0.686384307759714,0.653405217498749
+"female","group C","some high school","free/reduced","none","married","regularly","no",2,"private","10-May",-1.35103609857217,-1.27312528610634,-1.03352594421793
+"female","group E","high school","standard","none","single","sometimes","yes",1,"private","10-May",2.12602588715537,1.63235445652264,1.43198883059876
+"male","group D","high school","standard","none","married","sometimes","no",2,"private","10-May",0.645055041382529,0.280968529718462,0.00458553991540994
+"male","group D","some high school","free/reduced","none","divorced","sometimes","no",1,"school_bus","< 5",-0.578355657299382,-1.88124895316821,-1.81210955731794
+"female","","bachelor's degree","standard","none","married","sometimes","no",2,"school_bus","< 5",-0.320795510208453,0.280968529718462,0.718287185257083
+"female","group D","high school","standard","none","married","regularly","no",3,"school_bus","10-May",0.323104857518868,0.280968529718462,0.653405217498749
+"female","group D","associate's degree","standard","completed","married","regularly","yes",5,"school_bus","> 10",1.73968566651898,1.69992375286284,2.01592654042376
+"female","group E","some college","free/reduced","none","married","sometimes","no",2,"school_bus","",0.323104857518868,0.483676418739088,0.134349475432078
+"male","group C","bachelor's degree","standard","none","married","sometimes","yes",2,"school_bus","10-May",0.194324783973404,-0.394724433683624,-0.449588234392927
+"male","group C","some college","standard","","single","regularly","yes",1,"","< 5",-0.578355657299382,-1.40826387878675,-1.68234562180127
+"female","group D","associate's degree","free/reduced","none","single","regularly","yes",2,"private","10-May",-1.15786598825397,-1.07041739708571,-0.579352169909595
+"female","group D","some college","standard","none","married","sometimes","no",2,"private","10-May",-0.0632353631175246,0.0782606406978364,0.199231443190412
+"male","group B","some college","standard","completed","widowed","","yes",1,"school_bus","< 5",1.22456537233712,0.956661493120549,0.393877346465413
+"male","group C","bachelor's degree","standard","none","married","sometimes","no",3,"school_bus","10-May",1.09578529879165,0.618815011419506,0.32899537870708
+"female","group C","some high school","standard","completed","married","sometimes","yes",3,"private","< 5",1.03139526201892,1.42964656750201,1.49687079835709
+"female","group E","","standard","completed","single","sometimes","no",4,"school_bus","< 5",-0.578355657299382,-0.462293730023833,0.32899537870708
+"female","group C","some high school","free/reduced","none","married","sometimes","yes",1,"school_bus","10-May",-0.0632353631175246,1.15936938214117,0.783169153015417
+"male","group B","bachelor's degree","free/reduced","none","widowed","sometimes","no",2,"school_bus","10-May",0.451884931064333,-0.867709508065085,-0.709116105426263
+"male","group D","high school","standard","none","divorced","sometimes","no",2.15521064301552,"private","10-May",-1.35103609857217,-1.40826387878675,-1.42281775076794
+"female","group D","bachelor's degree","free/reduced","none","divorced","regularly","no",3,"school_bus","10-May",0.580665004609797,0.753953604099923,1.17246095956542
+"female","group D","some college","free/reduced","completed","","never","yes",2,"school_bus","10-May",0.0655447104279397,0.483676418739088,0.523641281982081
+"female","","some high school","standard","none","married","regularly","yes",0,"private","< 5",-1.93054642952676,-1.61097176780738,-1.42281775076794
+"male","group B","associate's degree","standard","completed","married","never","yes",3,"school_bus","10-May",0.773835114927993,0.753953604099923,0.718287185257083
+"male","group E","associate's degree","standard","completed","married","regularly","yes",0,"private","10-May",2.12602588715537,0.956661493120549,1.43198883059876
+"female","group B","some high school","standard","none","married","sometimes","no",1,"school_bus","< 5",-0.127625399890257,1.22693867848138,0.783169153015417
+"male","group B","bachelor's degree","free/reduced","none","single","sometimes","yes",0,"","< 5",1.22456537233712,0.280968529718462,0.393877346465413
+"male","","some high school","standard","completed","married","sometimes","yes",1,"school_bus","> 10",0.838225151700726,0.551245715079297,0.653405217498749
+"male","group C","associate's degree","standard","none","married","sometimes","no",2,"school_bus","10-May",0.645055041382529,0.0782606406978364,0.00458553991540994
+"male","group D","some high school","standard","none","married","sometimes","yes",2,"private","< 5",1.09578529879165,0.145829937038045,0.00458553991540994
+"male","group C","some high school","standard","completed","married","never","yes",1,"private","10-May",-0.320795510208453,-0.665001619044459,-0.838880040942931
+"female","group E","bachelor's degree","standard","none","married","sometimes","yes",2.15521064301552,"school_bus","> 10",0.00115467365520756,0.348537826058671,0.523641281982081
+"male","group D","high school","free/reduced","completed","single","regularly","yes",3,"school_bus","10-May",0.902615188473458,0.618815011419506,0.912933088532085
+"male","group B","associate's degree","free/reduced","none","married","never","yes",1,"school_bus","> 10",0.00115467365520756,-0.529863026364042,-0.579352169909595
+"male","","some high school","standard","completed","widowed","regularly","no",2,"school_bus","10-May",-1.2222560250267,-1.88124895316821,-1.5525816862846
+"male","","associate's degree","standard","completed","single","regularly","no",1,"school_bus","10-May",0.451884931064333,0.41610712239888,0.0694675076737439
+"male","group C","","free/reduced","completed","single","regularly","no",2,"private","< 5",-1.73737631920856,-1.61097176780738,-1.1632898797346
+"male","group D","associate's degree","free/reduced","none","married","regularly","no",2,"","< 5",1.48212551942805,1.15936938214117,0.458759314223747
+"male","group A","some college","free/reduced","completed","married","never","yes",2,"private","< 5",0.645055041382529,0.41610712239888,0.588523249740415
+"male","group D","some high school","free/reduced","","divorced","regularly","no",4,"school_bus","< 5",-0.707135730844846,-1.07041739708571,-1.03352594421793
+"female","group C","associate's degree","standard","completed","single","never","yes",5,"school_bus","> 10",0.00115467365520756,0.956661493120549,0.783169153015417
+"male","group B","associate's degree","standard","none","married","regularly","yes",1,"school_bus","10-May",1.03139526201892,0.551245715079297,-0.190060363359592
+"female","group C","associate's degree","standard","completed","married","regularly","yes",2,"school_bus","10-May",0.645055041382529,0.483676418739088,1.10757899180709
+"male","group A","some college","standard","none","","sometimes","yes",7,"private","10-May",0.194324783973404,-0.12444724832279,0.0694675076737439
+"male","group E","some college","standard","completed","divorced","regularly","yes",5,"private","10-May",2.1904159239281,1.29450797482159,0.977815056290419
+"male","group C","some high school","standard","none","single","regularly","no",2,"","10-May",-0.900305841163042,-1.13798669342592,-1.48769971852627
+"female","group B","associate's degree","free/reduced","none","married","regularly","no",3,"private","> 10",-0.642745694072114,0.280968529718462,0.134349475432078
+"female","group D","high school","free/reduced","","single","regularly","yes",5,"","< 5",-1.15786598825397,-0.867709508065085,-1.03352594421793
+"female","group B","associate's degree","standard","none","married","sometimes","no",2,"school_bus","10-May",0.451884931064333,0.483676418739088,0.783169153015417
+"male","group B","bachelor's degree","standard","none","married","never","yes",3,"school_bus","< 5",-0.256405473435721,-0.732570915384668,-0.903762008701265
+"male","group D","bachelor's degree","standard","completed","single","sometimes","yes",0,"private","",0.0655447104279397,-0.529863026364042,0.00458553991540994
+"female","group C","associate's degree","free/reduced","completed","single","sometimes","yes",2,"private","> 10",0.258714820746136,-0.056877951982581,0.134349475432078
+"male","group C","high school","standard","none","married","regularly","no",3,"private","10-May",0.451884931064333,-0.192016544662998,-0.125178395601258
+"female","group D","master's degree","standard","completed","widowed","never","yes",3,"private","10-May",0.516274967837065,0.753953604099923,1.30222489508209
+"male","group C","associate's degree","standard","none","single","sometimes","no",1,"school_bus","10-May",1.09578529879165,0.213399233378254,0.653405217498749
+"male","group B","bachelor's degree","standard","none","married","sometimes","yes",2.15521064301552,"private","< 5",-0.320795510208453,0.0106913443576277,-0.060296427842924
+"female","group D","associate's degree","free/reduced","none","single","regularly","no",1,"school_bus","< 5",-0.707135730844846,-0.327155137343416,-0.31982429887626
+"female","group C","high school","free/reduced","","divorced","sometimes","yes",2,"","< 5",-0.127625399890257,0.551245715079297,0.912933088532085
+"female","group E","high school","standard","none","married","never","no",3,"private","> 10",0.516274967837065,1.09180008580097,0.653405217498749
+"female","group C","some college","standard","none","married","regularly","yes",2,"private","< 5",0.258714820746136,0.753953604099923,0.783169153015417
+"female","group C","some high school","free/reduced","none","married","sometimes","yes",5,"private","10-May",-1.67298628243583,-1.13798669342592,-1.09840791197627
+"female","group C","high school","free/reduced","none","divorced","sometimes","no",1,"","< 5",-1.73737631920856,-1.61097176780738,-1.68234562180127
+"female","group C","some college","standard","none","single","sometimes","yes",3,"school_bus","10-May",1.03139526201892,1.42964656750201,1.69151670163209
+"male","group C","some college","standard","none","married","sometimes","yes",1,"school_bus","10-May",-0.320795510208453,-0.529863026364042,-0.384706266634594
+"male","group A","some college","free/reduced","none","married","regularly","yes",2,"school_bus","> 10",-2.38127668693588,-3.09749628729197,-3.17463088024295
+"male","group C","associate's degree","standard","completed","married","sometimes","yes",5,"school_bus","10-May",1.03139526201892,0.41610712239888,0.588523249740415
+"female","group B","some high school","standard","none","married","sometimes","yes",2,"school_bus","< 5",-1.73737631920856,-1.0028481007455,-1.22817184749293
+"male","group C","high school","standard","none","single","regularly","yes",2.15521064301552,"school_bus","< 5",0.258714820746136,-0.665001619044459,-0.449588234392927
+"male","group C","associate's degree","standard","none","","sometimes","no",3,"private","< 5",-1.35103609857217,-2.21909543486926,-2.20140136386794
+"male","group E","associate's degree","standard","completed","married","never","no",3,"school_bus","> 10",-0.320795510208453,-0.935278804405294,-1.03352594421793
+"male","group B","associate's degree","standard","none","single","sometimes","yes",1,"school_bus","10-May",1.54651555620078,0.618815011419506,0.848051120773751
+"female","group C","bachelor's degree","standard","none","","sometimes","yes",1,"","",1.09578529879165,1.63235445652264,1.75639866939043
+"female","group B","some college","free/reduced","none","married","regularly","yes",2,"","10-May",-0.256405473435721,0.0106913443576277,-0.060296427842924
+"male","group D","some high school","standard","completed","married","regularly","no",2.15521064301552,"private","10-May",0.773835114927993,0.145829937038045,0.134349475432078
+"male","group C","associate's degree","standard","none","single","regularly","yes",2,"","10-May",-1.02908591470851,-1.20555598976613,-1.5525816862846
+"female","group B","some high school","free/reduced","none","single","sometimes","no",3,"school_bus","< 5",-2.76761690757227,-2.15152613852905,-2.72045710593461
+"female","group D","some high school","free/reduced","completed","married","sometimes","yes",3,"school_bus","10-May",-1.99493646629949,-0.935278804405294,-0.514470202151261
+"male","group C","high school","free/reduced","none","married","regularly","yes",1,"school_bus","> 10",-0.320795510208453,-0.462293730023833,-0.903762008701265
+"female","group C","","standard","none","married","regularly","yes",0,"","10-May",-0.256405473435721,0.348537826058671,-0.254942331117926
+"female","group B","","standard","completed","single","sometimes","yes",1,"school_bus","< 5",0.00115467365520756,0.348537826058671,0.264113410948746
+"male","group D","associate's degree","standard","completed","single","sometimes","yes",3,"private","< 5",-0.127625399890257,0.0782606406978364,-0.190060363359592
+"male","group D","some college","standard","none","","regularly","yes",2,"school_bus","< 5",0.773835114927993,0.213399233378254,-0.060296427842924
+"female","group C","high school","standard","none","married","sometimes","yes",4,"private","10-May",0.3874948942916,0.753953604099923,0.458759314223747
+"male","group B","","standard","none","married","sometimes","no",2,"school_bus","10-May",-0.256405473435721,-0.529863026364042,-0.709116105426263
+"female","group C","bachelor's degree","standard","completed","married","regularly","yes",0,"","< 5",0.645055041382529,1.63235445652264,1.75639866939043
+"male","group E","associate's degree","standard","none","divorced","regularly","yes",2,"private","> 10",1.67529562974624,0.483676418739088,0.718287185257083
+"female","group B","bachelor's degree","standard","none","married","sometimes","yes",0,"private","10-May",-0.900305841163042,-0.259585841003207,0.0694675076737439
+"male","group E","some college","standard","none","married","","no",4,"school_bus","> 10",0.0655447104279397,-0.800140211724876,-0.968643976459599
+"female","group C","some college","standard","completed","married","sometimes","no",1,"school_bus","< 5",-0.320795510208453,0.483676418739088,0.653405217498749
+"female","group C","associate's degree","standard","none","married","regularly","no",1,"private","< 5",-1.35103609857217,-0.800140211724876,-0.709116105426263
+"female","group C","some college","standard","none","married","never","yes",2,"","< 5",-0.707135730844846,-0.056877951982581,-0.125178395601258
+"female","group B","bachelor's degree","standard","none","single","regularly","no",3,"school_bus","> 10",-0.127625399890257,0.348537826058671,0.32899537870708
+"male","group A","","standard","none","married","sometimes","no",2,"private","10-May",-0.192015436662989,-0.529863026364042,-0.449588234392927
+"female","group C","some college","free/reduced","completed","married","sometimes","yes",1,"private","< 5",-1.67298628243583,-0.259585841003207,-0.060296427842924
+"female","group D","some college","standard","none","divorced","sometimes","no",1,"private","< 5",0.709445078155261,1.29450797482159,1.23734292732375
+"female","group B","high school","standard","none","married","never","yes",1,"school_bus","10-May",-0.642745694072114,-0.529863026364042,-0.709116105426263
+"male","group B","some high school","standard","completed","single","regularly","yes",3,"private","10-May",1.35334544588258,1.09180008580097,0.718287185257083
+"female","group C","some college","standard","none","single","regularly","no",2,"private","10-May",-0.83591580439031,-0.732570915384668,-0.579352169909595
+"female","group D","some high school","free/reduced","none","single","sometimes","no",3,"school_bus","< 5",-2.57444679725408,-2.42180332388988,-2.39604726714294
+"male","group C","some college","standard","none","divorced","regularly","yes",1,"school_bus","10-May",-0.385185546981185,-0.59743232270425,-0.579352169909595
+"male","group A","bachelor's degree","free/reduced","completed","married","regularly","no",2,"private","> 10",-0.964695877935775,-0.665001619044459,-0.384706266634594
+"male","group C","high school","standard","completed","married","sometimes","yes",2,"","10-May",0.194324783973404,-0.732570915384668,-0.968643976459599
+"male","group C","bachelor's degree","free/reduced","none","married","regularly","",3,"private","> 10",-0.127625399890257,-0.12444724832279,-0.31982429887626
+"female","group A","some high school","free/reduced","none","single","sometimes","yes",2,"private","10-May",-1.4154261353449,-0.327155137343416,-0.644234137667929
+"female","group D","some high school","standard","none","single","regularly","yes",5,"school_bus","10-May",0.323104857518868,0.956661493120549,1.04269702404875
+"male","group E","some college","standard","none","married","regularly","yes",3,"private","10-May",1.28895540910985,0.618815011419506,0.264113410948746
+"female","group C","some college","free/reduced","completed","single","sometimes","no",4,"school_bus","10-May",-1.35103609857217,0.280968529718462,0.134349475432078
+"male","group D","some high school","standard","none","single","sometimes","yes",0,"private","> 10",0.645055041382529,0.41610712239888,0.32899537870708
+"female","group D","some college","standard","completed","married","sometimes","yes",1,"private","> 10",1.16017533556439,1.97020093822368,1.88616260490709
+"female","group D","bachelor's degree","standard","none","married","sometimes","yes",0,"","> 10",-0.385185546981185,0.145829937038045,0.393877346465413
+"female","group D","some high school","standard","none","single","sometimes","no",2,"school_bus","> 10",1.03139526201892,1.49721586384222,0.977815056290419
+"female","group D","master's degree","free/reduced","completed","single","sometimes","yes",2.15521064301552,"private","10-May",1.22456537233712,1.76749304920305,2.0808085081821
+"female","group A","some high school","standard","none","single","sometimes","no",1,"private","> 10",0.451884931064333,1.02423078946076,0.653405217498749
+"male","group A","bachelor's degree","standard","none","married","regularly","yes",1,"private","10-May",0.0655447104279397,-0.327155137343416,-0.31982429887626
+"female","group B","associate's degree","standard","none","single","sometimes","yes",1,"school_bus","10-May",0.902615188473458,1.15936938214117,0.977815056290419
+"male","group C","associate's degree","standard","completed","divorced","sometimes","yes",0,"private","< 5",1.16017533556439,1.97020093822368,1.62663473387376
+"male","group C","master's degree","free/reduced","none","married","sometimes","no",2,"","10-May",0.838225151700726,0.88909219678034,0.32899537870708
+"female","group E","some high school","free/reduced","none","divorced","regularly","yes",3,"private","> 10",-1.67298628243583,-1.27312528610634,-1.3579357830096
+"female","group A","some high school","free/reduced","none","divorced","never","no",5,"private","10-May",-1.99493646629949,-1.88124895316821,-1.81210955731794
+"female","group E","some college","standard","none","divorced","regularly","yes",2,"private","10-May",0.194324783973404,0.551245715079297,0.523641281982081
+"female","group E","bachelor's degree","standard","none","single","sometimes","yes",0,"school_bus","< 5",-0.256405473435721,0.145829937038045,0.00458553991540994
+"female","group C","","free/reduced","none","widowed","regularly","yes",4,"school_bus","10-May",-0.51396562052665,0.686384307759714,0.00458553991540994
+"female","group D","high school","standard","none","single","sometimes","yes",3,"private","10-May",-0.256405473435721,-0.327155137343416,-0.254942331117926
+"male","group D","master's degree","standard","none","married","sometimes","no",1,"school_bus","< 5",0.323104857518868,0.0782606406978364,0.458759314223747
+"male","group E","some high school","free/reduced","completed","single","regularly","yes",0,"private","10-May",0.580665004609797,-0.056877951982581,-0.514470202151261
+"female","group D","some college","standard","none","single","sometimes","no",3,"private","< 5",0.516274967837065,-0.192016544662998,0.458759314223747
+"male","group E","some college","standard","none","married","sometimes","yes",3,"school_bus","> 10",0.773835114927993,-0.056877951982581,0.00458553991540994
+"male","group C","associate's degree","standard","completed","divorced","regularly","yes",4,"private","> 10",-0.385185546981185,-0.935278804405294,-0.644234137667929
+"female","group C","some high school","standard","completed","single","sometimes","no",2.15521064301552,"school_bus","10-May",-0.0632353631175246,0.348537826058671,0.588523249740415
+"female","group B","high school","free/reduced","none","married","never","no",5,"school_bus","10-May",-1.15786598825397,-0.259585841003207,-0.449588234392927
+"male","group B","some high school","standard","none","single","regularly","yes",0,"school_bus","< 5",0.451884931064333,-0.462293730023833,-0.709116105426263
+"male","group D","some high school","standard","none","single","never","no",4,"private","< 5",-0.642745694072114,-0.800140211724876,-1.09840791197627
+"female","group C","some high school","standard","completed","married","regularly","yes",3,"private","10-May",-0.385185546981185,-1.0028481007455,0.00458553991540994
+"male","group A","some college","standard","","married","sometimes","no",1,"school_bus","",-0.83591580439031,-1.7461103604878,-1.61746365404294
+"female","group A","some college","free/reduced","none","married","regularly","no",2,"school_bus","> 10",-0.964695877935775,-0.192016544662998,-0.709116105426263
+"female","group D","high school","standard","completed","single","sometimes","yes",4,"private","10-May",1.41773548265531,2.03777023456389,2.0808085081821
+"female","group C","high school","standard","none","single","regularly","yes",0,"school_bus","10-May",-0.707135730844846,-0.665001619044459,-0.31982429887626
+"female","group C","some high school","standard","none","married","regularly","yes",2.15521064301552,"","< 5",-0.256405473435721,0.213399233378254,0.00458553991540994
+"male","group B","associate's degree","standard","completed","married","regularly","no",3,"school_bus","> 10",0.129934747200672,-0.192016544662998,-0.190060363359592
+"female","group B","associate's degree","standard","","married","regularly","yes",3,"school_bus","10-May",1.16017533556439,0.821522900440132,0.653405217498749
+"female","group D","high school","free/reduced","completed","divorced","sometimes","no",2,"school_bus","10-May",-0.900305841163042,-0.800140211724876,-0.773998073184597
+"male","group D","associate's degree","standard","completed","widowed","never","no",5,"school_bus","> 10",1.28895540910985,0.956661493120549,1.04269702404875
+"female","group D","master's degree","standard","completed","","regularly","yes",2,"private","10-May",0.3874948942916,0.280968529718462,0.653405217498749
+"male","","some college","standard","completed","widowed","regularly","yes",4,"school_bus","10-May",1.28895540910985,1.02423078946076,0.718287185257083
+"male","group D","associate's degree","standard","none","married","sometimes","yes",3,"private","",0.323104857518868,-0.192016544662998,-0.514470202151261
+"female","group C","","free/reduced","","married","regularly","yes",3,"school_bus","10-May",-0.900305841163042,0.280968529718462,0.783169153015417
+"male","group E","high school","standard","none","single","regularly","no",3,"private","10-May",1.28895540910985,0.348537826058671,0.134349475432078
+"male","group C","bachelor's degree","standard","completed","married","sometimes","yes",3,"private","< 5",0.129934747200672,0.213399233378254,-0.125178395601258
+"male","group C","associate's degree","standard","none","married","sometimes","yes",3,"","< 5",0.323104857518868,0.145829937038045,-0.190060363359592
+"male","group D","some college","standard","none","married","regularly","no",4,"private","10-May",0.258714820746136,-0.665001619044459,-0.31982429887626
+"male","group E","high school","free/reduced","completed","married","sometimes","no",3,"private","10-May",-0.578355657299382,-0.867709508065085,-0.903762008701265
+"female","group D","high school","standard","completed","married","regularly","no",2,"","< 5",-0.642745694072114,-0.800140211724876,-0.254942331117926
+"female","group D","master's degree","free/reduced","completed","divorced","never","yes",0,"private","> 10",-1.2222560250267,-0.665001619044459,0.00458553991540994
+"female","group A","some high school","standard","completed","married","sometimes","yes",0,"","< 5",-0.578355657299382,0.956661493120549,0.653405217498749
+"male","","some college","free/reduced","none","married","","no",2,"private","10-May",-1.6085962456631,-2.01638754584863,-2.20140136386794
+"female","","some college","free/reduced","none","single","sometimes","yes",3,"school_bus","< 5",-0.385185546981185,-0.259585841003207,-0.514470202151261
+"male","group C","bachelor's degree","standard","none","married","regularly","yes",2,"school_bus","10-May",1.41773548265531,1.02423078946076,1.30222489508209
+"male","group C","some high school","free/reduced","none","single","regularly","yes",0,"private","10-May",0.323104857518868,0.213399233378254,-0.125178395601258
+"male","group A","some high school","free/reduced","","single","sometimes","yes",1,"private","",-0.0632353631175246,-0.665001619044459,-0.968643976459599
+"male","group C","some high school","free/reduced","none","married","sometimes","no",3,"school_bus","> 10",0.258714820746136,-0.394724433683624,-0.838880040942931
+"male","","associate's degree","free/reduced","none","married","sometimes","",1,"private","< 5",-0.256405473435721,-0.259585841003207,-0.709116105426263
+"female","group C","high school","standard","none","single","sometimes","yes",3,"school_bus","",-0.320795510208453,0.213399233378254,0.134349475432078
+"male","group C","high school","standard","none","single","never","yes",4,"school_bus","< 5",-0.578355657299382,-1.0028481007455,-1.03352594421793
+"female","group A","some high school","free/reduced","none","divorced","sometimes","no",2.15521064301552,"school_bus","< 5",-1.35103609857217,-0.732570915384668,-1.22817184749293
+"male","group C","","standard","none","married","sometimes","no",1,"","> 10",0.580665004609797,-0.192016544662998,-0.060296427842924
+"male","","some college","free/reduced","completed","married","sometimes","no",7,"private","10-May",-1.02908591470851,-1.40826387878675,-0.968643976459599
+"male","group D","associate's degree","standard","none","married","regularly","yes",3,"school_bus","10-May",0.709445078155261,0.0106913443576277,-0.190060363359592
+"male","group D","","free/reduced","none","divorced","sometimes","yes",1,"private","10-May",0.580665004609797,-0.192016544662998,0.32899537870708
+"male","group C","high school","standard","","single","regularly","yes",0,"school_bus","< 5",0.194324783973404,-0.935278804405294,-1.09840791197627
+"male","group D","some high school","standard","completed","married","sometimes","",0,"school_bus","10-May",1.48212551942805,1.29450797482159,0.912933088532085
+"female","group C","","standard","completed","single","regularly","no",1,"school_bus","10-May",0.194324783973404,0.88909219678034,0.783169153015417
+"female","group D","high school","standard","none","married","sometimes","yes",2,"","",0.773835114927993,0.821522900440132,0.783169153015417
+"female","group A","some high school","free/reduced","none","married","sometimes","yes",2,"school_bus","10-May",-0.449575583753917,0.280968529718462,0.0694675076737439
+"female","","associate's degree","standard","none","","sometimes","no",1,"school_bus","< 5",0.258714820746136,0.821522900440132,0.393877346465413
+"male","group A","some high school","free/reduced","none","married","sometimes","yes",0,"school_bus","10-May",0.838225151700726,0.88909219678034,0.32899537870708
+"female","group C","some high school","standard","completed","divorced","regularly","",3,"","10-May",0.194324783973404,0.41610712239888,0.653405217498749
+"male","group D","some college","free/reduced","none","","regularly","yes",1,"school_bus","> 10",0.451884931064333,-0.12444724832279,-0.384706266634594
+"male","group C","high school","standard","completed","single","regularly","yes",2,"school_bus","> 10",1.61090559297351,0.956661493120549,0.977815056290419
+"male","group B","high school","standard","none","widowed","regularly","yes",4,"school_bus","10-May",-1.15786598825397,-1.54340247146717,-1.61746365404294
+"male","group B","associate's degree","standard","none","single","regularly","yes",2.15521064301552,"school_bus","10-May",1.09578529879165,0.348537826058671,0.32899537870708
+"female","group C","some college","free/reduced","completed","divorced","sometimes","yes",3,"private","10-May",-0.127625399890257,1.09180008580097,1.10757899180709
+"female","group E","some college","standard","none","married","sometimes","",5,"school_bus","10-May",2.1904159239281,1.56478516018243,1.88616260490709
+"female","group C","associate's degree","free/reduced","none","married","regularly","no",1,"school_bus","> 10",0.129934747200672,0.686384307759714,0.588523249740415
+"male","group C","some college","free/reduced","none","married","never","yes",3,"private","> 10",-0.127625399890257,-0.800140211724876,-1.29305381525127
+"female","group C","associate's degree","free/reduced","none","","regularly","yes",3,"private","10-May",-0.771525767617578,-0.529863026364042,-0.31982429887626
+"male","group C","bachelor's degree","free/reduced","none","married","sometimes","yes",0,"school_bus","10-May",-1.86615639275402,-0.867709508065085,-1.3579357830096
+"female","group D","bachelor's degree","standard","none","divorced","sometimes","no",3,"school_bus","10-May",0.838225151700726,1.3620772711618,1.36710686284042
+"male","group D","associate's degree","free/reduced","none","single","regularly","yes",1,"","10-May",-0.771525767617578,-1.0028481007455,-1.22817184749293
+"female","group E","bachelor's degree","standard","none","married","regularly","",2,"school_bus","",2.1904159239281,2.1053395309041,2.0808085081821
+"male","group B","high school","standard","","married","sometimes","no",4,"","10-May",0.3874948942916,-0.259585841003207,0.00458553991540994
+"male","group C","bachelor's degree","free/reduced","none","married","regularly","no",1,"private","< 5",-0.900305841163042,-0.800140211724876,-0.838880040942931
+"male","group B","some college","free/reduced","none","married","sometimes","yes",1,"school_bus","10-May",-0.771525767617578,-1.0028481007455,-1.48769971852627
+"female","group E","some college","standard","none","divorced","never","no",1,"private","10-May",0.129934747200672,-0.056877951982581,0.393877346465413
+"female","group C","some college","free/reduced","none","widowed","sometimes","yes",4,"school_bus","10-May",0.709445078155261,1.42964656750201,1.49687079835709
+"male","group A","bachelor's degree","standard","completed","divorced","sometimes","yes",2.15521064301552,"private","10-May",0.580665004609797,-0.732570915384668,-0.384706266634594
+"female","group C","some college","standard","none","married","sometimes","no",4,"","10-May",1.16017533556439,1.22693867848138,1.49687079835709
+"female","group D","associate's degree","free/reduced","none","divorced","sometimes","no",1,"school_bus","> 10",-2.57444679725408,-2.5569419165703,-1.94187349283461
+"male","group A","high school","free/reduced","completed","married","regularly","no",7,"school_bus","> 10",0.645055041382529,0.0106913443576277,-0.060296427842924
+"female","group A","high school","free/reduced","completed","single","regularly","yes",3,"private","10-May",0.838225151700726,1.3620772711618,1.23734292732375
+"male","","some college","standard","none","married","regularly","yes",2,"private","10-May",1.73968566651898,0.41610712239888,0.588523249740415
+"female","group C","associate's degree","standard","completed","divorced","sometimes","no",1,"private","10-May",1.09578529879165,1.09180008580097,1.43198883059876
+"female","group C","high school","standard","","married","regularly","yes",0,"private","< 5",-0.256405473435721,-0.056877951982581,0.393877346465413
+"female","group C","associate's degree","standard","completed","married","sometimes","yes",4,"school_bus","10-May",0.129934747200672,1.15936938214117,1.04269702404875
+"female","group D","some high school","standard","none","married","sometimes","no",5,"private","> 10",-0.578355657299382,-0.192016544662998,-0.514470202151261
+"female","group B","associate's degree","standard","","single","sometimes","yes",2,"private","10-May",1.54651555620078,1.42964656750201,1.49687079835709
+"female","group D","bachelor's degree","standard","completed","","sometimes","yes",3,"","> 10",0.451884931064333,0.551245715079297,1.04269702404875
+"male","group E","bachelor's degree","standard","completed","single","sometimes","yes",2,"school_bus","10-May",0.645055041382529,-0.462293730023833,-0.125178395601258
+"male","group D","","standard","none","married","sometimes","no",1,"school_bus","10-May",0.902615188473458,-0.056877951982581,0.264113410948746
+"female","group D","master's degree","standard","none","single","never","yes",1,"private","10-May",-0.83591580439031,-0.327155137343416,0.134349475432078
+"male","group E","associate's degree","standard","none","single","sometimes","yes",4,"school_bus","> 10",0.773835114927993,0.213399233378254,0.00458553991540994
+"male","group B","high school","standard","completed","married","sometimes","yes",1,"private","10-May",0.451884931064333,0.145829937038045,0.00458553991540994
+"female","group D","associate's degree","free/reduced","","married","sometimes","yes",3,"school_bus","10-May",-0.900305841163042,-0.665001619044459,-0.773998073184597
+"male","","some college","free/reduced","none","married","sometimes","yes",2,"private","> 10",0.258714820746136,0.0106913443576277,-0.384706266634594
+"male","group A","high school","standard","none","divorced","sometimes","yes",2,"private","10-May",-0.449575583753917,-1.13798669342592,-1.42281775076794
+"female","group B","associate's degree","standard","none","single","regularly","no",3,"school_bus","< 5",-1.15786598825397,-1.20555598976613,-0.903762008701265
+"male","group C","high school","standard","none","married","sometimes","no",2.15521064301552,"school_bus","< 5",0.0655447104279397,0.213399233378254,0.0694675076737439
+"male","group D","some college","free/reduced","none","married","sometimes","yes",3,"private","10-May",-0.320795510208453,-1.47583317512696,-0.773998073184597
+"female","group C","associate's degree","free/reduced","none","married","sometimes","",4,"school_bus","10-May",-0.385185546981185,0.41610712239888,0.393877346465413
+"male","group B","some high school","standard","completed","divorced","regularly","yes",1,"school_bus","10-May",-0.0632353631175246,-1.07041739708571,-0.644234137667929
+"male","group A","associate's degree","free/reduced","completed","","never","yes",5,"school_bus","10-May",0.645055041382529,0.753953604099923,0.718287185257083
+"female","group A","associate's degree","free/reduced","none","married","regularly","no",1,"school_bus","< 5",-0.127625399890257,1.02423078946076,0.523641281982081
+"female","group C","associate's degree","standard","","divorced","sometimes","",0,"","10-May",-0.127625399890257,-0.327155137343416,0.134349475432078
+"female","group C","some college","standard","none","married","sometimes","no",1,"school_bus","10-May",1.09578529879165,0.956661493120549,1.43198883059876
+"female","group C","bachelor's degree","standard","none","married","sometimes","yes",6,"school_bus","< 5",0.773835114927993,1.15936938214117,1.30222489508209
+"female","group B","high school","standard","none","divorced","regularly","yes",2,"school_bus","< 5",-0.83591580439031,-0.394724433683624,0.00458553991540994
+"male","group D","high school","standard","completed","divorced","sometimes","yes",4,"private","10-May",0.129934747200672,-0.327155137343416,-0.125178395601258
+"female","group C","some college","standard","none","married","regularly","no",3,"school_bus","< 5",-0.83591580439031,-1.47583317512696,-1.03352594421793
+"female","group D","some college","free/reduced","completed","","sometimes","no",1,"school_bus","10-May",-0.449575583753917,0.618815011419506,0.523641281982081
+"male","group E","some college","standard","none","married","sometimes","yes",3,"school_bus","< 5",0.451884931064333,0.0106913443576277,0.134349475432078
+"female","group D","master's degree","standard","none","married","sometimes","yes",2,"school_bus","10-May",0.516274967837065,0.753953604099923,1.04269702404875
+"female","group B","associate's degree","standard","completed","married","sometimes","yes",0,"private","< 5",1.61090559297351,1.09180008580097,1.43198883059876
+"male","group C","some college","free/reduced","none","divorced","sometimes","yes",0,"school_bus","",-0.192015436662989,-0.529863026364042,-0.903762008701265
+"female","group E","associate's degree","standard","completed","married","regularly","yes",3,"school_bus","> 10",2.1904159239281,1.49721586384222,1.82128063714876
+"female","group D","master's degree","free/reduced","none","single","regularly","yes",1,"private","10-May",-1.6085962456631,-0.529863026364042,-0.709116105426263
+"female","group B","some high school","standard","none","married","sometimes","yes",3,"school_bus","< 5",0.838225151700726,0.753953604099923,0.653405217498749
+"male","group A","high school","standard","none","married","regularly","yes",1,"school_bus","10-May",0.258714820746136,0.145829937038045,-0.060296427842924
+"male","group C","","standard","none","single","sometimes","no",3,"private","10-May",0.838225151700726,0.618815011419506,0.588523249740415
+"female","group C","bachelor's degree","standard","none","married","regularly","no",1,"private","10-May",1.41773548265531,1.63235445652264,1.36710686284042
+"male","group D","some college","standard","none","married","sometimes","no",3,"","10-May",0.645055041382529,0.145829937038045,0.32899537870708
+"male","group A","","standard","none","","sometimes","yes",2,"","< 5",-0.256405473435721,-1.34069458244655,-1.68234562180127
+"male","group D","some high school","free/reduced","none","married","regularly","no",2,"school_bus","< 5",-0.320795510208453,-1.40826387878675,-1.03352594421793
+"female","group B","some high school","standard","completed","divorced","regularly","yes",3,"private","10-May",-0.707135730844846,-0.529863026364042,-0.31982429887626
+"female","group B","master's degree","free/reduced","completed","single","sometimes","yes",3,"school_bus","10-May",0.709445078155261,1.90263164188347,1.69151670163209
+"female","group C","some high school","standard","completed","married","sometimes","no",1,"private","10-May",0.645055041382529,1.22693867848138,1.10757899180709
+"female","group D","some college","standard","none","married","sometimes","no",1,"private","",0.516274967837065,1.3620772711618,1.04269702404875
+"female","group E","some college","standard","completed","divorced","never","yes",1,"school_bus","10-May",-0.127625399890257,0.213399233378254,0.199231443190412
+"female","group D","some high school","standard","completed","single","regularly","no",1,"school_bus","10-May",0.0655447104279397,0.686384307759714,0.718287185257083
+"female","group B","high school","free/reduced","completed","married","sometimes","no",5,"school_bus","10-May",0.0655447104279397,0.618815011419506,0.718287185257083
+"male","group D","","standard","none","married","sometimes","no",3,"private","10-May",0.323104857518868,-1.34069458244655,-1.03352594421793
+"female","group C","associate's degree","standard","none","single","sometimes","yes",4,"private","10-May",1.61090559297351,1.15936938214117,1.04269702404875
+"male","","bachelor's degree","standard","none","married","sometimes","yes",5,"private","> 10",0.323104857518868,-0.732570915384668,-0.644234137667929
+"male","group C","master's degree","free/reduced","","widowed","regularly","yes",2,"","10-May",-0.642745694072114,-0.529863026364042,-1.03352594421793
+"male","group C","high school","standard","completed","married","sometimes","no",2,"private","",-0.83591580439031,-1.13798669342592,-1.22817184749293
+"male","","some college","standard","none","single","sometimes","yes",3,"private","> 10",0.258714820746136,-0.59743232270425,-0.514470202151261
+"male","group C","some high school","free/reduced","completed","single","sometimes","yes",4,"school_bus","< 5",-0.771525767617578,-0.59743232270425,-0.644234137667929
+"female","group C","high school","free/reduced","none","divorced","sometimes","yes",2,"","10-May",-1.93054642952676,-1.07041739708571,-1.61746365404294
+"female","group D","bachelor's degree","free/reduced","none","single","sometimes","no",2,"private","< 5",-2.44566672370861,-1.94881824950842,-1.42281775076794
+"female","group C","associate's degree","standard","none","married","never","no",1,"private","10-May",-0.385185546981185,0.213399233378254,0.00458553991540994
+"female","group C","associate's degree","standard","completed","married","","yes",1,"private","10-May",0.129934747200672,-0.12444724832279,0.32899537870708
+"female","group C","some high school","standard","none","married","never","yes",2,"private","10-May",-1.35103609857217,-1.07041739708571,-1.09840791197627
+"male","group E","associate's degree","standard","completed","single","sometimes","yes",2,"school_bus","< 5",-0.385185546981185,-0.59743232270425,-0.773998073184597
+"female","group E","associate's degree","standard","completed","married","sometimes","no",4,"school_bus","10-May",0.838225151700726,1.29450797482159,1.69151670163209
+"male","group B","high school","standard","completed","married","sometimes","no",1,"school_bus","> 10",0.580665004609797,0.0782606406978364,0.0694675076737439
+"female","group C","bachelor's degree","free/reduced","completed","married","sometimes","yes",5,"private","10-May",0.00115467365520756,0.956661493120549,0.977815056290419
+"male","","associate's degree","standard","completed","single","never","no",2,"","< 5",-1.2222560250267,-0.732570915384668,-0.838880040942931
+"female","group D","high school","standard","none","married","never","yes",1,"school_bus","10-May",-1.09347595148124,-0.259585841003207,-0.514470202151261
+"male","","bachelor's degree","standard","completed","","sometimes","no",2,"school_bus","< 5",1.03139526201892,-0.259585841003207,0.0694675076737439
+"male","group A","associate's degree","standard","completed","married","sometimes","no",3,"school_bus","> 10",2.12602588715537,1.63235445652264,1.23734292732375
+"male","group C","high school","standard","completed","married","sometimes","no",1,"private","10-May",0.580665004609797,0.0106913443576277,0.00458553991540994
+"male","","associate's degree","free/reduced","","single","sometimes","no",2,"school_bus","< 5",0.645055041382529,0.753953604099923,0.653405217498749
+"female","","associate's degree","standard","none","divorced","regularly","yes",3,"private","10-May",1.09578529879165,0.618815011419506,0.783169153015417
+"female","group D","associate's degree","standard","none","single","regularly","no",2,"private","> 10",1.28895540910985,1.90263164188347,1.62663473387376
+"female","group D","","standard","none","married","sometimes","yes",2,"","10-May",-0.127625399890257,-0.394724433683624,-0.125178395601258
+"male","group E","some high school","free/reduced","completed","married","regularly","yes",1,"school_bus","10-May",0.902615188473458,1.02423078946076,0.912933088532085
+"female","group A","some high school","standard","completed","married","sometimes","yes",3,"school_bus","10-May",1.67529562974624,2.1053395309041,1.88616260490709
+"male","group C","high school","standard","completed","divorced","regularly","yes",2,"private","< 5",0.323104857518868,-0.192016544662998,-0.254942331117926
+"female","group C","high school","free/reduced","none","married","regularly","no",5,"school_bus","< 5",-0.320795510208453,-0.192016544662998,-0.254942331117926
+"male","group C","master's degree","standard","none","married","sometimes","yes",1,"school_bus","< 5",0.709445078155261,0.213399233378254,0.0694675076737439
+"male","group C","some high school","free/reduced","none","","sometimes","yes",0,"","< 5",0.645055041382529,0.348537826058671,-0.31982429887626
+"male","group B","bachelor's degree","free/reduced","completed","married","regularly","no",2,"private","10-May",1.48212551942805,1.49721586384222,1.43198883059876
+"female","group B","","standard","none","married","never","no",3,"private","10-May",-1.80176635598129,-1.47583317512696,-1.29305381525127
+"male","group D","some college","free/reduced","none","married","regularly","no",2,"private","10-May",0.838225151700726,-0.462293730023833,-0.190060363359592
+"male","group E","associate's degree","standard","none","divorced","regularly","yes",1,"private","> 10",-0.642745694072114,-1.54340247146717,-1.74722758955961
+"female","group C","some college","free/reduced","","single","regularly","no",2.15521064301552,"private","> 10",-2.12371653984495,-1.94881824950842,-2.20140136386794
+"male","group C","master's degree","free/reduced","none","single","regularly","yes",1,"school_bus","10-May",-0.192015436662989,0.0106913443576277,0.0694675076737439
+"female","group B","associate's degree","free/reduced","none","single","sometimes","no",2,"school_bus","< 5",-0.964695877935775,-0.056877951982581,0.00458553991540994
+"male","group D","some high school","standard","none","married","sometimes","yes",2,"school_bus","> 10",0.580665004609797,-0.192016544662998,-0.31982429887626
+"female","group D","some college","standard","completed","divorced","sometimes","no",3,"school_bus","",0.516274967837065,0.41610712239888,0.718287185257083
+"female","group C","some college","standard","none","single","regularly","yes",3,"school_bus","> 10",0.00115467365520756,0.483676418739088,0.588523249740415
+"male","group C","bachelor's degree","standard","completed","married","regularly","no",2,"school_bus","< 5",1.86846574006444,1.3620772711618,1.56175276611542
+"female","group D","some college","free/reduced","completed","divorced","sometimes","yes",1,"","10-May",-0.192015436662989,0.753953604099923,0.783169153015417
+"male","group B","bachelor's degree","free/reduced","none","married","sometimes","",1,"school_bus","< 5",-1.28664606179944,-1.27312528610634,-1.48769971852627
+"male","group B","associate's degree","standard","none","divorced","sometimes","no",2,"school_bus","< 5",-1.28664606179944,-1.81367965682801,-1.5525816862846
+"female","group E","bachelor's degree","free/reduced","completed","single","never","no",4,"private","10-May",1.48212551942805,1.97020093822368,1.88616260490709
+"female","group D","master's degree","free/reduced","completed","married","","yes",2,"","10-May",-0.320795510208453,0.213399233378254,0.783169153015417
+"male","group B","high school","free/reduced","none","married","regularly","yes",6,"private","< 5",-0.256405473435721,-1.47583317512696,-1.3579357830096
+"male","","bachelor's degree","free/reduced","none","single","regularly","yes",2,"private","",0.258714820746136,0.0106913443576277,0.00458553991540994
+"male","group B","","standard","completed","divorced","regularly","yes",1,"private","10-May",0.451884931064333,0.483676418739088,0.199231443190412
+"male","group A","bachelor's degree","standard","none","married","never","yes",1,"school_bus","10-May",1.41773548265531,1.69992375286284,1.36710686284042
+"female","group C","some college","standard","","single","sometimes","no",5,"private","> 10",-0.771525767617578,-0.462293730023833,-0.709116105426263
+"female","group C","high school","free/reduced","completed","","sometimes","yes",1,"school_bus","10-May",-1.02908591470851,-0.192016544662998,-0.254942331117926
+"female","","high school","standard","none","","sometimes","no",1,"private","> 10",0.645055041382529,0.88909219678034,0.264113410948746
+"male","group A","associate's degree","free/reduced","","married","sometimes","yes",7,"school_bus","10-May",-1.67298628243583,-0.935278804405294,-0.968643976459599
+"male","group A","some college","standard","completed","married","sometimes","yes",0,"school_bus","10-May",-0.320795510208453,-1.20555598976613,-1.03352594421793
+"female","group B","high school","standard","none","married","sometimes","yes",1,"school_bus","< 5",0.773835114927993,1.3620772711618,1.23734292732375
+"female","group B","some college","free/reduced","completed","single","sometimes","no",1,"school_bus","> 10",-1.09347595148124,-0.867709508065085,-0.579352169909595
+"female","group D","master's degree","standard","none","married","regularly","no",3,"school_bus","< 5",-0.900305841163042,-0.59743232270425,0.00458553991540994
+"female","group D","some high school","standard","none","married","sometimes","no",2,"school_bus","< 5",0.773835114927993,1.76749304920305,1.69151670163209
+"female","group E","some high school","standard","none","divorced","never","yes",3,"school_bus","10-May",0.516274967837065,0.551245715079297,0.653405217498749
+"female","group D","bachelor's degree","free/reduced","none","widowed","sometimes","yes",1,"school_bus","10-May",-0.192015436662989,0.280968529718462,0.653405217498749
+"female","","associate's degree","standard","completed","single","sometimes","yes",2,"school_bus","> 10",0.580665004609797,0.483676418739088,0.848051120773751
+"female","group A","high school","standard","none","married","sometimes","yes",3,"school_bus","10-May",-0.707135730844846,0.280968529718462,0.32899537870708
+"female","group C","bachelor's degree","free/reduced","none","married","regularly","yes",1,"school_bus","< 5",-1.47981617211763,-0.462293730023833,-0.384706266634594
+"female","group C","some college","standard","none","","regularly","no",1,"school_bus","< 5",-0.83591580439031,-0.394724433683624,-0.190060363359592
+"female","group A","some high school","standard","none","single","sometimes","yes",1,"","10-May",-1.15786598825397,-0.192016544662998,-0.190060363359592
+"male","group C","some college","free/reduced","none","widowed","sometimes","no",3,"private","< 5",-0.642745694072114,-0.867709508065085,-1.03352594421793
+"male","","some high school","standard","none","widowed","sometimes","yes",5,"school_bus","10-May",0.0655447104279397,-0.529863026364042,-1.29305381525127
+"male","group E","bachelor's degree","standard","none","married","never","yes",2.15521064301552,"","10-May",-0.0632353631175246,-0.192016544662998,-0.384706266634594
+"female","","","standard","","married","sometimes","yes",3,"private","10-May",0.516274967837065,0.483676418739088,0.32899537870708
+"female","group C","bachelor's degree","standard","completed","married","regularly","no",2,"private","10-May",1.80407570329171,2.1053395309041,2.0808085081821
+"female","group C","bachelor's degree","standard","completed","married","sometimes","yes",1,"school_bus","> 10",-0.578355657299382,0.753953604099923,0.32899537870708
+"male","group B","high school","free/reduced","none","married","regularly","no",2,"school_bus","10-May",-2.31688665016315,-3.02992699095176,-3.43415875127629
+"male","group A","some high school","standard","none","married","never","yes",1,"","10-May",-0.964695877935775,-1.07041739708571,-1.42281775076794
+"female","group D","high school","standard","none","married","sometimes","yes",4,"school_bus","> 10",0.323104857518868,0.618815011419506,0.393877346465413
+"female","group D","some high school","standard","none","single","sometimes","no",1,"school_bus","10-May",-0.0632353631175246,0.88909219678034,0.848051120773751
+"female","","master's degree","standard","none","single","sometimes","yes",1,"private","< 5",-0.900305841163042,-0.59743232270425,-0.31982429887626
+"female","group C","high school","standard","none","divorced","sometimes","no",1,"school_bus","10-May",-2.38127668693588,-2.69208050925072,-2.46092923490128
+"female","group E","some college","standard","none","married","sometimes","no",2,"school_bus","10-May",0.645055041382529,0.618815011419506,0.783169153015417
+"male","group D","high school","free/reduced","none","married","sometimes","yes",1,"school_bus","10-May",-0.385185546981185,-0.800140211724876,-1.09840791197627
+"male","group D","master's degree","free/reduced","completed","married","sometimes","",2.15521064301552,"school_bus","< 5",0.96700522524619,1.22693867848138,1.30222489508209
+"male","group C","some high school","standard","none","divorced","sometimes","yes",3,"private","< 5",0.3874948942916,0.0782606406978364,-0.514470202151261
+"female","group C","associate's degree","standard","none","","never","yes",2.15521064301552,"school_bus","10-May",1.03139526201892,0.88909219678034,0.718287185257083
+"female","group C","master's degree","free/reduced","none","married","sometimes","yes",1,"private","10-May",-1.67298628243583,-0.665001619044459,-0.838880040942931
+"female","","some college","standard","","divorced","never","yes",0,"private","10-May",-0.449575583753917,-0.394724433683624,-0.514470202151261
+"female","group B","associate's degree","standard","none","married","regularly","no",1,"school_bus","< 5",-0.578355657299382,-0.462293730023833,-0.190060363359592
+"male","group D","some college","free/reduced","completed","married","sometimes","yes",5,"school_bus","10-May",0.194324783973404,-0.59743232270425,-0.31982429887626
+"female","group C","some college","standard","none","married","sometimes","yes",3,"school_bus","< 5",-0.642745694072114,-0.732570915384668,-0.254942331117926
+"male","group C","bachelor's degree","standard","completed","married","sometimes","yes",0,"private","< 5",1.61090559297351,1.29450797482159,1.36710686284042
+"female","group A","associate's degree","standard","none","married","sometimes","no",4,"school_bus","10-May",1.03139526201892,1.63235445652264,1.62663473387376
+"female","group C","high school","standard","none","married","sometimes","yes",1,"school_bus","10-May",-0.385185546981185,-0.056877951982581,0.264113410948746
+"female","group E","bachelor's degree","standard","none","single","sometimes","",4,"school_bus","10-May",-1.86615639275402,-1.61097176780738,-1.94187349283461
+"male","group D","bachelor's degree","standard","none","","sometimes","no",3,"","10-May",1.41773548265531,0.618815011419506,0.977815056290419
+"male","group D","master's degree","standard","none","married","sometimes","yes",1,"school_bus","10-May",1.86846574006444,0.88909219678034,1.17246095956542
+"male","","associate's degree","free/reduced","completed","married","never","no",3,"","< 5",-0.320795510208453,0.0782606406978364,-0.254942331117926
+"female","group C","high school","free/reduced","none","single","sometimes","yes",2,"school_bus","> 10",-1.93054642952676,-0.529863026364042,-0.838880040942931
+"male","group B","","free/reduced","none","single","regularly","",3,"private","10-May",-0.192015436662989,-0.394724433683624,-0.709116105426263
+"male","group C","high school","free/reduced","completed","married","sometimes","yes",2,"private","> 10",-0.449575583753917,-1.20555598976613,-0.968643976459599
+"male","group A","some college","standard","completed","divorced","never","yes",4,"private","10-May",1.9972458136099,1.69992375286284,0.977815056290419
+"female","","bachelor's degree","free/reduced","none","married","regularly","no",2,"private","< 5",-0.385185546981185,-0.800140211724876,-0.384706266634594
+"male","group D","some college","standard","completed","married","regularly","yes",0,"","< 5",2.12602588715537,1.83506234554326,2.01592654042376
+"male","group B","associate's degree","free/reduced","completed","divorced","never","yes",1,"school_bus","10-May",0.00115467365520756,-0.056877951982581,-0.449588234392927
+"male","group D","associate's degree","standard","none","divorced","sometimes","no",1,"school_bus","",-0.320795510208453,-1.40826387878675,-1.42281775076794
+"male","group D","some college","free/reduced","none","married","regularly","no",2,"school_bus","10-May",-1.02908591470851,-0.800140211724876,-1.3579357830096
+"female","group C","some high school","standard","completed","married","regularly","yes",0,"school_bus","10-May",-1.35103609857217,-1.20555598976613,-0.773998073184597
+"male","group D","some college","standard","none","single","never","yes",1,"private","10-May",-0.127625399890257,-0.394724433683624,0.00458553991540994
+"male","group B","high school","standard","none","widowed","regularly","yes",2,"private","10-May",0.96700522524619,-0.59743232270425,-0.125178395601258
+"female","group B","bachelor's degree","standard","completed","married","sometimes","yes",2,"school_bus","> 10",0.0655447104279397,0.41610712239888,0.912933088532085
+"female","group C","high school","standard","none","married","sometimes","no",5,"school_bus","10-May",0.580665004609797,1.29450797482159,1.10757899180709
+"male","group A","high school","standard","none","married","sometimes","yes",0,"school_bus","10-May",0.323104857518868,0.348537826058671,-0.254942331117926
+"female","group D","some high school","standard","completed","single","never","",2,"private","< 5",0.580665004609797,1.3620772711618,1.04269702404875
+"male","group E","some college","standard","","married","regularly","yes",2,"private","10-May",1.41773548265531,0.551245715079297,0.458759314223747
+"female","group D","","standard","none","single","never","yes",2,"school_bus","10-May",0.451884931064333,0.213399233378254,0.199231443190412
+"male","group D","high school","standard","none","single","sometimes","no",3,"school_bus","> 10",-1.54420620889036,-1.13798669342592,-1.03352594421793
+"female","group D","associate's degree","free/reduced","completed","","sometimes","yes",1,"school_bus","> 10",0.645055041382529,1.3620772711618,1.49687079835709
+"female","group B","some high school","free/reduced","none","married","never","yes",2,"private","< 5",0.0655447104279397,0.618815011419506,0.458759314223747
+"female","group E","high school","standard","completed","single","regularly","yes",2.15521064301552,"private","10-May",0.645055041382529,0.753953604099923,0.912933088532085
+"male","group B","high school","standard","none","single","sometimes","yes",1,"school_bus","< 5",0.0655447104279397,-0.327155137343416,-0.644234137667929
+"female","group B","bachelor's degree","standard","completed","married","never","yes",1,"school_bus","10-May",-0.192015436662989,0.686384307759714,0.653405217498749
+"female","","associate's degree","standard","none","married","regularly","yes",4,"school_bus","> 10",-0.256405473435721,0.213399233378254,-0.060296427842924
+"female","group E","","free/reduced","none","single","sometimes","yes",2,"private","< 5",-0.256405473435721,-0.529863026364042,-0.125178395601258
+"female","","high school","standard","none","single","regularly","yes",2,"private","10-May",-0.964695877935775,-1.07041739708571,-0.773998073184597
+"female","group D","some college","standard","completed","divorced","never","yes",2.15521064301552,"private","10-May",0.00115467365520756,0.551245715079297,0.653405217498749
+"male","group C","some high school","free/reduced","completed","single","sometimes","yes",3,"","> 10",-0.900305841163042,-0.867709508065085,-0.903762008701265
+"female","group A","high school","standard","completed","married","regularly","yes",7,"private","10-May",0.258714820746136,0.821522900440132,0.588523249740415
+"female","group D","some college","standard","completed","married","sometimes","yes",2,"school_bus","< 5",1.03139526201892,1.02423078946076,1.82128063714876
+"female","group A","associate's degree","standard","completed","single","sometimes","no",2,"school_bus","10-May",-0.0632353631175246,0.0782606406978364,0.393877346465413
+"female","group B","some high school","standard","none","divorced","sometimes","yes",1,"school_bus","10-May",0.451884931064333,0.686384307759714,0.718287185257083
+"female","group B","some college","standard","none","married","sometimes","no",1,"school_bus","",-0.256405473435721,-0.12444724832279,-0.060296427842924
+"male","group C","associate's degree","free/reduced","none","married","sometimes","no",5,"school_bus","> 10",0.838225151700726,-0.056877951982581,-0.190060363359592
+"male","group D","some high school","standard","none","married","sometimes","no",1,"school_bus","> 10",0.323104857518868,-0.192016544662998,-0.384706266634594
+"female","group D","associate's degree","free/reduced","none","married","","yes",3,"school_bus","10-May",-1.47981617211763,-0.59743232270425,-0.644234137667929
+"male","group D","associate's degree","standard","none","divorced","sometimes","yes",4,"private","10-May",1.54651555620078,1.22693867848138,1.10757899180709
+"male","group C","some high school","standard","none","married","never","no",2,"","10-May",0.258714820746136,-0.259585841003207,-0.449588234392927
+"female","group D","some college","free/reduced","none","divorced","regularly","yes",2,"private","< 5",-0.771525767617578,0.0782606406978364,0.0694675076737439
+"female","group C","high school","standard","none","","sometimes","yes",5,"school_bus","10-May",-0.0632353631175246,0.0106913443576277,-0.060296427842924
+"male","","associate's degree","standard","none","married","regularly","yes",1,"private","",1.03139526201892,-0.394724433683624,-0.254942331117926
+"female","group C","some high school","free/reduced","completed","single","sometimes","no",2,"","10-May",-1.02908591470851,-0.59743232270425,-0.514470202151261
+"female","group C","some college","free/reduced","completed","married","sometimes","yes",2,"school_bus","10-May",-0.192015436662989,0.280968529718462,0.199231443190412
+"female","group B","bachelor's degree","free/reduced","none","married","sometimes","no",4,"school_bus","< 5",0.516274967837065,0.956661493120549,1.10757899180709
+"male","group C","some college","standard","none","single","regularly","yes",5,"","10-May",0.580665004609797,0.41610712239888,-0.384706266634594
+"male","group D","associate's degree","standard","completed","single","sometimes","yes",3,"private","10-May",0.96700522524619,0.213399233378254,0.588523249740415
+"female","group C","high school","free/reduced","none","married","never","no",2,"school_bus","< 5",-0.256405473435721,0.280968529718462,-0.254942331117926
+"male","group D","associate's degree","free/reduced","none","married","sometimes","yes",0,"school_bus","< 5",-1.02908591470851,-0.867709508065085,-1.22817184749293
+"female","group C","some college","standard","none","married","regularly","yes",1,"private","10-May",0.323104857518868,0.686384307759714,0.588523249740415
+"female","group C","associate's degree","standard","","married","sometimes","no",2,"private","10-May",-0.0632353631175246,1.02423078946076,1.04269702404875
+"female","group D","high school","standard","completed","divorced","regularly","yes",2,"private","10-May",0.323104857518868,0.618815011419506,0.718287185257083
+"female","group B","some college","standard","completed","married","sometimes","yes",2,"","10-May",-1.02908591470851,-0.327155137343416,-0.125178395601258
+"female","group E","some college","standard","completed","divorced","sometimes","yes",2.15521064301552,"school_bus","10-May",0.451884931064333,0.618815011419506,0.523641281982081
+"female","group C","","standard","completed","single","sometimes","no",1,"school_bus","> 10",0.3874948942916,0.956661493120549,0.588523249740415
+"male","group D","associate's degree","free/reduced","","married","regularly","yes",1,"","10-May",1.09578529879165,0.483676418739088,0.718287185257083
+"male","group D","some college","free/reduced","","divorced","sometimes","yes",3,"school_bus","10-May",-0.192015436662989,-0.529863026364042,-0.514470202151261
+"female","group D","high school","standard","none","divorced","regularly","yes",6,"school_bus","< 5",0.00115467365520756,0.145829937038045,0.393877346465413
+"male","group B","high school","standard","none","divorced","regularly","yes",2,"school_bus","10-May",-0.192015436662989,-0.935278804405294,-0.838880040942931
+"female","group C","","free/reduced","completed","divorced","regularly","yes",2,"private","10-May",-2.38127668693588,-1.94881824950842,-1.48769971852627
+"male","group B","some college","standard","","married","regularly","yes",1,"school_bus","< 5",-0.320795510208453,-0.259585841003207,0.00458553991540994
+"female","group E","master's degree","standard","completed","single","sometimes","yes",2,"school_bus","> 10",1.9972458136099,2.1053395309041,2.0808085081821
+"male","group E","some college","standard","completed","single","sometimes","yes",0,"school_bus","10-May",1.22456537233712,0.41610712239888,0.00458553991540994
+"male","","associate's degree","free/reduced","none","divorced","regularly","yes",2,"school_bus","> 10",0.96700522524619,0.753953604099923,0.523641281982081
+"male","group A","high school","free/reduced","none","divorced","sometimes","yes",2,"school_bus","10-May",-0.83591580439031,-0.732570915384668,-1.5525816862846
+"male","group E","some college","free/reduced","none","married","sometimes","yes",3,"private","10-May",1.73968566651898,1.42964656750201,0.977815056290419
+"female","group C","associate's degree","standard","none","married","never","yes",5,"school_bus","10-May",-1.2222560250267,-1.13798669342592,-1.09840791197627
+"female","group E","associate's degree","free/reduced","none","married","sometimes","no",1,"private","< 5",0.258714820746136,0.348537826058671,0.523641281982081
+"female","group C","","free/reduced","completed","divorced","sometimes","yes",0,"private","> 10",0.0655447104279397,0.41610712239888,0.912933088532085
+"female","group D","associate's degree","standard","none","married","regularly","yes",2,"school_bus","10-May",0.838225151700726,0.618815011419506,0.393877346465413
+"female","group C","some high school","standard","none","single","sometimes","yes",1,"school_bus","10-May",-1.09347595148124,-0.394724433683624,-0.773998073184597
+"female","group D","some college","free/reduced","none","married","","no",2,"school_bus","> 10",0.96700522524619,1.42964656750201,1.23734292732375
+"female","","associate's degree","standard","completed","married","sometimes","yes",1,"school_bus","< 5",0.3874948942916,0.753953604099923,1.30222489508209
+"female","group A","bachelor's degree","standard","none","","sometimes","no",3,"private","< 5",-0.578355657299382,0.0782606406978364,0.00458553991540994
+"female","group D","associate's degree","standard","completed","married","sometimes","yes",2,"school_bus","10-May",-0.578355657299382,0.618815011419506,0.718287185257083
+"male","group C","high school","free/reduced","none","divorced","never","yes",3,"private","10-May",-0.127625399890257,-0.259585841003207,-0.709116105426263
+"female","group E","bachelor's degree","standard","completed","single","regularly","yes",4,"school_bus","10-May",0.96700522524619,0.88909219678034,1.04269702404875
+"female","","some high school","standard","none","married","never","no",2,"school_bus","",-0.707135730844846,-0.259585841003207,0.134349475432078
+"male","group A","bachelor's degree","standard","completed","married","regularly","yes",2.15521064301552,"school_bus","< 5",1.28895540910985,0.956661493120549,1.23734292732375
+"female","group D","","standard","","married","never","yes",2,"private","10-May",-0.320795510208453,-0.394724433683624,-0.190060363359592
+"female","group B","some high school","free/reduced","completed","married","sometimes","yes",3,"school_bus","< 5",-0.578355657299382,-0.462293730023833,-0.384706266634594
+"male","group A","","free/reduced","none","single","regularly","yes",2,"school_bus","10-May",-0.192015436662989,0.280968529718462,-0.125178395601258
+"male","group D","high school","standard","none","married","regularly","yes",2,"private","10-May",-1.2222560250267,-2.35423402754968,-2.07163742835128
+"male","group C","some college","standard","","married","sometimes","yes",3,"private","10-May",0.00115467365520756,-0.665001619044459,-1.03352594421793
+"male","group D","high school","standard","none","married","never","yes",2,"school_bus","< 5",1.09578529879165,1.02423078946076,0.458759314223747
+"female","group D","associate's degree","free/reduced","completed","divorced","sometimes","yes",0,"school_bus","10-May",-1.54420620889036,-0.529863026364042,-0.644234137667929
+"male","group C","some college","standard","completed","divorced","sometimes","yes",0,"","10-May",1.73968566651898,1.02423078946076,1.43198883059876
+"female","group E","some high school","standard","completed","divorced","sometimes","yes",2,"school_bus","10-May",0.902615188473458,1.09180008580097,1.10757899180709
+"female","group D","some college","standard","none","married","sometimes","yes",3,"school_bus","10-May",2.06163585038264,2.1053395309041,2.01592654042376
+"male","group D","master's degree","standard","none","divorced","sometimes","no",1,"school_bus","< 5",0.838225151700726,0.821522900440132,1.04269702404875
+"female","group B","some high school","standard","completed","married","regularly","no",1,"school_bus","> 10",-0.192015436662989,0.213399233378254,0.588523249740415
+"female","group B","associate's degree","free/reduced","completed","married","regularly","yes",0,"private","< 5",0.580665004609797,1.63235445652264,1.23734292732375
+"male","group C","associate's degree","standard","completed","divorced","never","yes",1,"","< 5",0.129934747200672,0.41610712239888,0.00458553991540994
+"female","group C","associate's degree","standard","completed","single","sometimes","yes",4,"private","10-May",1.93285577683717,1.83506234554326,2.01592654042376
+"female","group C","high school","standard","none","widowed","regularly","yes",3,"","10-May",0.773835114927993,0.551245715079297,0.458759314223747
+"male","group E","associate's degree","free/reduced","completed","divorced","never","",0,"school_bus","< 5",1.22456537233712,0.0782606406978364,0.523641281982081
+"female","group C","some college","free/reduced","none","married","regularly","no",2,"private","10-May",-0.192015436662989,0.280968529718462,0.199231443190412
+"male","group D","some high school","free/reduced","completed","married","regularly","yes",1,"school_bus","10-May",-0.642745694072114,-0.665001619044459,-0.514470202151261
+"female","group B","some high school","free/reduced","","single","regularly","yes",2,"school_bus","< 5",0.451884931064333,1.3620772711618,1.30222489508209
+"male","group C","high school","standard","none","married","regularly","no",2,"school_bus","10-May",-0.964695877935775,-1.40826387878675,-1.61746365404294
+"male","group B","some college","standard","none","divorced","sometimes","yes",4,"school_bus","> 10",-1.15786598825397,-1.7461103604878,-1.74722758955961
+"male","group E","some college","standard","completed","married","never","yes",4,"","< 5",0.645055041382529,0.145829937038045,-0.060296427842924
+"female","group E","","standard","completed","single","sometimes","yes",3,"school_bus","> 10",0.00115467365520756,0.483676418739088,0.653405217498749
+"male","group E","some high school","standard","completed","married","regularly","yes",0,"school_bus","10-May",0.258714820746136,-1.20555598976613,-0.644234137667929
+"female","group D","high school","free/reduced","none","single","sometimes","yes",1,"private","< 5",0.258714820746136,1.42964656750201,0.912933088532085
+"male","group C","some college","standard","none","single","regularly","no",3,"private","< 5",-0.900305841163042,-2.08395684218884,-2.00675546059294
+"female","group B","associate's degree","free/reduced","completed","divorced","sometimes","yes",5,"private","< 5",-0.0632353631175246,0.41610712239888,0.653405217498749
+"male","","some high school","free/reduced","none","divorced","sometimes","",0,"","< 5",-0.83591580439031,-1.61097176780738,-1.68234562180127
+"female","group C","some college","standard","completed","married","never","yes",2,"private","> 10",1.28895540910985,1.29450797482159,1.62663473387376
+"male","","","standard","none","divorced","sometimes","yes",2.15521064301552,"","10-May",-0.707135730844846,-1.47583317512696,-1.5525816862846
+"female","group E","some college","free/reduced","none","married","never","yes",1,"school_bus","> 10",-0.900305841163042,-0.800140211724876,-0.773998073184597
+"male","group C","master's degree","standard","","married","sometimes","no",5,"private","< 5",-0.127625399890257,-0.867709508065085,-0.709116105426263
+"male","group C","associate's degree","standard","none","married","regularly","yes",0,"","10-May",1.80407570329171,0.753953604099923,1.17246095956542
+"female","","some college","free/reduced","completed","married","sometimes","no",6,"school_bus","10-May",-0.83591580439031,-0.192016544662998,0.32899537870708
+"male","group D","associate's degree","standard","none","married","","no",2,"school_bus","10-May",0.96700522524619,0.145829937038045,0.32899537870708
+"male","group C","high school","free/reduced","none","married","regularly","yes",0,"private","10-May",-0.256405473435721,-0.59743232270425,-0.773998073184597
+"male","group D","bachelor's degree","standard","none","married","never","yes",2,"","> 10",0.838225151700726,0.213399233378254,0.199231443190412
+"female","","associate's degree","free/reduced","none","married","sometimes","yes",1,"school_bus","10-May",-1.86615639275402,-0.800140211724876,-0.773998073184597
+"female","group C","high school","standard","none","married","sometimes","yes",4,"private","10-May",0.96700522524619,1.02423078946076,0.912933088532085
+"female","group C","associate's degree","standard","completed","married","sometimes","yes",4,"school_bus","10-May",-0.449575583753917,0.280968529718462,0.264113410948746
+"male","group B","some college","free/reduced","none","married","regularly","yes",2,"private","10-May",-0.642745694072114,-0.935278804405294,-1.29305381525127
+"male","","associate's degree","standard","none","","regularly","no",4,"private","< 5",0.323104857518868,0.618815011419506,0.393877346465413
+"male","group D","high school","standard","none","married","regularly","yes",1,"","10-May",0.323104857518868,0.483676418739088,0.264113410948746
+"male","group C","some college","standard","none","married","sometimes","yes",1,"school_bus","10-May",0.194324783973404,-0.327155137343416,0.00458553991540994
+"female","","bachelor's degree","free/reduced","none","married","sometimes","no",4,"school_bus","10-May",-1.02908591470851,-0.59743232270425,-0.579352169909595
+"male","group B","some college","standard","completed","married","sometimes","yes",4,"school_bus","10-May",1.35334544588258,1.02423078946076,1.17246095956542
+"male","group D","some high school","standard","completed","married","sometimes","no",2,"school_bus","",0.323104857518868,0.0106913443576277,0.00458553991540994
+"male","group E","some college","standard","none","","never","yes",1,"private","> 10",0.0655447104279397,0.145829937038045,-0.254942331117926
+"male","group C","master's degree","free/reduced","completed","single","never","yes",1,"private","",0.709445078155261,0.551245715079297,0.458759314223747
+"female","group C","some high school","standard","completed","married","sometimes","no",1,"private","10-May",0.709445078155261,1.42964656750201,1.10757899180709
+"male","group C","associate's degree","free/reduced","none","single","regularly","yes",4,"school_bus","10-May",-0.449575583753917,-0.935278804405294,-0.903762008701265
+"female","group E","associate's degree","standard","none","married","sometimes","yes",4,"school_bus","> 10",1.28895540910985,1.83506234554326,1.62663473387376
+"male","group D","some college","standard","none","married","sometimes","no",2,"private","> 10",-0.642745694072114,-0.732570915384668,-0.968643976459599
+"male","group E","bachelor's degree","free/reduced","completed","married","sometimes","no",2.15521064301552,"","10-May",0.258714820746136,-0.056877951982581,0.264113410948746
+"female","group D","some college","free/reduced","completed","married","regularly","yes",5,"private","10-May",-0.83591580439031,-0.665001619044459,-0.125178395601258
+"male","group B","some college","standard","completed","","sometimes","yes",1,"school_bus","10-May",0.194324783973404,0.551245715079297,0.588523249740415
+"female","group C","high school","free/reduced","none","married","sometimes","yes",1,"school_bus","10-May",-0.83591580439031,0.213399233378254,-0.254942331117926
+"female","group D","some high school","standard","none","","sometimes","yes",1,"school_bus","10-May",-1.15786598825397,-0.732570915384668,-0.903762008701265
+"male","group D","some high school","standard","completed","single","never","no",4,"school_bus","10-May",0.580665004609797,0.686384307759714,0.977815056290419
+"female","group B","high school","standard","none","divorced","never","yes",2,"private","10-May",-0.385185546981185,-0.529863026364042,-0.449588234392927
+"male","group D","some college","standard","none","married","sometimes","yes",0,"school_bus","10-May",-0.385185546981185,-0.394724433683624,-0.579352169909595
+"female","group B","high school","standard","none","married","sometimes","yes",0,"school_bus","10-May",0.516274967837065,0.213399233378254,0.264113410948746
+"female","","high school","standard","completed","widowed","regularly","yes",1,"","< 5",-0.578355657299382,0.348537826058671,0.588523249740415
+"male","group B","high school","standard","completed","single","sometimes","yes",0,"school_bus","10-May",0.645055041382529,-0.462293730023833,-0.514470202151261
+"female","group D","some high school","standard","none","married","never","yes",1,"private","> 10",0.0655447104279397,0.0782606406978364,0.393877346465413
+"male","group A","some college","free/reduced","none","","never","yes",1,"school_bus","10-May",-0.642745694072114,-0.665001619044459,-0.838880040942931
+"male","group B","high school","standard","none","","sometimes","yes",0,"private","< 5",-1.02908591470851,-1.47583317512696,-1.29305381525127
+"male","group D","bachelor's degree","standard","none","married","regularly","yes",3,"school_bus","> 10",0.838225151700726,0.41610712239888,0.588523249740415
+"female","group B","some high school","free/reduced","completed","married","never","yes",0,"school_bus","< 5",-1.15786598825397,-0.259585841003207,0.00458553991540994
+"female","group C","bachelor's degree","free/reduced","none","married","sometimes","yes",3,"school_bus","10-May",-0.256405473435721,0.618815011419506,0.718287185257083
+"male","group B","","standard","none","single","never","no",3,"school_bus","10-May",-0.127625399890257,-0.327155137343416,-0.644234137667929
+"female","group B","some high school","free/reduced","none","married","regularly","yes",4,"private","< 5",-1.15786598825397,-0.800140211724876,-0.838880040942931
+"female","group B","high school","standard","","single","regularly","no",1,"private","< 5",-0.0632353631175246,0.145829937038045,0.134349475432078
+"female","group C","some college","free/reduced","none","single","regularly","no",4,"private","10-May",-1.93054642952676,-1.67854106414759,-1.5525816862846
+"female","","","standard","completed","married","sometimes","yes",2.15521064301552,"","> 10",0.516274967837065,0.753953604099923,0.977815056290419
+"male","group E","associate's degree","standard","completed","widowed","regularly","no",1,"school_bus","10-May",1.93285577683717,1.15936938214117,1.04269702404875
+"female","group D","associate's degree","free/reduced","none","","regularly","no",2,"school_bus","10-May",-1.2222560250267,-0.867709508065085,-0.644234137667929
+"female","group B","master's degree","standard","none","married","sometimes","yes",1,"school_bus","< 5",0.580665004609797,1.42964656750201,1.04269702404875
+"female","group B","","free/reduced","completed","married","sometimes","no",4,"school_bus","10-May",0.645055041382529,1.09180008580097,0.912933088532085
+"female","group C","associate's degree","standard","completed","married","sometimes","yes",4,"school_bus","10-May",-0.900305841163042,-0.665001619044459,-0.384706266634594
+"male","group C","bachelor's degree","standard","completed","married","sometimes","no",3,"school_bus","< 5",1.41773548265531,0.686384307759714,0.588523249740415
+"female","group B","some high school","standard","completed","married","sometimes","no",2,"private","10-May",-2.18810657661769,-1.20555598976613,-1.5525816862846
+"female","group E","some high school","free/reduced","none","married","regularly","yes",1,"school_bus","10-May",0.516274967837065,0.753953604099923,0.653405217498749
+"female","group B","some college","standard","none","single","regularly","no",4,"private","< 5",-3.08956709143594,-2.15152613852905,-2.33116529938461
+"male","group C","associate's degree","free/reduced","","single","regularly","yes",1,"school_bus","10-May",0.258714820746136,-0.259585841003207,-0.384706266634594
+"female","group C","master's degree","free/reduced","none","married","sometimes","yes",3,"private","10-May",-0.900305841163042,-0.259585841003207,-0.449588234392927
+"female","group B","high school","standard","none","","sometimes","yes",2.15521064301552,"private","> 10",-1.09347595148124,-0.462293730023833,-0.449588234392927
+"female","","some college","free/reduced","none","divorced","regularly","yes",2,"school_bus","> 10",-0.192015436662989,-0.12444724832279,0.32899537870708
+"male","group D","high school","free/reduced","none","married","regularly","yes",0,"school_bus","< 5",-0.0632353631175246,0.280968529718462,0.0694675076737439
+"male","group E","some high school","standard","completed","married","never","no",1,"private","< 5",1.09578529879165,0.821522900440132,0.32899537870708
+"female","group B","high school","standard","none","widowed","regularly","yes",1,"school_bus","10-May",-1.47981617211763,-1.13798669342592,-1.03352594421793
+"female","group E","associate's degree","free/reduced","completed","divorced","regularly","no",3,"private","10-May",-0.51396562052665,0.0106913443576277,0.393877346465413
+"male","group D","high school","standard","none","divorced","sometimes","yes",0,"private","10-May",0.258714820746136,0.0782606406978364,0.134349475432078
+"female","group E","associate's degree","free/reduced","none","married","sometimes","yes",0,"school_bus","10-May",0.258714820746136,1.02423078946076,0.848051120773751
+"male","group E","","standard","none","married","sometimes","no",4,"private","10-May",0.194324783973404,-0.59743232270425,-0.903762008701265
+"female","group C","associate's degree","standard","none","married","never","yes",2.15521064301552,"school_bus","10-May",-1.02908591470851,-1.0028481007455,-0.838880040942931
+"male","group C","some high school","standard","completed","","","no",2,"","10-May",0.0655447104279397,0.280968529718462,0.00458553991540994
+"female","group B","some college","standard","none","married","regularly","yes",1,"school_bus","10-May",1.16017533556439,1.15936938214117,1.36710686284042
+"female","group C","some college","standard","none","","never","yes",3,"school_bus","10-May",0.258714820746136,0.348537826058671,0.523641281982081
+"male","group A","some college","free/reduced","none","divorced","sometimes","yes",3,"","< 5",0.3874948942916,0.686384307759714,0.264113410948746
+"female","group D","some college","free/reduced","none","single","sometimes","yes",2,"school_bus","< 5",-0.256405473435721,0.213399233378254,0.32899537870708
+"female","group E","high school","free/reduced","none","divorced","sometimes","no",4,"","> 10",-1.54420620889036,-1.61097176780738,-1.81210955731794
+"male","group C","high school","standard","none","married","sometimes","yes",5,"private","10-May",1.54651555620078,0.41610712239888,0.0694675076737439
+"male","group B","bachelor's degree","standard","none","married","sometimes","yes",3,"school_bus","10-May",-0.449575583753917,-1.0028481007455,-1.09840791197627
+"male","group A","some high school","standard","none","married","sometimes","no",1,"private","10-May",-0.964695877935775,-2.5569419165703,-2.07163742835128
+"male","group A","high school","free/reduced","none","single","sometimes","yes",1,"school_bus","> 10",-1.28664606179944,-1.47583317512696,-1.22817184749293
+"female","group C","master's degree","standard","completed","married","regularly","yes",3,"school_bus","< 5",-0.83591580439031,-0.394724433683624,-0.060296427842924
+"male","group E","some high school","standard","completed","married","sometimes","yes",2,"school_bus","> 10",1.48212551942805,1.09180008580097,0.588523249740415
+"female","group C","high school","standard","none","married","sometimes","yes",2.15521064301552,"school_bus","> 10",0.516274967837065,0.821522900440132,1.04269702404875
+"male","group B","some high school","standard","completed","married","regularly","no",2,"","10-May",1.93285577683717,1.22693867848138,1.36710686284042
+"male","group D","bachelor's degree","free/reduced","completed","married","regularly","yes",0,"school_bus","10-May",-0.256405473435721,0.145829937038045,0.588523249740415
+"female","group B","high school","free/reduced","none","","sometimes","yes",1,"private","10-May",-0.385185546981185,0.213399233378254,0.00458553991540994
+"female","group C","some high school","standard","none","married","sometimes","no",3,"private","< 5",0.516274967837065,1.3620772711618,1.17246095956542
+"female","group A","some high school","standard","completed","divorced","","yes",3,"school_bus","10-May",1.22456537233712,1.42964656750201,1.56175276611542
+"male","group E","some college","free/reduced","completed","married","regularly","yes",1,"private","10-May",-1.02908591470851,-1.13798669342592,-1.03352594421793
+"female","group C","some high school","free/reduced","none","widowed","sometimes","no",3,"private","> 10",-1.09347595148124,-0.732570915384668,-0.968643976459599
+"male","group C","high school","standard","none","single","regularly","",0,"school_bus","< 5",-0.320795510208453,-0.192016544662998,-0.644234137667929
+"female","group C","associate's degree","free/reduced","completed","","sometimes","yes",3,"school_bus","10-May",-0.642745694072114,-0.056877951982581,0.134349475432078
+"female","","some high school","standard","none","married","regularly","yes",2,"school_bus","< 5",-0.127625399890257,-0.056877951982581,0.523641281982081
+"male","group B","some high school","standard","none","married","regularly","yes",0,"school_bus","< 5",0.0655447104279397,-1.07041739708571,-0.968643976459599
+"female","group A","some college","free/reduced","none","single","regularly","yes",3,"school_bus","> 10",-0.127625399890257,-0.529863026364042,-0.579352169909595
+"female","group C","bachelor's degree","free/reduced","completed","married","regularly","",2.15521064301552,"school_bus","10-May",0.645055041382529,1.22693867848138,1.49687079835709
+"male","group A","bachelor's degree","standard","none","divorced","never","yes",1,"school_bus","> 10",-0.192015436662989,-0.665001619044459,-0.709116105426263
+"male","group B","some college","standard","none","single","regularly","yes",2,"school_bus","10-May",-0.449575583753917,-1.27312528610634,-1.42281775076794
+"female","group C","high school","standard","completed","single","regularly","yes",2,"school_bus","10-May",-0.320795510208453,-0.327155137343416,0.458759314223747
+"male","group E","high school","standard","none","single","regularly","no",3,"private","> 10",0.709445078155261,-0.259585841003207,-0.579352169909595
+"female","group A","high school","standard","completed","married","regularly","yes",6,"school_bus","> 10",0.838225151700726,1.02423078946076,0.912933088532085
+"male","group B","associate's degree","free/reduced","completed","divorced","regularly","yes",1,"school_bus","< 5",-0.578355657299382,-0.867709508065085,-0.968643976459599
+"female","group D","high school","free/reduced","none","divorced","sometimes","yes",4,"school_bus","10-May",-1.73737631920856,-1.13798669342592,-1.42281775076794
+"male","group C","some high school","standard","none","married","regularly","yes",0,"school_bus","10-May",-0.0632353631175246,-0.732570915384668,-1.03352594421793
+"female","group B","high school","free/reduced","completed","married","sometimes","no",2,"private","> 10",-2.76761690757227,-1.67854106414759,-2.07163742835128
+"male","group B","some college","free/reduced","completed","single","sometimes","yes",2,"school_bus","> 10",0.645055041382529,0.618815011419506,0.588523249740415
+"female","group D","some high school","free/reduced","completed","single","regularly","yes",0,"school_bus","< 5",-1.73737631920856,-0.327155137343416,-0.254942331117926
+"male","group E","master's degree","standard","none","divorced","sometimes","yes",1,"private","< 5",1.41773548265531,1.09180008580097,1.04269702404875
+"male","group C","master's degree","standard","completed","married","sometimes","yes",7,"private","10-May",1.61090559297351,1.09180008580097,1.10757899180709
+"female","group C","high school","standard","none","married","regularly","no",4,"private","10-May",-0.385185546981185,0.280968529718462,0.0694675076737439
+"male","group D","associate's degree","standard","none","single","regularly","yes",0,"school_bus","10-May",1.03139526201892,0.483676418739088,0.134349475432078
+"male","group C","master's degree","standard","none","married","never","yes",2,"","10-May",0.194324783973404,-0.12444724832279,-0.060296427842924
+"female","group A","high school","standard","none","married","sometimes","yes",3,"private","< 5",-0.449575583753917,-0.192016544662998,-0.449588234392927
+"female","group E","some college","standard","none","married","regularly","no",1,"","< 5",1.28895540910985,1.02423078946076,1.62663473387376
+"male","group E","some high school","standard","none","married","never","no",2,"private","< 5",0.709445078155261,-0.259585841003207,-0.644234137667929
+"male","group C","some high school","standard","none","","sometimes","yes",2,"school_bus","10-May",-0.256405473435721,-0.327155137343416,-0.838880040942931
+"female","group B","bachelor's degree","standard","none","married","regularly","yes",0,"private","< 5",1.93285577683717,1.83506234554326,1.82128063714876
+"male","group B","some college","free/reduced","none","married","regularly","no",1,"school_bus","10-May",0.709445078155261,0.0106913443576277,-0.125178395601258
+"female","group C","bachelor's degree","standard","none","married","regularly","no",2,"private","10-May",0.00115467365520756,0.753953604099923,0.977815056290419
+"male","group B","high school","standard","completed","divorced","regularly","",3,"school_bus","10-May",-0.83591580439031,-1.34069458244655,-1.3579357830096
+"male","group C","associate's degree","free/reduced","none","married","sometimes","yes",3,"school_bus","10-May",1.35334544588258,0.280968529718462,0.264113410948746
+"female","group C","associate's degree","standard","none","divorced","never","yes",2.15521064301552,"school_bus","10-May",-0.964695877935775,-0.529863026364042,-1.09840791197627
+"female","group E","master's degree","free/reduced","none","married","sometimes","yes",4,"school_bus","> 10",1.09578529879165,1.22693867848138,1.30222489508209
+"male","group D","bachelor's degree","free/reduced","completed","single","sometimes","no",2,"private","< 5",-1.86615639275402,-1.88124895316821,-2.00675546059294
+"female","group C","some college","standard","completed","single","regularly","yes",1,"private","< 5",0.258714820746136,0.0782606406978364,0.783169153015417
+"male","group C","associate's degree","standard","none","married","regularly","yes",3,"school_bus","10-May",2.12602588715537,1.69992375286284,1.62663473387376
+"male","group D","","standard","completed","married","never","no",3,"school_bus","10-May",0.838225151700726,0.753953604099923,1.10757899180709
+"male","group B","associate's degree","standard","none","divorced","regularly","no",1,"","< 5",-0.385185546981185,-1.88124895316821,-1.74722758955961
+"male","group E","associate's degree","free/reduced","completed","married","sometimes","yes",3,"school_bus","> 10",0.902615188473458,0.41610712239888,0.32899537870708
+"male","group C","associate's degree","free/reduced","none","married","regularly","",2,"school_bus","> 10",-0.964695877935775,-1.13798669342592,-0.968643976459599
+"male","group B","high school","standard","none","married","sometimes","yes",1,"school_bus","10-May",-0.449575583753917,-0.732570915384668,-1.3579357830096
+"male","group B","associate's degree","standard","completed","married","sometimes","yes",1,"private","10-May",1.03139526201892,1.02423078946076,0.653405217498749
+"male","group E","associate's degree","free/reduced","none","married","never","yes",1,"school_bus","< 5",1.16017533556439,1.22693867848138,0.653405217498749
+"female","group C","bachelor's degree","free/reduced","none","married","sometimes","yes",3,"private","< 5",-1.6085962456631,-0.529863026364042,-0.579352169909595
+"male","group C","","free/reduced","none","married","sometimes","no",7,"school_bus","10-May",0.902615188473458,-0.327155137343416,-0.125178395601258
+"male","group D","some college","standard","none","married","sometimes","yes",3,"school_bus","10-May",0.96700522524619,0.88909219678034,1.04269702404875
+"male","group C","some high school","standard","none","married","sometimes","yes",2,"private","10-May",-0.578355657299382,-0.529863026364042,-0.903762008701265
+"female","group D","some high school","standard","none","single","regularly","no",3,"private","",-0.385185546981185,0.280968529718462,0.912933088532085
+"female","","associate's degree","standard","none","married","sometimes","no",3,"school_bus","10-May",-0.127625399890257,0.483676418739088,0.393877346465413
+"male","group C","bachelor's degree","standard","completed","married","sometimes","yes",3,"school_bus","< 5",-0.320795510208453,-0.394724433683624,-0.254942331117926
+"female","group E","bachelor's degree","standard","completed","single","regularly","no",3,"school_bus","< 5",0.258714820746136,0.0106913443576277,0.134349475432078
+"female","group B","high school","free/reduced","none","married","regularly","yes",5,"private","> 10",0.0655447104279397,0.41610712239888,0.393877346465413
+"male","group D","bachelor's degree","free/reduced","none","married","sometimes","yes",1,"school_bus","> 10",-0.642745694072114,-1.54340247146717,-1.5525816862846
+"female","group E","associate's degree","standard","none","single","never","yes",0,"","< 5",-1.2222560250267,-1.34069458244655,-1.09840791197627
+"female","group C","associate's degree","standard","completed","married","sometimes","no",2.15521064301552,"school_bus","10-May",-0.256405473435721,0.483676418739088,0.783169153015417
+"female","group E","associate's degree","standard","completed","married","regularly","yes",2.15521064301552,"school_bus","> 10",2.06163585038264,2.1053395309041,2.01592654042376
+"female","group D","some college","free/reduced","none","married","sometimes","no",3,"school_bus","10-May",0.194324783973404,-0.259585841003207,0.393877346465413
+"male","group D","high school","free/reduced","none","divorced","sometimes","no",3,"school_bus","< 5",-1.54420620889036,-1.27312528610634,-1.3579357830096
+"female","group E","some college","standard","completed","married","regularly","no",1,"private","10-May",1.41773548265531,1.15936938214117,1.62663473387376
+"female","group E","associate's degree","standard","none","married","regularly","yes",1,"school_bus","10-May",1.35334544588258,1.63235445652264,1.23734292732375
+"female","group A","master's degree","free/reduced","none","married","sometimes","yes",2,"school_bus","",-1.02908591470851,-0.056877951982581,0.458759314223747
+"male","group D","some high school","standard","completed","divorced","sometimes","yes",0,"private","> 10",1.54651555620078,0.41610712239888,0.523641281982081
+"female","group E","associate's degree","standard","none","divorced","never","yes",3,"school_bus","< 5",-0.707135730844846,-0.59743232270425,-0.190060363359592
+"female","group E","","free/reduced","none","divorced","regularly","no",5,"private","10-May",-2.18810657661769,-2.35423402754968,-1.94187349283461
+"male","group B","high school","free/reduced","none","","regularly","yes",3,"school_bus","10-May",-1.86615639275402,-2.69208050925072,-2.65557513817628
+"female","group B","some high school","free/reduced","completed","single","regularly","yes",3,"private","< 5",-0.256405473435721,0.551245715079297,0.718287185257083
+"male","group D","","standard","completed","married","sometimes","no",3,"school_bus","< 5",-0.127625399890257,-1.07041739708571,-0.449588234392927
+"female","group D","some high school","standard","completed","single","sometimes","yes",1,"private","10-May",-0.0632353631175246,0.618815011419506,0.912933088532085
+"male","group D","master's degree","standard","none","married","sometimes","no",3,"private","10-May",1.22456537233712,1.02423078946076,1.36710686284042
+"female","group C","master's degree","standard","none","married","sometimes","yes",2,"school_bus","10-May",0.451884931064333,0.686384307759714,0.523641281982081
+"female","group A","high school","free/reduced","completed","married","sometimes","yes",0,"","< 5",-2.18810657661769,-1.47583317512696,-1.81210955731794
+"female","group D","bachelor's degree","free/reduced","completed","divorced","sometimes","yes",0,"private","10-May",1.73968566651898,2.1053395309041,2.0808085081821
+"female","group D","some high school","free/reduced","none","divorced","regularly","yes",4,"school_bus","10-May",0.194324783973404,1.09180008580097,1.17246095956542
+"male","group D","","standard","none","single","never","yes",2,"private","< 5",1.03139526201892,0.348537826058671,0.32899537870708
+"male","group B","","standard","none","married","regularly","yes",0,"private","< 5",-0.642745694072114,-1.47583317512696,-1.09840791197627
+"female","group D","some college","standard","completed","single","regularly","",5,"private","> 10",1.09578529879165,1.15936938214117,1.75639866939043
+"female","group C","bachelor's degree","free/reduced","none","divorced","sometimes","no",1,"school_bus","10-May",0.0655447104279397,0.41610712239888,0.264113410948746
+"male","","bachelor's degree","standard","completed","married","sometimes","no",1,"private","< 5",0.0655447104279397,-0.394724433683624,0.00458553991540994
+"male","group D","bachelor's degree","free/reduced","","divorced","sometimes","yes",3,"private","10-May",-1.02908591470851,-1.81367965682801,-1.29305381525127
+"female","group A","some college","standard","none","married","regularly","no",1,"school_bus","10-May",0.323104857518868,1.09180008580097,1.04269702404875
+"female","group C","bachelor's degree","standard","completed","married","sometimes","yes",3,"private","10-May",-0.900305841163042,-0.529863026364042,-0.125178395601258
+"female","group C","bachelor's degree","free/reduced","completed","single","regularly","yes",2,"school_bus","< 5",-1.28664606179944,-0.529863026364042,-0.125178395601258
+"female","group B","associate's degree","free/reduced","none","married","sometimes","yes",2,"school_bus","> 10",-1.2222560250267,-0.529863026364042,-0.773998073184597
+"female","group E","some college","standard","none","married","regularly","no",2,"private","10-May",0.258714820746136,0.145829937038045,-0.060296427842924
+"male","group E","bachelor's degree","standard","completed","single","regularly","yes",7,"private","10-May",2.1904159239281,2.1053395309041,2.0808085081821
+"female","group C","high school","standard","none","married","regularly","yes",1,"private","< 5",-1.47981617211763,-0.59743232270425,-1.03352594421793
+"female","group C","associate's degree","standard","completed","married","regularly","yes",0,"private","10-May",-0.51396562052665,0.618815011419506,0.912933088532085
+"male","group B","some college","standard","completed","married","","yes",1,"school_bus","10-May",1.61090559297351,1.83506234554326,1.49687079835709
+"male","group D","high school","free/reduced","none","married","regularly","",1,"private","10-May",0.323104857518868,0.145829937038045,0.00458553991540994
+"male","group D","high school","standard","none","married","regularly","no",1,"school_bus","< 5",0.323104857518868,-0.259585841003207,-0.125178395601258
+"female","group B","associate's degree","free/reduced","none","single","sometimes","no",1,"school_bus","10-May",-0.771525767617578,-0.259585841003207,-0.190060363359592
+"male","group D","high school","free/reduced","none","married","sometimes","yes",0,"school_bus","10-May",0.516274967837065,0.0782606406978364,0.0694675076737439
+"male","group E","some high school","standard","completed","divorced","regularly","no",2,"school_bus","10-May",0.645055041382529,-0.327155137343416,-0.449588234392927
+"male","group E","","free/reduced","none","married","sometimes","yes",0,"","",-0.127625399890257,-0.867709508065085,-1.03352594421793
+"female","group D","high school","free/reduced","completed","married","sometimes","yes",1,"school_bus","> 10",0.00115467365520756,-0.529863026364042,0.264113410948746
+"male","group E","associate's degree","free/reduced","completed","married","sometimes","yes",0,"school_bus","10-May",-1.28664606179944,-1.7461103604878,-1.5525816862846
+"female","group C","some high school","free/reduced","none","","never","yes",2,"private","< 5",-1.35103609857217,-1.0028481007455,-1.29305381525127
+"male","group D","some college","free/reduced","none","married","regularly","yes",2,"","< 5",-0.320795510208453,-0.867709508065085,-0.384706266634594
+"male","group D","associate's degree","free/reduced","completed","divorced","regularly","yes",2,"private","10-May",-0.256405473435721,0.213399233378254,0.393877346465413
+"male","group C","","free/reduced","completed","divorced","sometimes","yes",5,"private","< 5",0.0655447104279397,0.280968529718462,0.264113410948746
+"male","group C","associate's degree","standard","completed","married","sometimes","no",2,"school_bus","> 10",2.1904159239281,1.29450797482159,1.49687079835709
+"male","group D","some college","free/reduced","none","divorced","regularly","yes",0,"private","10-May",0.3874948942916,-0.394724433683624,-0.579352169909595
+"male","group A","associate's degree","standard","none","divorced","never","no",1,"school_bus","10-May",-0.127625399890257,-0.867709508065085,-1.09840791197627
+"female","group E","high school","free/reduced","none","married","regularly","yes",1,"private","< 5",-0.642745694072114,-0.800140211724876,-0.709116105426263
+"male","group D","some college","standard","completed","married","sometimes","yes",1,"private","10-May",1.22456537233712,0.821522900440132,1.10757899180709
+"male","group D","some high school","standard","completed","divorced","regularly","yes",4,"private","",0.838225151700726,0.0106913443576277,0.134349475432078
+"male","group C","master's degree","free/reduced","completed","married","never","yes",0,"school_bus","10-May",0.258714820746136,-0.192016544662998,0.264113410948746
+"female","group D","master's degree","standard","none","married","regularly","no",1,"school_bus","10-May",0.96700522524619,1.69992375286284,2.0808085081821
+"male","group C","high school","standard","none","married","regularly","yes",0,"private","< 5",0.902615188473458,-0.259585841003207,-0.254942331117926
+"male","group A","some high school","free/reduced","completed","single","sometimes","no",3,"school_bus","10-May",-0.320795510208453,-0.462293730023833,-0.449588234392927
+"female","group B","high school","standard","none","married","sometimes","yes",3,"private","< 5",-0.642745694072114,-0.192016544662998,-0.579352169909595
+"female","group C","associate's degree","standard","none","divorced","regularly","no",1,"school_bus","10-May",-0.707135730844846,-0.529863026364042,-0.579352169909595
+"male","group B","high school","standard","none","married","sometimes","yes",3,"private","< 5",0.838225151700726,0.753953604099923,0.653405217498749
+"female","group D","some college","free/reduced","none","married","sometimes","yes",1,"private","< 5",-1.2222560250267,-0.800140211724876,-0.644234137667929
+"male","group B","some high school","free/reduced","completed","single","regularly","no",1,"school_bus","< 5",-1.15786598825397,-1.34069458244655,-1.03352594421793
+"female","group E","high school","free/reduced","completed","","sometimes","yes",3,"private","> 10",-0.51396562052665,0.483676418739088,0.393877346465413
+"male","group E","high school","standard","none","married","never","yes",0,"private","10-May",1.61090559297351,0.145829937038045,0.0694675076737439
+"female","group D","some college","standard","completed","single","regularly","yes",3,"","",0.709445078155261,0.618815011419506,1.10757899180709
+"female","group E","some high school","free/reduced","none","married","sometimes","yes",1,"private","10-May",0.516274967837065,0.348537826058671,0.264113410948746
+"male","","high school","standard","completed","single","sometimes","no",3,"private","10-May",-0.51396562052665,-1.13798669342592,-0.903762008701265
+"female","group C","some college","standard","","married","sometimes","yes",2,"private","< 5",-0.385185546981185,-0.12444724832279,-0.060296427842924
+"male","group E","associate's degree","standard","none","married","regularly","no",5,"school_bus","> 10",0.645055041382529,-0.732570915384668,-0.254942331117926
+"male","group C","some college","standard","none","married","regularly","yes",0,"private","10-May",1.28895540910985,1.29450797482159,0.977815056290419
+"female","group D","master's degree","standard","none","divorced","sometimes","yes",4,"school_bus","",1.67529562974624,2.1053395309041,2.0808085081821
+"female","group D","high school","standard","none","divorced","regularly","yes",1,"school_bus","< 5",-1.4154261353449,-0.462293730023833,-0.579352169909595
+"male","group C","high school","standard","","single","sometimes","",3,"private","10-May",0.580665004609797,0.821522900440132,0.199231443190412
+"female","group A","some college","standard","none","single","regularly","no",2,"school_bus","10-May",-0.578355657299382,-0.732570915384668,-0.190060363359592
+"female","group D","some high school","free/reduced","","single","regularly","yes",4,"school_bus","10-May",-1.09347595148124,-1.0028481007455,-0.903762008701265
+"female","group E","associate's degree","standard","none","single","regularly","no",3,"school_bus","10-May",2.1904159239281,2.1053395309041,2.0808085081821
+"female","","some high school","free/reduced","completed","married","never","yes",1,"school_bus","10-May",-0.192015436662989,0.348537826058671,0.32899537870708
+"male","group D","","standard","none","married","sometimes","no",4,"school_bus","10-May",0.3874948942916,-0.800140211724876,-0.644234137667929
+"female","group D","some college","standard","","single","regularly","yes",2.15521064301552,"school_bus","10-May",-0.192015436662989,0.145829937038045,0.32899537870708
+"male","group A","some high school","standard","completed","divorced","regularly","yes",1,"school_bus","10-May",0.0655447104279397,0.0106913443576277,-0.190060363359592
+"male","group C","some college","standard","none","married","never","yes",4,"school_bus","< 5",-0.449575583753917,-0.529863026364042,-0.709116105426263
+"female","group E","associate's degree","standard","none","single","regularly","yes",1,"school_bus","",0.258714820746136,0.551245715079297,0.00458553991540994
+"female","group B","bachelor's degree","standard","none","divorced","never","yes",1,"school_bus","10-May",0.3874948942916,0.88909219678034,0.653405217498749
+"female","group D","bachelor's degree","standard","none","widowed","regularly","yes",0,"school_bus","10-May",1.61090559297351,2.1053395309041,2.0808085081821
+"male","group C","some high school","standard","completed","single","regularly","yes",2,"school_bus","> 10",1.03139526201892,0.348537826058671,0.264113410948746
+"female","group A","high school","free/reduced","completed","married","regularly","",3,"school_bus","10-May",-0.771525767617578,-1.27312528610634,-0.449588234392927
+"female","group D","some college","free/reduced","none","divorced","regularly","yes",3,"","< 5",-1.15786598825397,-0.327155137343416,-0.449588234392927
+"female","group A","","standard","none","married","sometimes","no",2,"school_bus","< 5",-0.900305841163042,-0.462293730023833,-0.190060363359592
+"male","group C","associate's degree","standard","none","married","sometimes","yes",1,"school_bus","< 5",-0.385185546981185,-0.327155137343416,-0.773998073184597
+"male","group D","high school","standard","completed","married","regularly","yes",5,"private","< 5",-0.771525767617578,-1.94881824950842,-1.29305381525127
+"female","group C","associate's degree","standard","none","married","sometimes","no",3,"private","10-May",1.61090559297351,1.76749304920305,1.69151670163209
+"female","group B","high school","free/reduced","none","married","sometimes","yes",1,"private","10-May",-3.73346745916326,-3.02992699095176,-2.91510300920962
+"male","group D","some high school","standard","none","married","regularly","no",2,"school_bus","10-May",1.09578529879165,0.686384307759714,0.718287185257083
+"male","group B","some high school","standard","completed","married","sometimes","yes",4,"","< 5",0.645055041382529,0.956661493120549,1.04269702404875
+"female","group A","some college","standard","completed","married","regularly","yes",1,"","> 10",1.03139526201892,1.3620772711618,1.75639866939043
+"female","group C","some high school","standard","none","married","regularly","yes",6,"school_bus","10-May",0.3874948942916,0.348537826058671,0.848051120773751
+"male","group A","high school","standard","none","married","regularly","no",1,"private","< 5",-0.642745694072114,-1.27312528610634,-0.903762008701265
+"female","group C","associate's degree","standard","none","","never","yes",2.15521064301552,"","10-May",-1.80176635598129,-0.732570915384668,-1.22817184749293
+"male","group E","some high school","standard","completed","married","regularly","yes",0,"school_bus","10-May",1.09578529879165,0.483676418739088,0.588523249740415
+"female","group A","some high school","free/reduced","","single","sometimes","no",5,"school_bus","10-May",-1.6085962456631,-1.67854106414759,-1.61746365404294
+"female","group D","some college","free/reduced","completed","married","regularly","yes",3,"school_bus","10-May",0.194324783973404,1.22693867848138,1.10757899180709
+"male","group E","high school","free/reduced","completed","married","regularly","yes",1,"school_bus","10-May",1.41773548265531,0.88909219678034,0.523641281982081
+"female","group B","some high school","standard","completed","married","regularly","no",1,"school_bus","10-May",0.00115467365520756,0.956661493120549,0.718287185257083
+"female","group D","associate's degree","free/reduced","none","married","sometimes","yes",1,"school_bus","10-May",-0.707135730844846,0.483676418739088,0.523641281982081
+"female","group D","bachelor's degree","free/reduced","none","single","sometimes","yes",3,"school_bus","10-May",-0.256405473435721,0.213399233378254,0.393877346465413
+"male","group A","high school","standard","none","married","regularly","no",7,"school_bus","> 10",0.00115467365520756,-0.327155137343416,-0.254942331117926
+"female","group E","master's degree","standard","","married","never","no",2,"school_bus","10-May",1.28895540910985,2.03777023456389,1.75639866939043
+"male","group C","high school","free/reduced","none","single","regularly","yes",2,"school_bus","< 5",-0.320795510208453,-1.0028481007455,-0.838880040942931
+"female","group C","high school","free/reduced","completed","married","sometimes","no",2,"school_bus","10-May",-0.449575583753917,0.145829937038045,-0.190060363359592
+"female","group D","","standard","completed","divorced","sometimes","yes",3,"school_bus","10-May",0.129934747200672,0.618815011419506,0.588523249740415
+"female","group D","some college","free/reduced","none","married","regularly","yes",1,"school_bus","> 10",0.96700522524619,1.29450797482159,1.36710686284042
