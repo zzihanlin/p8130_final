@@ -1,0 +1,258 @@
+---
+title: "p8130_final"
+author: "Zihan Lin"
+output: pdf_document
+always_allow_html: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(skimr)
+library(DataExplorer)
+library(knitr)
+library(kableExtra)
+webshot::install_phantomjs()
+library(ggplot2)
+library(GGally)
+```
+
+## R Markdown
+
+```{r}
+# Load the dataset
+data <- read.csv("/Users/suwa/Desktop/p8130_final/data/Project_1_data.csv")
+
+# View the structure of the data
+str(data)
+
+# Check for missing values
+sum(is.na(data))
+
+# Summarize missing data by variable
+colSums(is.na(data))
+
+# Handle missing values (example: mean imputation for numeric variables)
+data <- data %>%
+  mutate(across(where(is.numeric), ~ ifelse(is.na(.), mean(., na.rm = TRUE), .)))
+
+# Check for duplicate rows
+duplicates <- data[duplicated(data), ]
+print(duplicates)
+
+# Remove duplicate rows if any
+data <- data[!duplicated(data), ]
+
+# Ensure categorical variables are factors
+data <- data %>%
+  mutate(across(where(is.character), as.factor))
+
+# Summary after cleaning
+summary(data)
+
+# Separate numeric and categorical variables
+numeric_vars <- data %>%
+  select(where(is.numeric))
+
+categorical_vars <- data %>%
+  select(where(is.factor))
+
+# Summary for numeric variables
+numeric_summary <- numeric_vars %>%
+  summarise(across(everything(),
+                   list(
+                     Mean = ~mean(., na.rm = TRUE),
+                     SD = ~sd(., na.rm = TRUE),
+                     Min = ~min(., na.rm = TRUE),
+                     Q1 = ~quantile(., 0.25, na.rm = TRUE),
+                     Median = ~median(., na.rm = TRUE),
+                     Q3 = ~quantile(., 0.75, na.rm = TRUE),
+                     Max = ~max(., na.rm = TRUE)
+                   ), .names = "{.col}_{.fn}")) %>%
+  pivot_longer(cols = everything(),
+               names_to = c("Variable", ".value"),
+               names_sep = "_")
+
+# Summary for categorical variables
+categorical_summary <- categorical_vars %>%
+  summarise(across(everything(),
+                   ~paste(names(table(.)), ":", as.vector(table(.)), collapse = ", "),
+                   .names = "{.col}")) %>%
+  pivot_longer(cols = everything(),
+               names_to = "Variable",
+               values_to = "Levels_Values")
+
+# Format numeric columns to two decimal places
+format_numeric <- function(x) {
+  if (is.numeric(x)) {
+    round(x, 2)
+  } else {
+    x
+  }
+}
+
+# Generate the summary table
+summary_table <- bind_rows(
+  numeric_vars %>%
+    summarise(across(everything(),
+                     list(Mean = ~mean(., na.rm = TRUE),
+                          SD = ~sd(., na.rm = TRUE),
+                          Min = ~min(., na.rm = TRUE),
+                          Q1 = ~quantile(., 0.25, na.rm = TRUE),
+                          Median = ~median(., na.rm = TRUE),
+                          Q3 = ~quantile(., 0.75, na.rm = TRUE),
+                          Max = ~max(., na.rm = TRUE)),
+                     .names = "{.col}_{.fn}")) %>%
+    pivot_longer(cols = everything(),
+                 names_to = c("Variable", ".value"),
+                 names_sep = "_") %>%
+    mutate(Variable_Type = "Numeric"),
+  categorical_vars %>%
+    summarise(across(everything(),
+                     ~paste(names(table(.)), ":", as.vector(table(.)), collapse = "; "),
+                     .names = "{.col}")) %>%
+    pivot_longer(cols = everything(),
+                 names_to = "Variable",
+                 values_to = "Levels_Values") %>%
+    mutate(Variable_Type = "Categorical", Mean = NA, SD = NA, Min = NA, Q1 = NA, Median = NA, Q3 = NA, Max = NA)
+)
+
+# Wrap text in the Levels_Values column
+summary_table$Levels_Values <- str_wrap(summary_table$Levels_Values, width = 40)
+
+# Apply numeric formatting to two decimal places
+summary_table <- summary_table %>%
+  mutate(across(c(Mean, SD, Min, Q1, Median, Q3, Max), format_numeric))
+
+# Create the final table
+summary_table %>%
+  select(Variable, Variable_Type, Levels_Values, Mean, SD, Min, Q1, Median, Q3, Max) %>%
+  kable(format = "latex", booktabs = TRUE, caption = "Descriptive Summary Statistics") %>%
+  kable_styling(latex_options = c("striped", "hold_position")) %>%
+  column_spec(1, width = "3cm") %>%  # Adjust width for Variable
+  column_spec(2, width = "2.5cm") %>%  # Adjust width for Variable_Type
+  column_spec(3, width = "2.5cm") %>%  # Adjust width for Levels_Values
+  column_spec(4:10, width = "0.8cm") %>%  # Adjust widths for numeric summaries
+  row_spec(0, bold = TRUE) %>%  # Bold header row
+  footnote(general = "Numeric variables display statistical summaries; categorical variables list levels with counts.")
+```
+
+```{r}
+# Distribution of Numeric Variables
+# Plot histograms and density plots for numeric variables
+numeric_vars %>%
+  pivot_longer(cols = everything(), names_to = "Variable", values_to = "Value") %>%
+  ggplot(aes(x = Value)) +
+  geom_histogram(bins = 30, fill = "skyblue", color = "black", alpha = 0.7) +
+  facet_wrap(~Variable, scales = "free", ncol = 2) +
+  labs(title = "Distribution of Numeric Variables",
+       x = "Value",
+       y = "Frequency") +
+  theme_minimal()
+```
+
+```{r}
+# Boxplots for Categorical Covariates vs Test Scores
+# Explore relationships between categorical covariates and test scores
+data %>%
+  pivot_longer(cols = c(MathScore, ReadingScore, WritingScore),
+               names_to = "TestType", values_to = "Score") %>%
+  ggplot(aes(x = Gender, y = Score, fill = Gender)) +
+  geom_boxplot(alpha = 0.7) +
+  facet_wrap(~TestType, scales = "free") +
+  labs(title = "Test Scores by Gender",
+       x = "Gender",
+       y = "Score") +
+  theme_minimal()
+```
+
+```{r}
+# Scatterplots to Explore Pairwise Relationships Between Test Scores
+# Explore correlations between Math, Reading, and Writing Scores
+ggpairs(data, columns = c("MathScore", "ReadingScore", "WritingScore"),
+        title = "Pairwise Relationships Between Test Scores")
+
+# Covariate vs. Weekly Study Hours
+# Explore the effect of weekly study hours on test scores
+data %>%
+  pivot_longer(cols = c(MathScore, ReadingScore, WritingScore),
+               names_to = "TestType", values_to = "Score") %>%
+  ggplot(aes(x = WklyStudyHours, y = Score, fill = WklyStudyHours)) +
+  geom_boxplot(alpha = 0.7) +
+  facet_wrap(~TestType, scales = "free") +
+  labs(title = "Test Scores by Weekly Study Hours",
+       x = "Weekly Study Hours",
+       y = "Score") +
+  theme_minimal()
+```
+
+```{r}
+# Check for Interaction Effects
+# Example: Gender and LunchType interaction on MathScore
+ggplot(data, aes(x = LunchType, y = MathScore, fill = Gender)) +
+  geom_boxplot(alpha = 0.7) +
+  labs(title = "Interaction Effect: Gender and Lunch Type on Math Score",
+       x = "Lunch Type",
+       y = "Math Score") +
+  theme_minimal()
+```
+
+```{r}
+# Histograms for numeric variables
+numeric_vars %>%
+  pivot_longer(cols = everything(), names_to = "Variable", values_to = "Value") %>%
+  ggplot(aes(x = Value)) +
+  geom_histogram(binwidth = 5, fill = "skyblue", color = "black") +
+  facet_wrap(~ Variable, scales = "free", ncol = 2) +
+  theme_minimal() +
+  labs(title = "Distributions of Numeric Variables", x = "Value", y = "Frequency")
+```
+
+```{r}
+# Boxplots for numeric variables by categorical covariates (e.g., Gender)
+numeric_vars %>%
+  bind_cols(data %>% select(Gender)) %>%
+  pivot_longer(cols = -Gender, names_to = "Variable", values_to = "Value") %>%
+  ggplot(aes(x = Gender, y = Value, fill = Gender)) +
+  geom_boxplot() +
+  facet_wrap(~ Variable, scales = "free", ncol = 2) +
+  theme_minimal() +
+  labs(title = "Boxplots of Numeric Variables by Gender", x = "Gender", y = "Value")
+```
+
+```{r}
+# Scatterplots for pairwise relationships
+numeric_vars %>%
+  GGally::ggpairs() +
+  theme_minimal() +
+  labs(title = "Pairwise Relationships Between Numeric Variables")
+```
+
+```{r}
+# Correlation heatmap
+corr_matrix <- cor(numeric_vars, use = "complete.obs")
+
+corr_matrix %>%
+  as.data.frame() %>%
+  rownames_to_column(var = "Variable1") %>%
+  pivot_longer(cols = -Variable1, names_to = "Variable2", values_to = "Correlation") %>%
+  ggplot(aes(x = Variable1, y = Variable2, fill = Correlation)) +
+  geom_tile() +
+  scale_fill_gradient2(low = "blue", mid = "white", high = "red", midpoint = 0) +
+  theme_minimal() +
+  labs(title = "Correlation Heatmap", x = "Variable", y = "Variable", fill = "Correlation") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+```{r}
+# Boxplots for test scores by EthnicGroup
+data %>%
+  pivot_longer(cols = c(MathScore, ReadingScore, WritingScore), names_to = "TestType", values_to = "Score") %>%
+  ggplot(aes(x = EthnicGroup, y = Score, fill = EthnicGroup)) +
+  geom_boxplot() +
+  facet_wrap(~ TestType, scales = "free") +
+  theme_minimal() +
+  labs(title = "Test Scores by Ethnic Group", x = "Ethnic Group", y = "Score") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
