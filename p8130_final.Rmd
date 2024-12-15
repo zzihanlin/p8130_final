@@ -11,6 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(skimr)
 library(skimr)
+library(caret)
 library(naniar)
 library(DataExplorer)
 library(knitr)
@@ -27,71 +28,31 @@ library(janitor)
 # Load the dataset
 data <- read.csv("/Users/suwa/Desktop/p8130_final/data/Project_1_data.csv")
 
-# Inspect the data structure
-glimpse(data)  # Overview of the dataset
+# Identify and encode binary categorical variables
+# Check the structure of the data
+str(data)
 
-# Check for missing values
-cat("Missing Values Summary:\n")
-colSums(is.na(data))  # Count missing values per column
+# Convert binary categorical variables to 0/1
+binary_vars <- c("Gender", "LunchType", "TestPrep", "IsFirstChild", "TransportMeans")
+data <- data %>%
+  mutate(across(all_of(binary_vars), ~ ifelse(. == levels(as.factor(.))[1], 0, 1)))
+
+# Create dummy variables for multi-category variables
+# Identify multi-category variables
+multi_category_vars <- c("EthnicGroup", "ParentEduc", "ParentMaritalStatus", "PracticeSport", "WklyStudyHours")
+
+# Generate dummy variables for multi-category variables
+dummy_vars <- dummyVars("~ .", data = data, fullRank = TRUE)
+data <- predict(dummy_vars, newdata = data) %>% as.data.frame()
 
 # Handle missing values
-data <- data %>%
-  mutate(across(where(is.numeric), ~ ifelse(is.na(.), mean(., na.rm = TRUE), .)))
+# Remove rows with missing values
+data <- data %>% drop_na()
 
-# For categorical variables, impute missing with the mode
-get_mode <- function(x) {
-  unique_x <- unique(na.omit(x))
-  unique_x[which.max(tabulate(match(x, unique_x)))]
-}
-
-data <- data %>%
-  mutate(across(where(is.character), ~ ifelse(is.na(.), get_mode(.), .)))
-
-# Check for duplicates
-cat("Checking for duplicate rows:\n")
-sum(duplicated(data))  # Count duplicate rows
-
-# Remove duplicates if any
-data <- data %>% distinct()
-
-# Check for invalid or inconsistent values
-cat("Summary of score variables:\n")
-summary(data$MathScore)
-summary(data$ReadingScore)
-summary(data$WritingScore)
-
-# Replace invalid scores (e.g., >100 or <0) with NA
-data <- data %>%
-  mutate(
-    MathScore = ifelse(MathScore < 0 | MathScore > 100, NA, MathScore),
-    ReadingScore = ifelse(ReadingScore < 0 | ReadingScore > 100, NA, ReadingScore),
-    WritingScore = ifelse(WritingScore < 0 | WritingScore > 100, NA, WritingScore)
-  )
-
-# Recheck missing values after cleaning
-cat("Missing Values Summary After Cleaning:\n")
-colSums(is.na(data))
-
-# Recheck data types and convert if necessary
-cat("Converting categorical variables to factors...\n")
-data <- data %>%
-  mutate(
-    Gender = as.factor(Gender),
-    EthnicGroup = as.factor(EthnicGroup),
-    ParentEduc = as.factor(ParentEduc),
-    LunchType = as.factor(LunchType),
-    TestPrep = as.factor(TestPrep),
-    ParentMaritalStatus = as.factor(ParentMaritalStatus),
-    PracticeSport = as.factor(PracticeSport),
-    IsFirstChild = as.factor(IsFirstChild),
-    TransportMeans = as.factor(TransportMeans),
-    WklyStudyHours = as.factor(WklyStudyHours)
-  )
-
-# Standardize numeric variables (if needed for modeling)
-# Example: Scale test scores
-data <- data %>%
-  mutate(across(c(MathScore, ReadingScore, WritingScore), scale))
+# Check the cleaned dataset
+str(data)        # Check the structure of the cleaned dataset
+summary(data)    # Summarize the cleaned data
+head(data)       # View the first few rows of the cleaned data
 
 # Save Cleaned Data
 write.csv(data, "/Users/suwa/Desktop/p8130_final/data/data_cleaned.csv", row.names = FALSE)
@@ -130,27 +91,12 @@ data %>%
 ```
 
 ```{r}
-# Boxplots for Categorical Covariates vs Test Scores
-# Explore relationships between categorical covariates and test scores
-data %>%
-  pivot_longer(cols = c(MathScore, ReadingScore, WritingScore),
-               names_to = "TestType", values_to = "Score") %>%
-  ggplot(aes(x = Gender, y = Score, fill = Gender)) +
-  geom_boxplot(alpha = 0.7) +
-  facet_wrap(~TestType, scales = "free") +
-  labs(title = "Test Scores by Gender",
-       x = "Gender",
-       y = "Score") +
-  theme_minimal()
-```
+# Distributions of Categorical Covariates
+# Identify original categorical variables in the data
+categorical_vars <- c("Gender", "LunchType", "TestPrep", "IsFirstChild")
 
-```{r}
-# Distributions of Covariates
 # Bar plots for categorical variables
-categorical_vars <- data %>%
-  select(where(is.factor))
-
-for (var in names(categorical_vars)) {
+for (var in categorical_vars) {
   print(
     ggplot(data, aes_string(x = var, fill = var)) +
       geom_bar(alpha = 0.7) +
@@ -159,19 +105,29 @@ for (var in names(categorical_vars)) {
       theme(axis.text.x = element_text(angle = 45, hjust = 1))
   )
 }
+```
 
-# Histograms for numeric covariates
-numeric_vars <- data %>%
-  select(where(is.numeric), -c(MathScore, ReadingScore, WritingScore))
+```{r}
+# Relationships Between Test Scores and Key Covariates
+# Boxplots for test scores by Gender
+data %>%
+  select(Gender, MathScore, ReadingScore, WritingScore) %>%
+  pivot_longer(cols = starts_with("MathScore"), names_to = "Test", values_to = "Score") %>%
+  ggplot(aes(x = Gender, y = Score, fill = Gender)) +
+  geom_boxplot() +
+  facet_wrap(~ Test) +
+  labs(title = "Test Scores by Gender", x = "Gender", y = "Score") +
+  theme_minimal()
 
-for (var in names(numeric_vars)) {
-  print(
-    ggplot(data, aes_string(x = var)) +
-      geom_histogram(binwidth = 1, fill = "steelblue", alpha = 0.7) +
-      labs(title = paste("Distribution of", var), x = var, y = "Frequency") +
-      theme_minimal()
-  )
-}
+# Boxplots for test scores by LunchType
+data %>%
+  select(LunchType, MathScore, ReadingScore, WritingScore) %>%
+  pivot_longer(cols = starts_with("MathScore"), names_to = "Test", values_to = "Score") %>%
+  ggplot(aes(x = LunchType, y = Score, fill = LunchType)) +
+  geom_boxplot() +
+  facet_wrap(~ Test) +
+  labs(title = "Test Scores by Lunch Type", x = "Lunch Type", y = "Score") +
+  theme_minimal()
 ```
 
 ```{r}
@@ -199,6 +155,7 @@ data %>%
 
 ```{r}
 # Correlation heatmap
+numeric_vars <- data %>% select(where(is.numeric))
 corr_matrix <- cor(numeric_vars, use = "complete.obs")
 
 corr_matrix %>%
@@ -214,17 +171,6 @@ corr_matrix %>%
         axis.text.y = element_text(size = 10))
 ```
 
-```{r}
-# Boxplots for test scores by EthnicGroup
-data %>%
-  pivot_longer(cols = c(MathScore, ReadingScore, WritingScore), names_to = "TestType", values_to = "Score") %>%
-  ggplot(aes(x = EthnicGroup, y = Score, fill = EthnicGroup)) +
-  geom_boxplot() +
-  facet_wrap(~ TestType, scales = "free") +
-  theme_minimal() +
-  labs(title = "Test Scores by Ethnic Group", x = "Ethnic Group", y = "Score") +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
-```
 
 ### Findings from Exploratory Data Analysis (EDA)
 
