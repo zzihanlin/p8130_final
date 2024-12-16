@@ -1,0 +1,895 @@
+---
+title: "modeling"
+output: html_document
+date: "2024-12-15"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(readr)
+library(MASS)      
+library(glmnet)     
+library(tidyverse) 
+library(lmtest)   
+library(car)
+library(ggplot2)
+```
+
+```{r}
+model_data=read_csv("./data/data_cleaned.csv") |>
+  janitor::clean_names()
+```
+
+```{r}
+str(model_data)
+```
+
+# Mathscore
+
+## backward elimination
+```{r}
+X <- model_data %>%
+  select(-math_score, -reading_score, -writing_score)  
+y <- model_data$math_score  
+
+# The initial full-variable model
+full_model <- lm(math_score ~ ., data = model_data[, c(colnames(X), "math_score")])
+
+# backward elimination
+backward_model <- stepAIC(full_model, direction = "backward")
+
+
+summary(backward_model)
+
+```
+
+
+## criteria-based
+```{r}
+# Perform stepwise selection based on AIC using stepAIC
+aic_model <- stepAIC(full_model, direction = "both", k = 2)  
+summary(aic_model)
+
+# Perform stepwise selection based on BIC using stepAIC
+bic_model <- stepAIC(full_model, direction = "both", k = log(nrow(model_data)))   
+summary(bic_model)
+
+```
+
+## lasso
+```{r}
+# transform data into matrix
+X_matrix <- model.matrix(~ . - 1, data = X)  
+y_vector <- as.numeric(y)
+
+#  LASSO 
+lasso_model <- cv.glmnet(X_matrix, y_vector, alpha = 1, nfolds = 5)
+
+# lambda
+lambda_min <- lasso_model$lambda.min
+
+
+lasso_coef <- coef(lasso_model, s = lambda_min)
+print(lasso_coef)
+
+```
+
+## comparison
+```{r}
+# compare AIC/BIC
+aic_backward <- AIC(backward_model)
+bic_backward <- BIC(backward_model)
+# Backward elimination R2
+r2_backward <- summary(backward_model)$r.squared
+adj_r2_backward <- summary(backward_model)$adj.r.squared
+
+
+aic_aic_model <- AIC(aic_model)
+bic_aic_model <- BIC(aic_model)
+
+aic_bic_model <- AIC(bic_model)
+bic_bic_model <- BIC(bic_model)
+# R2 of AIC model
+r2_aic <- summary(aic_model)$r.squared
+adj_r2_aic <- summary(aic_model)$adj.r.squared
+
+# R2 if BIC model
+r2_bic <- summary(bic_model)$r.squared
+adj_r2_bic <- summary(bic_model)$adj.r.squared
+
+
+# compare AIC/BIC of LASSO
+predictions <- predict(lasso_model, newx = X_matrix, s = lambda_min)
+rss <- sum((y_vector - predictions)^2)
+n <- length(y_vector)
+k <- sum(lasso_coef != 0)
+aic_lasso <- n * log(rss / n) + 2 * k
+bic_lasso <- n * log(rss / n) + log(n) * k
+
+# prediction of lasso
+predictions <- predict(lasso_model, newx = X_matrix, s = lambda_min)
+
+# RSS and TSS
+rss <- sum((y_vector - predictions)^2)
+tss <- sum((y_vector - mean(y_vector))^2)
+
+# adjusted R2 of LASSO
+r2_lasso <- 1 - (rss / tss)
+adj_r2_lasso <- 1 - ((1 - r2_lasso) * (n - 1) / (n - k - 1))  
+
+results <- data.frame(
+  Method = c("Backward", "Criteria-Based AIC", "Criteria-Based BIC", "LASSO"),
+  AIC = c(aic_backward, aic_aic_model, aic_bic_model, aic_lasso),
+  BIC = c(bic_backward, bic_aic_model, bic_bic_model, bic_lasso),
+  Adj_R2 = c(adj_r2_backward, adj_r2_aic, adj_r2_bic, adj_r2_lasso)
+)
+
+print(results)
+
+```
+
+Based on the AIC,BIC and adjusted R^2, we choose lasso to be the final model
+
+## Look for interaction term
+```{r}
+# Univariable regression for screening main effects
+significant_vars <- c()  # save significant variables
+
+for (var in names(model_data)[-c(28:30)]) {  
+  formula <- as.formula(paste("math_score ~", var))
+  model <- lm(formula, data = model_data)
+  if (summary(model)$coefficients[2, 4] < 0.05) {  # pvalue < 0.05
+    significant_vars <- c(significant_vars, var)
+  }
+}
+print(significant_vars)
+
+# Generate interaction terms for significant variables
+interaction_candidates <- combn(significant_vars, 2, 
+                                function(x) paste(x, collapse = ":"))
+print(interaction_candidates)
+
+```
+
+We identify and test potential interaction terms based on the following criteria:
+Interactions involving key main effect variables, such as Gender, ethnic_group, and parent_educ.
+Variables with potential interaction effects inferred from background knowledge, including:
+Background Differences: e.g., Gender:ethnic_group or Gender:parent_educ.
+Study Habits: e.g., wkly_study_hours:lunch_type.
+Family Structure and Education Level: e.g., parent_marital_status:parent_educ.
+
+```{r}
+selected_interactions <- c(
+  "gender:ethnic_groupgroup_a",
+  "gender:parent_educbachelors_degree",
+  "gender:lunch_type",
+  "ethnic_groupgroup_a:parent_educbachelors_degree",
+  "parent_educbachelors_degree:lunch_type",
+  "lunch_type:wkly_study_hours_5",
+  "parent_marital_statussingle:wkly_study_hours_5"
+)
+```
+
+
+
+```{r}
+# Construct model matrix containing only main effects
+X_matrix_main <- model.matrix(~ . - 1, data = X)
+
+selected_interactions <- c(
+  "gender:ethnic_groupgroup_a",
+  "gender:parent_educbachelors_degree",
+  "gender:lunch_type",
+  "ethnic_groupgroup_a:parent_educbachelors_degree",
+  "parent_educbachelors_degree:lunch_type",
+  "lunch_type:wkly_study_hours_5",
+  "parent_marital_statussingle:wkly_study_hours_5"
+)
+
+# Construct model matrix containing main effects and interaction terms
+formula_interactions <- as.formula(
+  paste("~ . - 1 +", paste(selected_interactions, collapse = " + "))
+)
+
+X_matrix_inter <- model.matrix(formula_interactions, data = X)
+
+y_vector <- model_data$math_score
+
+# without interaction term LASSO
+lasso_main <- cv.glmnet(X_matrix_main, y_vector, alpha = 1, nfolds = 5)
+lambda_min_main <- lasso_main$lambda.min
+
+# with interaction term LASSO
+lasso_inter <- cv.glmnet(X_matrix_inter, y_vector, alpha = 1, nfolds = 5)
+lambda_min_inter <- lasso_inter$lambda.min
+
+
+# Extract the CV error (MSE) for the corresponding lambd
+cv_mse_main <- lasso_main$cvm[which(lasso_main$lambda == lambda_min_main)]
+cv_mse_inter <- lasso_inter$cvm[which(lasso_inter$lambda == lambda_min_inter)]
+
+cat("no interaction term CV MSE:", cv_mse_main, "\n")
+cat("with interaction term CV MSE:", cv_mse_inter, "\n")
+
+
+pred_main <- predict(lasso_main$glmnet.fit, newx = X_matrix_main, s = lambda_min_main)
+pred_inter <- predict(lasso_inter$glmnet.fit, newx = X_matrix_inter, s = lambda_min_inter)
+
+# RSS and TSS
+rss_main <- sum((y_vector - pred_main)^2)
+rss_inter <- sum((y_vector - pred_inter)^2)
+tss <- sum((y_vector - mean(y_vector))^2)
+
+coef_main <- coef(lasso_main, s = lambda_min_main)
+coef_inter <- coef(lasso_inter, s = lambda_min_inter)
+
+k_main <- sum(coef_main != 0) - 1
+k_inter <- sum(coef_inter != 0) - 1
+
+r2_main <- 1 - (rss_main / tss)
+r2_inter <- 1 - (rss_inter / tss)
+adj_r2_main <- 1 - (1 - r2_main)*((n - 1)/(n - k_main - 1))
+adj_r2_inter <- 1 - (1 - r2_inter)*((n - 1)/(n - k_inter - 1))
+
+cat("no interaction term R²:", r2_main, "\n")
+cat("with interaction term R²:", r2_inter, "\n")
+
+
+```
+From above we can see that including interaction term into our model does not improve MSE or adjusted R^2.
+##regression diagnostics
+```{r}
+
+predictions <- predict(lasso_model$glmnet.fit, newx = X_matrix, s = lambda_min)
+residuals <- y_vector - predictions
+```
+# normality
+```{r}
+residuals_df <- data.frame(residuals = residuals)
+
+ggplot(residuals_df, aes(sample = residuals)) +
+  stat_qq() +
+  stat_qq_line(col = "red") +
+  labs(title = "Q-Q Plot of Residuals",
+       x = "Theoretical Quantiles",
+       y = "Sample Quantiles") +
+  theme_minimal()
+
+
+shapiro_result <- shapiro.test(residuals)
+cat("Shapiro-Wilk test p-value:", shapiro_result$p.value, "\n")
+if (shapiro_result$p.value < 0.05) {
+  cat("Residuals may deviate from normal distribution\n")
+} else {
+  cat("Residuals do not reject the null hypothesis of normality\n")
+}
+```
+## constant variance
+```{r}
+predictions <- predict(lasso_model$glmnet.fit, newx = X_matrix, s = lambda_min)
+residuals <- y_vector - predictions
+
+residuals_df <- data.frame(
+  Fitted = predictions,
+  Residuals = residuals
+)
+colnames(residuals_df) <- c("Fitted", "Residuals")
+
+
+# Plot Residuals vs Fitted
+ggplot(residuals_df, aes(x = Fitted, y = Residuals)) +
+  geom_point(color = "blue", alpha = 0.7) +  # Points
+  geom_hline(yintercept = 0, color = "red", linetype = "dashed") +  
+  labs(
+    x = "Fitted Values",
+    y = "Residuals",
+    title = "Residuals vs Fitted (Lasso Model)"
+  ) 
+```
+
+## check for independence
+```{r}
+dw_result <- dwtest(residuals ~ predictions)
+cat("Durbin-Watson test p-value:", dw_result$p.value, "\n")
+if (dw_result$p.value < 0.05) {
+  cat("Residuals exhibit autocorrelation\n")
+} else {
+  cat("No significant autocorrelation was detected\n")
+}
+```
+## VIF
+```{r}
+selected_vars <- rownames(lasso_coef)[which(lasso_coef != 0)]
+selected_vars <- selected_vars[selected_vars != "(Intercept)"]
+formula_selected <- as.formula(paste("y_vector ~", paste(selected_vars, collapse = "+")))
+lm_selected <- lm(formula_selected, data = X)  
+vif_values <- vif(lm_selected)
+cat("VIF values:\n")
+print(vif_values)
+```
+
+
+
+
+```{r}
+basic_lm <- lm(y_vector ~ X_matrix)
+
+# Find a shift value to ensure positivity
+shift_value <- abs(min(y_vector)) + 1
+y_vector_shifted <- y_vector + shift_value
+
+# Refit the basic linear model with shifted response
+basic_lm <- lm(y_vector_shifted ~ X_matrix)
+
+# Now apply boxcox
+boxcox_result <- boxcox(basic_lm, lambda = seq(-2, 2, by = 0.1))
+
+# Use boxcox() to find the optimal lambda value
+lambda_opt <- boxcox_result$x[which.max(boxcox_result$y)]
+cat("Optimal lambda for Box-Cox:", lambda_opt, "\n")
+
+# 2. Transform y_vector based on the optimal lambda
+if (lambda_opt == 0) {
+  # If lambda = 0, the transform is log(y)
+  y_transformed <- log(y_vector)
+} else {
+  # For lambda != 0, use the standard Box-Cox formula
+  y_transformed <- (y_vector^lambda_opt - 1) / lambda_opt
+}
+
+# 3. Fit a LASSO model using the transformed response
+lasso_model_boxcox <- cv.glmnet(X_matrix, y_transformed, alpha = 1, nfolds = 5)
+lambda_min_boxcox <- lasso_model_boxcox$lambda.min
+
+# Extract coefficients for the best model on the transformed scale
+lasso_coef_boxcox <- coef(lasso_model_boxcox, s = lambda_min_boxcox)
+print(lasso_coef_boxcox)
+
+# 4. Compare model performance
+# For example, compare CV MSE with and without transformation
+cv_mse_boxcox <- lasso_model_boxcox$cvm[which(lasso_model_boxcox$lambda == lambda_min_boxcox)]
+cat("Box-Cox transformed model CV MSE:", cv_mse_boxcox, "\n")
+
+
+```
+
+# Reading_model
+```{r}
+# Select predictors, excluding the score columns
+X_reading <- model_data %>%
+  select(-math_score, -reading_score, -writing_score)
+
+# Define the response variable
+y_reading <- model_data$reading_score
+
+# The initial full-variable model for reading_score
+full_model_reading <- lm(reading_score ~ ., data = model_data[, c(colnames(X_reading), "reading_score")])
+
+# Perform backward elimination
+backward_model_reading <- stepAIC(full_model_reading, direction = "backward")
+
+# Display the summary of the final model
+summary(backward_model_reading)
+```
+
+## criteria-based
+```{r}
+# Perform stepwise selection based on AIC using stepAIC
+aic_model_reading <- stepAIC(full_model_reading, direction = "both", k = 2)
+summary(aic_model_reading)
+
+# Perform stepwise selection based on BIC using stepAIC
+bic_model_reading <- stepAIC(full_model_reading, direction = "both", k = log(nrow(model_data)))
+summary(bic_model_reading)
+
+```
+
+```{r}
+# Prepare the predictors (X) and response variable (y) for reading_score
+X_matrix_reading <- model.matrix(~ . - 1, data = X_reading)  # Convert predictors to a matrix
+y_vector_reading <- as.numeric(model_data$reading_score)  # Response variable as a numeric vector
+
+# Fit Lasso model with cross-validation
+lasso_model_reading <- cv.glmnet(X_matrix_reading, y_vector_reading, alpha = 1, nfolds = 5)
+
+# Extract the best lambda (lambda.min)
+lambda_min_reading <- lasso_model_reading$lambda.min
+
+# Get the coefficients at the best lambda
+lasso_coef_reading <- coef(lasso_model_reading, s = lambda_min_reading)
+print(lasso_coef_reading)
+
+```
+## comparison
+```{r}
+# Compare AIC/BIC for Backward Elimination
+aic_backward_reading <- AIC(backward_model_reading)
+bic_backward_reading <- BIC(backward_model_reading)
+
+# R-squared and Adjusted R-squared for Backward Elimination
+r2_backward_reading <- summary(backward_model_reading)$r.squared
+adj_r2_backward_reading <- summary(backward_model_reading)$adj.r.squared
+
+# Compare AIC/BIC for AIC Model
+aic_aic_model_reading <- AIC(aic_model_reading)
+bic_aic_model_reading <- BIC(aic_model_reading)
+
+# Compare AIC/BIC for BIC Model
+aic_bic_model_reading <- AIC(bic_model_reading)
+bic_bic_model_reading <- BIC(bic_model_reading)
+
+# R-squared and Adjusted R-squared for AIC and BIC models
+r2_aic_reading <- summary(aic_model_reading)$r.squared
+adj_r2_aic_reading <- summary(aic_model_reading)$adj.r.squared
+
+r2_bic_reading <- summary(bic_model_reading)$r.squared
+adj_r2_bic_reading <- summary(bic_model_reading)$adj.r.squared
+
+# Compare AIC/BIC for Lasso
+predictions_reading <- predict(lasso_model_reading, newx = X_matrix, s = lambda_min_reading)
+rss_reading <- sum((y_vector - predictions_reading)^2)
+n_reading <- length(y_vector)
+k_reading <- sum(lasso_coef_reading != 0)  # Non-zero coefficients
+
+# Compute AIC and BIC for Lasso
+aic_lasso_reading <- n_reading * log(rss_reading / n_reading) + 2 * k_reading
+bic_lasso_reading <- n_reading * log(rss_reading / n_reading) + log(n_reading) * k_reading
+
+# RSS and TSS for Lasso
+tss_reading <- sum((y_vector - mean(y_vector))^2)
+r2_lasso_reading <- 1 - (rss_reading / tss_reading)
+
+# Adjusted R-squared for Lasso
+adj_r2_lasso_reading <- 1 - ((1 - r2_lasso_reading) * (n_reading - 1) / (n_reading - k_reading - 1))
+
+# Compile Results into a Data Frame
+results_reading <- data.frame(
+  Method = c("Backward", "Criteria-Based AIC", "Criteria-Based BIC", "LASSO"),
+  AIC = c(aic_backward_reading, aic_aic_model_reading, aic_bic_model_reading, aic_lasso_reading),
+  BIC = c(bic_backward_reading, bic_aic_model_reading, bic_bic_model_reading, bic_lasso_reading),
+  Adj_R2 = c(adj_r2_backward_reading, adj_r2_aic_reading, adj_r2_bic_reading, adj_r2_lasso_reading)
+)
+
+# Print the results
+print(results_reading)
+
+```
+Based on the AIC, BIC and adjusted R square, we choose the model from backward elimination.
+
+## look for interaction term
+```{r}
+# Univariable regression for screening main effects for reading_score
+significant_vars_reading <- c()  # Save significant variables
+
+for (var in names(model_data)[-c(28:30)]) {  # Exclude the score columns
+  formula <- as.formula(paste("reading_score ~", var))  # Update for reading_score
+  model <- lm(formula, data = model_data)
+  if (summary(model)$coefficients[2, 4] < 0.05) {  # Check if p-value < 0.05
+    significant_vars_reading <- c(significant_vars_reading, var)
+  }
+}
+
+# Print significant variables
+print(significant_vars_reading)
+
+# Generate interaction terms for significant variables
+interaction_candidates_reading <- combn(significant_vars_reading, 2, 
+                                        function(x) paste(x, collapse = ":"))
+# Print interaction terms
+print(interaction_candidates_reading)
+
+```
+
+```{r}
+# Selected interaction terms for reading_score
+interaction_terms_reading <- c(
+  "gender:ethnic_groupgroup_e",  # Gender and specific ethnic group
+  "gender:parent_educbachelors_degree",  # Gender and parent's education
+  "ethnic_groupgroup_e:parent_educmasters_degree",  # Ethnic group and parent's education
+  "wkly_study_hours_5:lunch_type",  # Weekly study hours and lunch type
+  "gender:wkly_study_hours_5",  # Gender and weekly study hours
+  "parent_marital_statusmarried:lunch_type",  # Marital status and lunch type
+  "gender:parent_marital_statusdivorced"  # Gender and marital status
+)
+
+# Check if all components of interaction terms exist in model_data
+valid_interaction_terms <- interaction_terms_reading[
+  sapply(interaction_terms_reading, function(term) {
+    all(unlist(strsplit(term, ":")) %in% names(model_data))
+  })
+]
+
+# Print valid interaction terms
+print(valid_interaction_terms)
+
+
+# Construct the formula dynamically with valid interaction terms
+interaction_formula_reading <- paste("reading_score ~ . +", paste(valid_interaction_terms, collapse = " + "))
+
+# Fit the interaction model
+interaction_model_reading <- lm(as.formula(interaction_formula_reading), 
+                                data = model_data[, c(names(X_reading), "reading_score")])
+summary(interaction_model_reading)
+```
+
+```{r}
+# Compute Adjusted R^2 for both models
+adj_r2_backward_reading <- summary(backward_model_reading)$adj.r.squared
+adj_r2_interaction_reading <- summary(interaction_model_reading)$adj.r.squared
+
+cat("Adjusted R^2 of Backward Model:", adj_r2_backward_reading, "\n")
+cat("Adjusted R^2 of Interaction Model:", adj_r2_interaction_reading, "\n")
+
+```
+
+```{r}
+# Compute AIC and BIC for both models
+aic_backward_reading <- AIC(backward_model_reading)
+bic_backward_reading <- BIC(backward_model_reading)
+
+aic_interaction_reading <- AIC(interaction_model_reading)
+bic_interaction_reading <- BIC(interaction_model_reading)
+
+cat("AIC of Backward Model:", aic_backward_reading, "\n")
+cat("BIC of Backward Model:", bic_backward_reading, "\n")
+cat("AIC of Interaction Model:", aic_interaction_reading, "\n")
+cat("BIC of Interaction Model:", bic_interaction_reading, "\n")
+
+```
+
+
+```{r}
+anova_result <- anova(backward_model_reading, interaction_model_reading)
+print(anova_result)
+
+```
+
+Based on the anova result, including interaction term does not significantly improve our model, therefore, we will not include interaction term into our model.
+
+## model diagnostic
+### normality
+```{r}
+shapiro.test(residuals(backward_model_reading))
+qqnorm(residuals(backward_model_reading))
+```
+### Independence of Residuals
+```{r}
+dwtest(backward_model_reading)
+```
+### Multicollinearity Check
+```{r}
+vif(backward_model_reading)
+```
+### constant variance
+```{r}
+bptest(backward_model_reading)
+```
+
+```{r}
+residuals <- residuals(backward_model_reading)
+fitted_values <- fitted(backward_model_reading)
+
+# Create a data frame for ggplot
+residuals_df <- data.frame(Fitted = fitted_values, Residuals = residuals)
+
+# Plot Residuals vs Fitted Values
+ggplot(residuals_df, aes(x = Fitted, y = Residuals)) +
+  geom_point(alpha = 0.6) +  # Add points
+  geom_hline(yintercept = 0, color = "red", linetype = "dashed") +  # Reference line at 0
+  labs(
+    title = "Residuals vs Fitted Values",
+    x = "Fitted Values",
+    y = "Residuals"
+  ) +
+  theme_minimal()
+```
+
+##box-cox
+```{r}
+boxcox_result_reading <- boxcox(backward_model_reading, lambda = seq(-2, 2, 0.1))
+
+# Find the lambda that maximizes log-likelihood
+lambda_best_reading <- boxcox_result$x[which.max(boxcox_result$y)]
+cat("Optimal Lambda:", lambda_best_reading, "\n")
+
+if (lambda_best_reading == 0) {
+  model_data$reading_score_trans <- log(model_data$reading_score)
+} else {
+  model_data$reading_score_trans <- (model_data$reading_score^lambda_best_reading - 1) / lambda_best_reading
+}
+
+# Fit a new model with the transformed dependent variable
+boxcox_model_reading <- lm(reading_score_trans ~ ., data = model_data[, c(colnames(X_reading), "reading_score_trans")])
+summary(boxcox_model_reading)
+
+
+```
+## compare with original model
+```{r}
+# Compare Adjusted R^2
+adj_r2_original_reading <- summary(backward_model_reading)$adj.r.squared
+adj_r2_boxcox_reading <- summary(boxcox_model_reading)$adj.r.squared
+
+# Compare AIC and BIC
+aic_original_reading <- AIC(backward_model_reading)
+bic_original_reading <- BIC(backward_model_reading)
+
+aic_boxcox_reading <- AIC(boxcox_model_reading)
+bic_boxcox_reading <- BIC(boxcox_model_reading)
+
+# Print comparison
+comparison_reading <- data.frame(
+  Metric = c("Adjusted R^2", "AIC", "BIC"),
+  Original_Model = c(adj_r2_original_reading, aic_original_reading, bic_original_reading),
+  BoxCox_Model = c(adj_r2_boxcox_reading, aic_boxcox_reading, bic_boxcox_reading)
+)
+
+print(comparison_reading)
+```
+
+# Writing Score
+```{r}
+# Select predictors, excluding the score columns
+X_writing <- model_data %>%
+  select(-math_score, -reading_score, -writing_score)
+
+# Define the response variable
+y_writing <- model_data$writing_score
+
+```
+
+## Backward elimination
+```{r}
+# The initial full-variable model for writing_score
+full_model_writing <- lm(writing_score ~ ., data = model_data[, c(colnames(X_writing), "writing_score")])
+
+backward_model_writing <- stepAIC(full_model_writing, direction = "backward")
+
+# Summary of the backward elimination model
+summary(backward_model_writing)
+```
+
+## criteria-based
+```{r}
+# Perform stepwise selection based on AIC
+aic_model_writing <- stepAIC(full_model_writing, direction = "both", k = 2)
+
+# Summary of the AIC-based stepwise selection model
+summary(aic_model_writing)
+
+# Perform stepwise selection based on BIC
+bic_model_writing <- stepAIC(full_model_writing, direction = "both", k = log(nrow(model_data)))
+
+# Summary of the BIC-based stepwise selection model
+summary(bic_model_writing)
+```
+
+## lasso
+```{r}
+# Transform data into matrix form for LASSO
+X_writing_matrix <- model.matrix(~ . - 1, data = X_writing)  # Predictors
+y_writing_vector <- as.numeric(model_data$writing_score)  # Response variable
+
+lasso_model_writing <- cv.glmnet(X_writing_matrix, y_writing_vector, alpha = 1, nfolds = 5)
+
+# Extract the optimal lambda value
+lambda_min_writing <- lasso_model_writing$lambda.min
+cat("Optimal lambda:", lambda_min_writing, "\n")
+
+# Extract coefficients for the model with optimal lambda
+lasso_coef_writing <- coef(lasso_model_writing, s = lambda_min_writing)
+print(lasso_coef_writing)
+
+
+```
+## comparison
+```{r}
+# Compare AIC and BIC for backward elimination
+aic_backward_writing <- AIC(backward_model_writing)
+bic_backward_writing <- BIC(backward_model_writing)
+
+# Backward elimination's R2
+r2_backward_writing <- summary(backward_model_writing)$r.squared
+adj_r2_backward_writing <- summary(backward_model_writing)$adj.r.squared
+
+# Compare AIC and BIC for AIC-based stepwise selection
+aic_aic_model_writing <- AIC(aic_model_writing)
+bic_aic_model_writing <- BIC(aic_model_writing)
+
+# Compare AIC and BIC for BIC-based stepwise selection
+aic_bic_model_writing <- AIC(bic_model_writing)
+bic_bic_model_writing <- BIC(bic_model_writing)
+
+# R2 of AIC model
+r2_aic_writing <- summary(aic_model_writing)$r.squared
+adj_r2_aic_writing <- summary(aic_model_writing)$adj.r.squared
+
+# R2 of BIC model
+r2_bic_writing <- summary(bic_model_writing)$r.squared
+adj_r2_bic_writing <- summary(bic_model_writing)$adj.r.squared
+
+```
+
+```{r}
+# Predictions from the LASSO model
+predictions_writing <- predict(lasso_model_writing, newx = X_writing_matrix, s = lambda_min_writing)
+
+# Calculate RSS and TSS
+rss_writing <- sum((y_writing_vector - predictions_writing)^2)
+tss_writing <- sum((y_writing_vector - mean(y_writing_vector))^2)
+
+# Calculate AIC and BIC for LASSO
+n_writing <- length(y_writing_vector)
+k_writing <- sum(lasso_coef_writing != 0)  # Number of non-zero coefficients
+aic_lasso_writing <- n_writing * log(rss_writing / n_writing) + 2 * k_writing
+bic_lasso_writing <- n_writing * log(rss_writing / n_writing) + log(n_writing) * k_writing
+
+# Adjusted R2 for LASSO
+r2_lasso_writing <- 1 - (rss_writing / tss_writing)
+adj_r2_lasso_writing <- 1 - ((1 - r2_lasso_writing) * (n_writing - 1) / (n_writing - k_writing - 1))
+
+```
+
+```{r}
+# Compile results for all models
+results_writing <- data.frame(
+  Method = c("Backward", "Criteria-Based AIC", "Criteria-Based BIC", "LASSO"),
+  AIC = c(aic_backward_writing, aic_aic_model_writing, aic_bic_model_writing, aic_lasso_writing),
+  BIC = c(bic_backward_writing, bic_aic_model_writing, bic_bic_model_writing, bic_lasso_writing),
+  Adj_R2 = c(adj_r2_backward_writing, adj_r2_aic_writing, adj_r2_bic_writing, adj_r2_lasso_writing)
+)
+
+# Print the results
+print(results_writing)
+
+```
+Based on AIC，BIC and R square, we choose backward model.
+
+## look for interaction terms
+```{r}
+# Univariable regression for screening main effects for writing_score
+significant_vars_writing <- c()  # Save significant variables
+
+for (var in names(model_data)[-c(28:30)]) {  
+  formula <- as.formula(paste("writing_score ~", var))  # Update to writing_score
+  model <- lm(formula, data = model_data)
+  if (summary(model)$coefficients[2, 4] < 0.05) {  # p-value < 0.05
+    significant_vars_writing <- c(significant_vars_writing, var)
+  }
+}
+
+print(significant_vars_writing)
+
+# Generate interaction terms for significant variables
+interaction_candidates_writing <- combn(significant_vars_writing, 2, 
+                                        function(x) paste(x, collapse = ":"))
+
+print(interaction_candidates_writing)
+
+
+
+
+```
+
+```{r}
+# Define interaction terms
+interaction_terms <- c(
+  "gender:ethnic_groupgroup_a",
+  "gender:parent_educbachelors_degree",
+  "ethnic_groupgroup_e:parent_educhigh_school",
+  "parent_educbachelors_degree:parent_educhigh_school",
+  "gender:parent_marital_statusmarried",
+  "gender:lunch_type",
+  "wkly_study_hours_5:reading_score_trans",
+  "lunch_type:wkly_study_hours_5"
+)
+
+```
+
+```{r}
+# Prepare main effects model matrix with "writing" prefix/suffix
+X_matrix_main_writing <- model.matrix(~ . - 1, data = X_writing)  # Use X_writing for predictors
+
+# Define selected interaction terms with "writing" prefix/suffix
+selected_interactions_writing <- c(
+  "gender:ethnic_groupgroup_a",
+  "gender:parent_educbachelors_degree",
+  "ethnic_groupgroup_e:parent_educhigh_school",
+  "parent_educbachelors_degree:parent_educhigh_school",
+  "gender:parent_marital_statusmarried",
+  "gender:lunch_type",
+  "wkly_study_hours_5:reading_score_trans",
+  "lunch_type:wkly_study_hours_5"
+)
+
+# Construct model matrix containing main effects and interaction terms with "writing" prefix/suffix
+formula_interactions_writing <- as.formula(
+  paste("~ . - 1 +", paste(selected_interactions_writing, collapse = " + "))
+)
+
+X_matrix_inter_writing <- model.matrix(formula_interactions_writing, data = X_writing)
+
+# Response variable with "writing" prefix
+y_vector_writing <- model_data$writing_score
+
+# Fit LASSO without interaction terms
+lasso_main_writing <- cv.glmnet(X_matrix_main_writing, y_vector_writing, alpha = 1, nfolds = 5)
+lambda_min_main_writing <- lasso_main_writing$lambda.min
+
+# Fit LASSO with interaction terms
+lasso_inter_writing <- cv.glmnet(X_matrix_inter_writing, y_vector_writing, alpha = 1, nfolds = 5)
+lambda_min_inter_writing <- lasso_inter_writing$lambda.min
+
+# Extract the CV error (MSE) for the corresponding lambda
+cv_mse_main_writing <- lasso_main_writing$cvm[which(lasso_main_writing$lambda == lambda_min_main_writing)]
+cv_mse_inter_writing <- lasso_inter_writing$cvm[which(lasso_inter_writing$lambda == lambda_min_inter_writing)]
+
+cat("No interaction term CV MSE:", cv_mse_main_writing, "\n")
+cat("With interaction term CV MSE:", cv_mse_inter_writing, "\n")
+
+# Predictions
+pred_main_writing <- predict(lasso_main_writing$glmnet.fit, newx = X_matrix_main_writing, s = lambda_min_main_writing)
+pred_inter_writing <- predict(lasso_inter_writing$glmnet.fit, newx = X_matrix_inter_writing, s = lambda_min_inter_writing)
+
+# RSS and TSS
+rss_main_writing <- sum((y_vector_writing - pred_main_writing)^2)
+rss_inter_writing <- sum((y_vector_writing - pred_inter_writing)^2)
+tss_writing <- sum((y_vector_writing - mean(y_vector_writing))^2)
+
+# Coefficients
+coef_main_writing <- coef(lasso_main_writing, s = lambda_min_main_writing)
+coef_inter_writing <- coef(lasso_inter_writing, s = lambda_min_inter_writing)
+
+# Number of non-zero coefficients
+k_main_writing <- sum(coef_main_writing != 0) - 1
+k_inter_writing <- sum(coef_inter_writing != 0) - 1
+
+# Calculate Adjusted R²
+n_writing <- length(y_vector_writing)
+r2_main_writing <- 1 - (rss_main_writing / tss_writing)
+r2_inter_writing <- 1 - (rss_inter_writing / tss_writing)
+
+adj_r2_main_writing <- 1 - (1 - r2_main_writing) * ((n_writing - 1) / (n_writing - k_main_writing - 1))
+adj_r2_inter_writing <- 1 - (1 - r2_inter_writing) * ((n_writing - 1) / (n_writing - k_inter_writing - 1))
+
+cat("No interaction term Adjusted R²:", adj_r2_main_writing, "\n")
+cat("With interaction term Adjusted R²:", adj_r2_inter_writing, "\n")
+
+```
+the interaction does not significantly improve our model, therefore we choose not to include them in our model.
+
+## model diagnostic
+```{r}
+shapiro.test(residuals(backward_model_writing))
+writing_residuals <- residuals(backward_model_writing)
+
+# Create a data frame for residuals
+residuals_df <- data.frame(residuals = writing_residuals)
+
+# Q-Q Plot
+library(ggplot2)
+
+ggplot(residuals_df, aes(sample = residuals)) +
+  stat_qq() +
+  stat_qq_line(color = "red") +
+  labs(title = "Q-Q Plot of Residuals for Writing Score",
+       x = "Theoretical Quantiles",
+       y = "Sample Quantiles") +
+  theme_minimal()
+```
+### Independence of Residuals
+```{r}
+dwtest(backward_model_writing)
+```
+### Multicollinearity Check
+```{r}
+vif(backward_model_writing)
+```
+### constant variance
+```{r}
+bptest(backward_model_writing)
+```
+
