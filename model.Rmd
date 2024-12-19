@@ -1,5 +1,6 @@
 ---
 title: "modeling"
+author: "Yuhao Chang, Yonghao Yu"
 output: html_document
 date: "2024-12-15"
 ---
@@ -129,6 +130,21 @@ results <- data.frame(
 
 print(results)
 
+results_long1 <- results %>%
+  pivot_longer(cols = c(AIC, BIC, Adj_R2),
+               names_to = "Metric",
+               values_to = "Value")
+
+ggplot(results_long1, aes(x = Method, y = Value, fill = Method)) +
+  geom_bar(stat = "identity") +
+  facet_wrap(~ Metric, scales = "free_y", ncol = 3) +  # 设置每行3个面板，即按列分布
+  theme_minimal() +
+  labs(title = "Model evaluation plot for writing score prediction",
+       x = "method",
+       y = "value") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        legend.position = "none")
+
 ```
 
 Based on the AIC,BIC and adjusted R^2, we choose lasso to be the final model
@@ -242,7 +258,6 @@ cat("with interaction term R²:", r2_inter, "\n")
 From above we can see that including interaction term into our model does not improve MSE or adjusted R^2.
 ##regression diagnostics
 ```{r}
-
 predictions <- predict(lasso_model$glmnet.fit, newx = X_matrix, s = lambda_min)
 residuals <- y_vector - predictions
 ```
@@ -456,6 +471,21 @@ results_reading <- data.frame(
 # Print the results
 print(results_reading)
 
+results_long2 <- results_reading %>%
+  pivot_longer(cols = c(AIC, BIC, Adj_R2),
+               names_to = "Metric",
+               values_to = "Value")
+
+ggplot(results_long2, aes(x = Method, y = Value, fill = Method)) +
+  geom_bar(stat = "identity") +
+  facet_wrap(~ Metric, scales = "free_y", ncol = 3) +  # 设置每行3个面板，即按列分布
+  theme_minimal() +
+  labs(title = "Model evaluation plot for writing score prediction",
+       x = "method",
+       y = "value") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        legend.position = "none")
+
 ```
 Based on the AIC, BIC and adjusted R square, we choose the model from backward elimination.
 
@@ -544,7 +574,6 @@ cat("BIC of Interaction Model:", bic_interaction_reading, "\n")
 ```{r}
 anova_result <- anova(backward_model_reading, interaction_model_reading)
 print(anova_result)
-
 ```
 
 Based on the anova result, including interaction term does not significantly improve our model, therefore, we will not include interaction term into our model.
@@ -745,6 +774,20 @@ results_writing <- data.frame(
 # Print the results
 print(results_writing)
 
+results_long <- results_writing %>%
+  pivot_longer(cols = c(AIC, BIC, Adj_R2),
+               names_to = "Metric",
+               values_to = "Value")
+
+ggplot(results_long, aes(x = Method, y = Value, fill = Method)) +
+  geom_bar(stat = "identity") +
+  facet_wrap(~ Metric, scales = "free_y", ncol = 3) +  # 设置每行3个面板，即按列分布
+  theme_minimal() +
+  labs(title = "Model evaluation plot for writing score prediction",
+       x = "method",
+       y = "value") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        legend.position = "none")
 ```
 Based on AIC，BIC and R square, we choose backward model.
 
@@ -768,10 +811,6 @@ interaction_candidates_writing <- combn(significant_vars_writing, 2,
                                         function(x) paste(x, collapse = ":"))
 
 print(interaction_candidates_writing)
-
-
-
-
 ```
 
 ```{r}
@@ -892,4 +931,140 @@ vif(backward_model_writing)
 ```{r}
 bptest(backward_model_writing)
 ```
+
+## Are the optimal prediction models similar or different across the three test scores?
+
+We show the summary statistics for the model we build
+```{r}
+summary(backward_model_reading)
+summary(backward_model_writing)
+lasso_coef
+```
+
+we can have a summary on the predictors we choose to construct three test scores:
+
+Predictors for predicting reading scores:gender, ethnic_groupgroup_d, ethnic_groupgroup_e ,    parent_educassociates_degree, parent_educbachelors_degree, parent_educmasters_degree, parent_educsome_college, lunch_type, parent_marital_statusmarried, wkly_study_hours10_may
+
+Predictors for predicting writing scores: gender, ethnic_groupgroup_d, parent_educassociates_degree, parent_educhigh_school, parent_educsome_college, parent_educsome_high_school, lunch_type, practice_sportregularly, practice_sportsometimes, reading_score_trans
+
+Predictors for predicting math scores:gender, ethnic_groupgroup_a, ethnic_groupgroup_d, ethnic_groupgroup_e, parent_educassociates_degree, parent_educbachelors_degree, parent_educhigh_school, parent_educmasters_degree, parent_educsome_high_school, lunch_type,           parent_marital_statusdivorced, parent_marital_statusmarried, parent_marital_statuswidowed, practice_sportnever, practice_sportregularly, wkly_study_hours_5, wkly_study_hours_10
+
+So by comparing the predictors among the three optimal models, we can find out that the optimal prediction models are different across the three test scores.
+
+## Is it possible to leverage one score as the auxiliary information to learn the model for another score (still its model against variables 1-11) better?
+
+#### We can take math as an example
+
+We cam try to use criteria-based procedures, automatic search procedures, and shrink methods to test whether the best model contains the other two test scores we select in every method we use, 
+```{r}
+X_math2 <- model_data %>%
+  select(-math_score)  
+y_math2 <- model_data$math_score  
+
+# The initial full-variable model
+full_model_math2 <- lm(math_score ~ ., data = model_data[, c(colnames(X_math2), "math_score")])
+
+# backward elimination
+backward_model_math2 <- stepAIC(full_model_math2, direction = "backward")
+
+
+summary(backward_model_math2)
+```
+
+## criteria-based
+```{r}
+# Perform stepwise selection based on AIC using stepAIC
+aic_model_math2 <- stepAIC(full_model_math2, direction = "both", k = 2)  
+summary(aic_model_math2)
+
+# Perform stepwise selection based on BIC using stepAIC
+bic_model_math2 <- stepAIC(full_model_math2, direction = "both", k = log(nrow(model_data)))   
+summary(bic_model_math2)
+
+```
+
+## lasso
+```{r}
+# transform data into matrix
+X_matrix_2 <- model.matrix(~ . - 1, data = X_math2)  
+y_vector_2 <- as.numeric(y_math2)
+
+#  LASSO 
+lasso_model_math2 <- cv.glmnet(X_matrix_2, y_vector_2, alpha = 1, nfolds = 5)
+
+# lambda
+lambda_min_math2 <- lasso_model_math2$lambda.min
+
+
+lasso_coef_math2 <- coef(lasso_model_math2, s = lambda_min_math2)
+print(lasso_coef_math2)
+```
+
+
+## comparison
+```{r}
+summary(backward_model_math2)
+summary(aic_model_math2)
+summary(bic_model_math2)
+print(lasso_coef_math2)
+```
+
+Here we can see that all the models built on different selection criteria contain writing score and possibly reading score
+
+```{r}
+# compare AIC/BIC
+aic_backward_math2 <- AIC(backward_model_math2)
+bic_backward_math2 <- BIC(backward_model_math2)
+# Backward elimination R2
+r2_backward_math2 <- summary(backward_model_math2)$r.squared
+adj_r2_backward_math2 <- summary(backward_model_math2)$adj.r.squared
+
+
+aic_aic_model_math2 <- AIC(aic_model_math2)
+bic_aic_model_math2 <- BIC(aic_model_math2)
+
+aic_bic_model_math2 <- AIC(bic_model_math2)
+bic_bic_model_math2 <- BIC(bic_model_math2)
+# R2 of AIC model
+r2_aic_math2 <- summary(aic_model_math2)$r.squared
+adj_r2_aic_math2 <- summary(aic_model_math2)$adj.r.squared
+
+# R2 if BIC model
+r2_bic_math2 <- summary(bic_model_math2)$r.squared
+adj_r2_bic_math2 <- summary(bic_model_math2)$adj.r.squared
+
+
+# compare AIC/BIC of LASSO
+predictions_math2 <- predict(lasso_model_math2, newx = X_matrix_2, s = lambda_min_math2)
+rss_math2 <- sum((y_vector_2 - predictions_math2)^2)
+n <- length(y_vector_2)
+k <- sum(lasso_coef != 0)
+aic_lasso_math2 <- n * log(rss / n) + 2 * k
+bic_lasso_math2 <- n * log(rss / n) + log(n) * k
+
+# prediction of lasso
+predictions_math2 <- predict(lasso_model_math2, newx = X_matrix_2, s = lambda_min_math2)
+
+# RSS and TSS
+rss_math2 <- sum((y_vector_2 - predictions_math2)^2)
+tss_math2 <- sum((y_vector_2 - mean(y_vector_2))^2)
+
+# adjusted R2 of LASSO
+r2_lasso_math2 <- 1 - (rss_math2 / tss_math2)
+adj_r2_lasso_math2 <- 1 - ((1 - r2_lasso_math2) * (n - 1) / (n - k - 1))  
+
+results_math2 <- data.frame(
+  Method = c("Backward", "Criteria-Based AIC", "Criteria-Based BIC", "LASSO"),
+  AIC_ = c(aic_backward_math2, aic_aic_model_math2, aic_bic_model_math2, aic_lasso_math2),
+  BIC = c(bic_backward_math2, bic_aic_model_math2, bic_bic_model_math2, bic_lasso_math2),
+  Adj_R2 = c(adj_r2_backward_math2, adj_r2_aic_math2, adj_r2_bic_math2, adj_r2_lasso_math2)
+)
+
+print(results_math2)
+```
+
+And the best model that contain possibly the other two scores have a lower AIC and BIC metrics and higher Adjusted R^2 value. 
+Hence, the result shows that it is possible to leverage one score as the auxiliary information to learn the model for another score (still its model against variables 1-11) better.
+
+
 
