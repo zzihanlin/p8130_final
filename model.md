@@ -2129,34 +2129,34 @@ print(lasso_coef)
 ```
 
     ## 28 x 1 sparse Matrix of class "dgCMatrix"
-    ##                                       s1
-    ## (Intercept)                   52.1557265
-    ## gender                         4.8952496
-    ## ethnic_groupgroup_a           -1.2716802
-    ## ethnic_groupgroup_b            .        
-    ## ethnic_groupgroup_c           -0.2038326
-    ## ethnic_groupgroup_d            2.9021424
-    ## ethnic_groupgroup_e            8.3660242
-    ## parent_educassociates_degree   3.0739677
-    ## parent_educbachelors_degree    4.4231410
-    ## parent_educhigh_school        -2.3039572
-    ## parent_educmasters_degree      4.8695221
-    ## parent_educsome_college        2.0488616
-    ## parent_educsome_high_school   -1.1661607
-    ## lunch_type                    10.8683379
-    ## test_prep                      0.4940415
-    ## parent_marital_statusdivorced -0.2501855
-    ## parent_marital_statusmarried   2.6645574
-    ## parent_marital_statussingle    .        
-    ## parent_marital_statuswidowed   3.5789237
-    ## practice_sportnever           -1.5806638
-    ## practice_sportregularly        0.4854517
-    ## practice_sportsometimes        .        
-    ## is_first_child                 .        
-    ## nr_siblings                    0.1086647
-    ## transport_means                0.2357421
-    ## wkly_study_hours_5            -3.3697031
-    ## wkly_study_hours_10            0.4660199
+    ##                                        s1
+    ## (Intercept)                   52.98357281
+    ## gender                         4.79949859
+    ## ethnic_groupgroup_a           -1.16549395
+    ## ethnic_groupgroup_b            .         
+    ## ethnic_groupgroup_c           -0.15241140
+    ## ethnic_groupgroup_d            2.82543272
+    ## ethnic_groupgroup_e            8.27438419
+    ## parent_educassociates_degree   2.57344646
+    ## parent_educbachelors_degree    3.88295951
+    ## parent_educhigh_school        -2.64043612
+    ## parent_educmasters_degree      4.25173992
+    ## parent_educsome_college        1.55233260
+    ## parent_educsome_high_school   -1.52123777
+    ## lunch_type                    10.78953283
+    ## test_prep                      0.35113303
+    ## parent_marital_statusdivorced -0.20159012
+    ## parent_marital_statusmarried   2.60581753
+    ## parent_marital_statussingle    .         
+    ## parent_marital_statuswidowed   3.33712980
+    ## practice_sportnever           -1.47717260
+    ## practice_sportregularly        0.42957900
+    ## practice_sportsometimes        .         
+    ## is_first_child                 .         
+    ## nr_siblings                    0.07939241
+    ## transport_means                0.15585720
+    ## wkly_study_hours_5            -3.29707751
+    ## wkly_study_hours_10            0.42768536
     ## wkly_study_hours10_may         .
 
 ## comparison
@@ -2217,7 +2217,7 @@ print(results)
     ## 1           Backward 7274.778 7342.042 0.2424206
     ## 2 Criteria-Based AIC 7274.778 7342.042 0.2424206
     ## 3 Criteria-Based BIC 7275.944 7333.599 0.2397792
-    ## 4              LASSO 4731.823 4842.329 0.2339401
+    ## 4              LASSO 4733.184 4843.690 0.2327832
 
 ``` r
 results_long1 <- results %>%
@@ -2227,9 +2227,9 @@ results_long1 <- results %>%
 
 ggplot(results_long1, aes(x = Method, y = Value, fill = Method)) +
   geom_bar(stat = "identity") +
-  facet_wrap(~ Metric, scales = "free_y", ncol = 3) +  # 设置每行3个面板，即按列分布
+  facet_wrap(~ Metric, scales = "free_y", ncol = 3) +
   theme_minimal() +
-  labs(title = "Model evaluation plot for writing score prediction",
+  labs(title = "Model evaluation plot for math score prediction",
        x = "method",
        y = "value") +
   theme(axis.text.x = element_text(angle = 45, hjust = 1),
@@ -2423,13 +2423,13 @@ cv_mse_inter <- lasso_inter$cvm[which(lasso_inter$lambda == lambda_min_inter)]
 cat("no interaction term CV MSE:", cv_mse_main, "\n")
 ```
 
-    ## no interaction term CV MSE: 188.3118
+    ## no interaction term CV MSE: 191.8869
 
 ``` r
 cat("with interaction term CV MSE:", cv_mse_inter, "\n")
 ```
 
-    ## with interaction term CV MSE: 189.0769
+    ## with interaction term CV MSE: 189.8133
 
 ``` r
 pred_main <- predict(lasso_main$glmnet.fit, newx = X_matrix_main, s = lambda_min_main)
@@ -2454,13 +2454,13 @@ adj_r2_inter <- 1 - (1 - r2_inter)*((n - 1)/(n - k_inter - 1))
 cat("no interaction term R²:", r2_main, "\n")
 ```
 
-    ## no interaction term R²: 0.2504083
+    ## no interaction term R²: 0.2531855
 
 ``` r
 cat("with interaction term R²:", r2_inter, "\n")
 ```
 
-    ## with interaction term R²: 0.2552965
+    ## with interaction term R²: 0.2645375
 
 From above we can see that including interaction term into our model
 does not improve MSE or adjusted R^2. \##regression diagnostics
@@ -2491,7 +2491,7 @@ shapiro_result <- shapiro.test(residuals)
 cat("Shapiro-Wilk test p-value:", shapiro_result$p.value, "\n")
 ```
 
-    ## Shapiro-Wilk test p-value: 0.0003643057
+    ## Shapiro-Wilk test p-value: 0.000378143
 
 ``` r
 if (shapiro_result$p.value < 0.05) {
@@ -2536,7 +2536,7 @@ dw_result <- dwtest(residuals ~ predictions)
 cat("Durbin-Watson test p-value:", dw_result$p.value, "\n")
 ```
 
-    ## Durbin-Watson test p-value: 0.4742689
+    ## Durbin-Watson test p-value: 0.4802513
 
 ``` r
 if (dw_result$p.value < 0.05) {
@@ -2632,34 +2632,34 @@ print(lasso_coef_boxcox)
 ```
 
     ## 28 x 1 sparse Matrix of class "dgCMatrix"
-    ##                                        s1
-    ## (Intercept)                   141.7326718
-    ## gender                         17.0661757
-    ## ethnic_groupgroup_a            -4.3102735
-    ## ethnic_groupgroup_b             .        
-    ## ethnic_groupgroup_c            -0.3596429
-    ## ethnic_groupgroup_d             9.8821135
-    ## ethnic_groupgroup_e            31.1902339
-    ## parent_educassociates_degree    8.8663249
-    ## parent_educbachelors_degree    13.7973675
-    ## parent_educhigh_school         -9.8577059
-    ## parent_educmasters_degree      14.7926231
-    ## parent_educsome_college         4.9832753
-    ## parent_educsome_high_school    -5.3351993
-    ## lunch_type                     38.8611721
-    ## test_prep                       1.4528258
-    ## parent_marital_statusdivorced  -0.4891811
-    ## parent_marital_statusmarried    9.2262350
-    ## parent_marital_statussingle     .        
-    ## parent_marital_statuswidowed   11.5285471
-    ## practice_sportnever            -5.9074836
-    ## practice_sportregularly         1.5844520
-    ## practice_sportsometimes         .        
-    ## is_first_child                  .        
-    ## nr_siblings                     0.2638422
-    ## transport_means                 0.3187248
-    ## wkly_study_hours_5            -12.2175415
-    ## wkly_study_hours_10             1.7447602
+    ##                                         s1
+    ## (Intercept)                   144.76253156
+    ## gender                         16.71546153
+    ## ethnic_groupgroup_a            -3.92175865
+    ## ethnic_groupgroup_b             .         
+    ## ethnic_groupgroup_c            -0.17221967
+    ## ethnic_groupgroup_d             9.59945667
+    ## ethnic_groupgroup_e            30.85325400
+    ## parent_educassociates_degree    7.03861687
+    ## parent_educbachelors_degree    11.82401601
+    ## parent_educhigh_school        -11.08350928
+    ## parent_educmasters_degree      12.53505389
+    ## parent_educsome_college         3.17026158
+    ## parent_educsome_high_school    -6.62996465
+    ## lunch_type                     38.57214274
+    ## test_prep                       0.92878118
+    ## parent_marital_statusdivorced  -0.31154950
+    ## parent_marital_statusmarried    9.01035267
+    ## parent_marital_statussingle     .         
+    ## parent_marital_statuswidowed   10.64095023
+    ## practice_sportnever            -5.52781239
+    ## practice_sportregularly         1.37923585
+    ## practice_sportsometimes         .         
+    ## is_first_child                  .         
+    ## nr_siblings                     0.15653111
+    ## transport_means                 0.02555675
+    ## wkly_study_hours_5            -11.95139996
+    ## wkly_study_hours_10             1.60384154
     ## wkly_study_hours10_may          .
 
 ``` r
@@ -2669,7 +2669,7 @@ cv_mse_boxcox <- lasso_model_boxcox$cvm[which(lasso_model_boxcox$lambda == lambd
 cat("Box-Cox transformed model CV MSE:", cv_mse_boxcox, "\n")
 ```
 
-    ## Box-Cox transformed model CV MSE: 2502.081
+    ## Box-Cox transformed model CV MSE: 2531.843
 
 # Reading_model
 
@@ -4818,34 +4818,34 @@ print(lasso_coef_reading)
 ```
 
     ## 28 x 1 sparse Matrix of class "dgCMatrix"
-    ##                                         s1
-    ## (Intercept)                   64.823500288
-    ## gender                        -6.656247021
-    ## ethnic_groupgroup_a            .          
-    ## ethnic_groupgroup_b            .          
-    ## ethnic_groupgroup_c            .          
-    ## ethnic_groupgroup_d            1.864244726
-    ## ethnic_groupgroup_e            3.966878000
-    ## parent_educassociates_degree   2.180223529
-    ## parent_educbachelors_degree    3.439374730
-    ## parent_educhigh_school        -3.118660795
-    ## parent_educmasters_degree      5.968631439
-    ## parent_educsome_college        0.352946274
-    ## parent_educsome_high_school   -1.283885938
-    ## lunch_type                     6.961979632
-    ## test_prep                      0.603191531
-    ## parent_marital_statusdivorced -0.272544652
-    ## parent_marital_statusmarried   2.284610080
-    ## parent_marital_statussingle    .          
-    ## parent_marital_statuswidowed   2.179242087
-    ## practice_sportnever            .          
-    ## practice_sportregularly       -0.003307305
-    ## practice_sportsometimes        0.165588909
-    ## is_first_child                 .          
-    ## nr_siblings                    .          
-    ## transport_means                .          
-    ## wkly_study_hours_5            -2.251518770
-    ## wkly_study_hours_10            .          
+    ##                                       s1
+    ## (Intercept)                   65.6535647
+    ## gender                        -6.5077522
+    ## ethnic_groupgroup_a            .        
+    ## ethnic_groupgroup_b            .        
+    ## ethnic_groupgroup_c            .        
+    ## ethnic_groupgroup_d            1.6282957
+    ## ethnic_groupgroup_e            3.6780839
+    ## parent_educassociates_degree   1.6785194
+    ## parent_educbachelors_degree    2.9214046
+    ## parent_educhigh_school        -3.3035558
+    ## parent_educmasters_degree      5.3611675
+    ## parent_educsome_college        .        
+    ## parent_educsome_high_school   -1.4602231
+    ## lunch_type                     6.8137976
+    ## test_prep                      0.3310316
+    ## parent_marital_statusdivorced -0.1694915
+    ## parent_marital_statusmarried   2.1427498
+    ## parent_marital_statussingle    .        
+    ## parent_marital_statuswidowed   1.5806829
+    ## practice_sportnever            .        
+    ## practice_sportregularly        .        
+    ## practice_sportsometimes        .        
+    ## is_first_child                 .        
+    ## nr_siblings                    .        
+    ## transport_means                .        
+    ## wkly_study_hours_5            -2.0991217
+    ## wkly_study_hours_10            .        
     ## wkly_study_hours10_may         .
 
 ## comparison
@@ -4907,7 +4907,7 @@ print(results_reading)
     ## 1           Backward 7260.187 7322.647 0.17856997
     ## 2 Criteria-Based AIC 7260.187 7322.647 0.17856997
     ## 3 Criteria-Based BIC 7262.805 7315.656 0.17437569
-    ## 4              LASSO 4953.919 5040.402 0.01475089
+    ## 4              LASSO 4948.827 5020.896 0.01709805
 
 ``` r
 results_long2 <- results_reading %>%
@@ -4917,9 +4917,9 @@ results_long2 <- results_reading %>%
 
 ggplot(results_long2, aes(x = Method, y = Value, fill = Method)) +
   geom_bar(stat = "identity") +
-  facet_wrap(~ Metric, scales = "free_y", ncol = 3) +  # 设置每行3个面板，即按列分布
+  facet_wrap(~ Metric, scales = "free_y", ncol = 3) + 
   theme_minimal() +
-  labs(title = "Model evaluation plot for writing score prediction",
+  labs(title = "Model evaluation plot for reading score prediction",
        x = "method",
        y = "value") +
   theme(axis.text.x = element_text(angle = 45, hjust = 1),
@@ -7716,7 +7716,7 @@ lambda_min_writing <- lasso_model_writing$lambda.min
 cat("Optimal lambda:", lambda_min_writing, "\n")
 ```
 
-    ## Optimal lambda: 0.08761859
+    ## Optimal lambda: 0.1158266
 
 ``` r
 # Extract coefficients for the model with optimal lambda
@@ -7726,35 +7726,35 @@ print(lasso_coef_writing)
 
     ## 29 x 1 sparse Matrix of class "dgCMatrix"
     ##                                        s1
-    ## (Intercept)                   17.28262314
-    ## gender                        -2.11786152
-    ## ethnic_groupgroup_a           -0.30066454
-    ## ethnic_groupgroup_b           -0.21427759
+    ## (Intercept)                   17.43316180
+    ## gender                        -2.06703541
+    ## ethnic_groupgroup_a           -0.20803534
+    ## ethnic_groupgroup_b           -0.14034732
     ## ethnic_groupgroup_c            .         
-    ## ethnic_groupgroup_d            1.77710025
-    ## ethnic_groupgroup_e           -0.04244223
+    ## ethnic_groupgroup_d            1.74338177
+    ## ethnic_groupgroup_e            .         
     ## parent_educassociates_degree   .         
-    ## parent_educbachelors_degree    0.58662965
-    ## parent_educhigh_school        -1.53009622
-    ## parent_educmasters_degree      0.82999561
+    ## parent_educbachelors_degree    0.52694896
+    ## parent_educhigh_school        -1.45970510
+    ## parent_educmasters_degree      0.72121631
     ## parent_educsome_college        .         
-    ## parent_educsome_high_school   -1.34628159
-    ## lunch_type                     1.10804424
+    ## parent_educsome_high_school   -1.28202390
+    ## lunch_type                     1.04220217
     ## test_prep                      .         
     ## parent_marital_statusdivorced  .         
-    ## parent_marital_statusmarried   0.16187549
+    ## parent_marital_statusmarried   0.10934421
     ## parent_marital_statussingle    .         
     ## parent_marital_statuswidowed   .         
-    ## practice_sportnever           -0.86860526
-    ## practice_sportregularly        0.82877688
+    ## practice_sportnever           -0.80684871
+    ## practice_sportregularly        0.76907825
     ## practice_sportsometimes        .         
     ## is_first_child                 .         
-    ## nr_siblings                    0.09759741
-    ## transport_means                0.15387122
+    ## nr_siblings                    0.07803907
+    ## transport_means                0.06802388
     ## wkly_study_hours_5             .         
     ## wkly_study_hours_10            .         
     ## wkly_study_hours10_may         .         
-    ## reading_score_trans            0.25358402
+    ## reading_score_trans            0.25358222
 
 ## comparison
 
@@ -7820,7 +7820,7 @@ print(results_writing)
     ## 1           Backward 5207.989 5270.449 0.9212862
     ## 2 Criteria-Based AIC 5207.989 5270.449 0.9212862
     ## 3 Criteria-Based BIC 5215.105 5258.346 0.9203141
-    ## 4              LASSO 2658.650 2740.329 0.9205385
+    ## 4              LASSO 2660.281 2737.155 0.9203081
 
 ``` r
 results_long <- results_writing %>%
@@ -7830,7 +7830,7 @@ results_long <- results_writing %>%
 
 ggplot(results_long, aes(x = Method, y = Value, fill = Method)) +
   geom_bar(stat = "identity") +
-  facet_wrap(~ Metric, scales = "free_y", ncol = 3) +  # 设置每行3个面板，即按列分布
+  facet_wrap(~ Metric, scales = "free_y", ncol = 3) +  
   theme_minimal() +
   labs(title = "Model evaluation plot for writing score prediction",
        x = "method",
@@ -8022,13 +8022,13 @@ cv_mse_inter_writing <- lasso_inter_writing$cvm[which(lasso_inter_writing$lambda
 cat("No interaction term CV MSE:", cv_mse_main_writing, "\n")
 ```
 
-    ## No interaction term CV MSE: 19.44372
+    ## No interaction term CV MSE: 19.07742
 
 ``` r
 cat("With interaction term CV MSE:", cv_mse_inter_writing, "\n")
 ```
 
-    ## With interaction term CV MSE: 19.26929
+    ## With interaction term CV MSE: 19.15418
 
 ``` r
 # Predictions
@@ -8059,13 +8059,13 @@ adj_r2_inter_writing <- 1 - (1 - r2_inter_writing) * ((n_writing - 1) / (n_writi
 cat("No interaction term Adjusted R²:", adj_r2_main_writing, "\n")
 ```
 
-    ## No interaction term Adjusted R²: 0.920398
+    ## No interaction term Adjusted R²: 0.9205193
 
 ``` r
 cat("With interaction term Adjusted R²:", adj_r2_inter_writing, "\n")
 ```
 
-    ## With interaction term Adjusted R²: 0.9199785
+    ## With interaction term Adjusted R²: 0.9203248
 
 the interaction does not significantly improve our model, therefore we
 choose not to include them in our model.
@@ -8228,34 +8228,34 @@ lasso_coef
 ```
 
     ## 28 x 1 sparse Matrix of class "dgCMatrix"
-    ##                                       s1
-    ## (Intercept)                   52.1557265
-    ## gender                         4.8952496
-    ## ethnic_groupgroup_a           -1.2716802
-    ## ethnic_groupgroup_b            .        
-    ## ethnic_groupgroup_c           -0.2038326
-    ## ethnic_groupgroup_d            2.9021424
-    ## ethnic_groupgroup_e            8.3660242
-    ## parent_educassociates_degree   3.0739677
-    ## parent_educbachelors_degree    4.4231410
-    ## parent_educhigh_school        -2.3039572
-    ## parent_educmasters_degree      4.8695221
-    ## parent_educsome_college        2.0488616
-    ## parent_educsome_high_school   -1.1661607
-    ## lunch_type                    10.8683379
-    ## test_prep                      0.4940415
-    ## parent_marital_statusdivorced -0.2501855
-    ## parent_marital_statusmarried   2.6645574
-    ## parent_marital_statussingle    .        
-    ## parent_marital_statuswidowed   3.5789237
-    ## practice_sportnever           -1.5806638
-    ## practice_sportregularly        0.4854517
-    ## practice_sportsometimes        .        
-    ## is_first_child                 .        
-    ## nr_siblings                    0.1086647
-    ## transport_means                0.2357421
-    ## wkly_study_hours_5            -3.3697031
-    ## wkly_study_hours_10            0.4660199
+    ##                                        s1
+    ## (Intercept)                   52.98357281
+    ## gender                         4.79949859
+    ## ethnic_groupgroup_a           -1.16549395
+    ## ethnic_groupgroup_b            .         
+    ## ethnic_groupgroup_c           -0.15241140
+    ## ethnic_groupgroup_d            2.82543272
+    ## ethnic_groupgroup_e            8.27438419
+    ## parent_educassociates_degree   2.57344646
+    ## parent_educbachelors_degree    3.88295951
+    ## parent_educhigh_school        -2.64043612
+    ## parent_educmasters_degree      4.25173992
+    ## parent_educsome_college        1.55233260
+    ## parent_educsome_high_school   -1.52123777
+    ## lunch_type                    10.78953283
+    ## test_prep                      0.35113303
+    ## parent_marital_statusdivorced -0.20159012
+    ## parent_marital_statusmarried   2.60581753
+    ## parent_marital_statussingle    .         
+    ## parent_marital_statuswidowed   3.33712980
+    ## practice_sportnever           -1.47717260
+    ## practice_sportregularly        0.42957900
+    ## practice_sportsometimes        .         
+    ## is_first_child                 .         
+    ## nr_siblings                    0.07939241
+    ## transport_means                0.15585720
+    ## wkly_study_hours_5            -3.29707751
+    ## wkly_study_hours_10            0.42768536
     ## wkly_study_hours10_may         .
 
 we can have a summary on the predictors we choose to construct three
@@ -10815,38 +10815,38 @@ print(lasso_coef_math2)
 ```
 
     ## 31 x 1 sparse Matrix of class "dgCMatrix"
-    ##                                         s1
-    ## (Intercept)                   -2.409395238
-    ## gender                        12.606552061
-    ## ethnic_groupgroup_a           -0.801795207
-    ## ethnic_groupgroup_b            .          
-    ## ethnic_groupgroup_c           -0.532831272
-    ## ethnic_groupgroup_d           -0.056394802
-    ## ethnic_groupgroup_e            4.144350483
-    ## parent_educassociates_degree   .          
-    ## parent_educbachelors_degree   -0.046865456
-    ## parent_educhigh_school         0.364235272
-    ## parent_educmasters_degree     -2.020322415
-    ## parent_educsome_college        0.389934309
-    ## parent_educsome_high_school    .          
-    ## lunch_type                     3.609962977
-    ## test_prep                     -0.006284589
-    ## parent_marital_statusdivorced  .          
-    ## parent_marital_statusmarried   0.072423214
-    ## parent_marital_statussingle    .          
-    ## parent_marital_statuswidowed   0.195318367
-    ## practice_sportnever           -0.379575429
-    ## practice_sportregularly        0.659706923
-    ## practice_sportsometimes        .          
-    ## is_first_child                 0.004192203
-    ## nr_siblings                    0.121172394
-    ## transport_means                .          
-    ## wkly_study_hours_5            -1.261639032
-    ## wkly_study_hours_10            .          
-    ## wkly_study_hours10_may        -0.414006042
-    ## reading_score                  0.165615986
-    ## writing_score                  0.550968719
-    ## reading_score_trans            0.054831845
+    ##                                        s1
+    ## (Intercept)                   -2.49121649
+    ## gender                        12.67167490
+    ## ethnic_groupgroup_a           -0.97359979
+    ## ethnic_groupgroup_b            .         
+    ## ethnic_groupgroup_c           -0.64779674
+    ## ethnic_groupgroup_d           -0.19203440
+    ## ethnic_groupgroup_e            4.10865633
+    ## parent_educassociates_degree   .         
+    ## parent_educbachelors_degree   -0.11025160
+    ## parent_educhigh_school         0.43669185
+    ## parent_educmasters_degree     -2.09338091
+    ## parent_educsome_college        0.43385473
+    ## parent_educsome_high_school    .         
+    ## lunch_type                     3.63973987
+    ## test_prep                     -0.12577600
+    ## parent_marital_statusdivorced  .         
+    ## parent_marital_statusmarried   0.11629534
+    ## parent_marital_statussingle    .         
+    ## parent_marital_statuswidowed   0.33720606
+    ## practice_sportnever           -0.42457039
+    ## practice_sportregularly        0.69374843
+    ## practice_sportsometimes        .         
+    ## is_first_child                 0.15726373
+    ## nr_siblings                    0.13399285
+    ## transport_means                .         
+    ## wkly_study_hours_5            -1.41331270
+    ## wkly_study_hours_10            .         
+    ## wkly_study_hours10_may        -0.55342454
+    ## reading_score                  0.16311452
+    ## writing_score                  0.55350812
+    ## reading_score_trans            0.05544545
 
 ## comparison
 
@@ -10966,38 +10966,38 @@ print(lasso_coef_math2)
 ```
 
     ## 31 x 1 sparse Matrix of class "dgCMatrix"
-    ##                                         s1
-    ## (Intercept)                   -2.409395238
-    ## gender                        12.606552061
-    ## ethnic_groupgroup_a           -0.801795207
-    ## ethnic_groupgroup_b            .          
-    ## ethnic_groupgroup_c           -0.532831272
-    ## ethnic_groupgroup_d           -0.056394802
-    ## ethnic_groupgroup_e            4.144350483
-    ## parent_educassociates_degree   .          
-    ## parent_educbachelors_degree   -0.046865456
-    ## parent_educhigh_school         0.364235272
-    ## parent_educmasters_degree     -2.020322415
-    ## parent_educsome_college        0.389934309
-    ## parent_educsome_high_school    .          
-    ## lunch_type                     3.609962977
-    ## test_prep                     -0.006284589
-    ## parent_marital_statusdivorced  .          
-    ## parent_marital_statusmarried   0.072423214
-    ## parent_marital_statussingle    .          
-    ## parent_marital_statuswidowed   0.195318367
-    ## practice_sportnever           -0.379575429
-    ## practice_sportregularly        0.659706923
-    ## practice_sportsometimes        .          
-    ## is_first_child                 0.004192203
-    ## nr_siblings                    0.121172394
-    ## transport_means                .          
-    ## wkly_study_hours_5            -1.261639032
-    ## wkly_study_hours_10            .          
-    ## wkly_study_hours10_may        -0.414006042
-    ## reading_score                  0.165615986
-    ## writing_score                  0.550968719
-    ## reading_score_trans            0.054831845
+    ##                                        s1
+    ## (Intercept)                   -2.49121649
+    ## gender                        12.67167490
+    ## ethnic_groupgroup_a           -0.97359979
+    ## ethnic_groupgroup_b            .         
+    ## ethnic_groupgroup_c           -0.64779674
+    ## ethnic_groupgroup_d           -0.19203440
+    ## ethnic_groupgroup_e            4.10865633
+    ## parent_educassociates_degree   .         
+    ## parent_educbachelors_degree   -0.11025160
+    ## parent_educhigh_school         0.43669185
+    ## parent_educmasters_degree     -2.09338091
+    ## parent_educsome_college        0.43385473
+    ## parent_educsome_high_school    .         
+    ## lunch_type                     3.63973987
+    ## test_prep                     -0.12577600
+    ## parent_marital_statusdivorced  .         
+    ## parent_marital_statusmarried   0.11629534
+    ## parent_marital_statussingle    .         
+    ## parent_marital_statuswidowed   0.33720606
+    ## practice_sportnever           -0.42457039
+    ## practice_sportregularly        0.69374843
+    ## practice_sportsometimes        .         
+    ## is_first_child                 0.15726373
+    ## nr_siblings                    0.13399285
+    ## transport_means                .         
+    ## wkly_study_hours_5            -1.41331270
+    ## wkly_study_hours_10            .         
+    ## wkly_study_hours10_may        -0.55342454
+    ## reading_score                  0.16311452
+    ## writing_score                  0.55350812
+    ## reading_score_trans            0.05544545
 
 Here we can see that all the models built on different selection
 criteria contain writing score and possibly reading score
@@ -11058,7 +11058,21 @@ print(results_math2)
     ## 1           Backward 5713.944 5786.014 0.8658950
     ## 2 Criteria-Based AIC 5713.944 5786.014 0.8658950
     ## 3 Criteria-Based BIC 5720.200 5763.442 0.8640716
-    ## 4              LASSO 4731.823 4842.329 0.8639951
+    ## 4              LASSO 4733.184 4843.690 0.8644444
+
+``` r
+ggplot(results_long, aes(x = Method, y = Value, fill = Method)) +
+  geom_bar(stat = "identity") +
+  facet_wrap(~ Metric, scales = "free_y", ncol = 3) +  
+  theme_minimal() +
+  labs(title = "Model evaluation plot for math score prediction(after adding other scores as predictors)",
+       x = "method",
+       y = "value") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        legend.position = "none")
+```
+
+![](model_files/figure-gfm/unnamed-chunk-52-1.png)<!-- -->
 
 And the best model that contain possibly the other two scores have a
 lower AIC and BIC metrics and higher Adjusted R^2 value. Hence, the

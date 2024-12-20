@@ -137,9 +137,9 @@ results_long1 <- results %>%
 
 ggplot(results_long1, aes(x = Method, y = Value, fill = Method)) +
   geom_bar(stat = "identity") +
-  facet_wrap(~ Metric, scales = "free_y", ncol = 3) +  # 设置每行3个面板，即按列分布
+  facet_wrap(~ Metric, scales = "free_y", ncol = 3) +
   theme_minimal() +
-  labs(title = "Model evaluation plot for writing score prediction",
+  labs(title = "Model evaluation plot for math score prediction",
        x = "method",
        y = "value") +
   theme(axis.text.x = element_text(angle = 45, hjust = 1),
@@ -478,9 +478,9 @@ results_long2 <- results_reading %>%
 
 ggplot(results_long2, aes(x = Method, y = Value, fill = Method)) +
   geom_bar(stat = "identity") +
-  facet_wrap(~ Metric, scales = "free_y", ncol = 3) +  # 设置每行3个面板，即按列分布
+  facet_wrap(~ Metric, scales = "free_y", ncol = 3) + 
   theme_minimal() +
-  labs(title = "Model evaluation plot for writing score prediction",
+  labs(title = "Model evaluation plot for reading score prediction",
        x = "method",
        y = "value") +
   theme(axis.text.x = element_text(angle = 45, hjust = 1),
@@ -781,7 +781,7 @@ results_long <- results_writing %>%
 
 ggplot(results_long, aes(x = Method, y = Value, fill = Method)) +
   geom_bar(stat = "identity") +
-  facet_wrap(~ Metric, scales = "free_y", ncol = 3) +  # 设置每行3个面板，即按列分布
+  facet_wrap(~ Metric, scales = "free_y", ncol = 3) +  
   theme_minimal() +
   labs(title = "Model evaluation plot for writing score prediction",
        x = "method",
@@ -1061,6 +1061,16 @@ results_math2 <- data.frame(
 )
 
 print(results_math2)
+
+ggplot(results_long, aes(x = Method, y = Value, fill = Method)) +
+  geom_bar(stat = "identity") +
+  facet_wrap(~ Metric, scales = "free_y", ncol = 3) +  
+  theme_minimal() +
+  labs(title = "Model evaluation plot for math score prediction(after adding other scores as predictors)",
+       x = "method",
+       y = "value") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        legend.position = "none")
 ```
 
 And the best model that contain possibly the other two scores have a lower AIC and BIC metrics and higher Adjusted R^2 value. 
