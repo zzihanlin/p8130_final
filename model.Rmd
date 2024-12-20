@@ -1,7 +1,7 @@
 ---
 title: "modeling"
 author: "Yuhao Chang, Yonghao Yu"
-output: html_document
+output: github_document
 date: "2024-12-15"
 ---
 
@@ -953,9 +953,9 @@ So by comparing the predictors among the three optimal models, we can find out t
 
 ## Is it possible to leverage one score as the auxiliary information to learn the model for another score (still its model against variables 1-11) better?
 
-#### We can take math as an example
+#### We can take math score prediction as an example
 
-We can try to use criteria-based procedures, automatic search procedures, and shrink methods to test whether the best model contains the other two test scores we select in every method we use, 
+We can try to use criteria-based procedures, automatic search procedures, and shrink methods to test whether the best model contains the other two test scores we select in every method we use.
 ```{r}
 X_math2 <- model_data %>%
   select(-math_score)  
